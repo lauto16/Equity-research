@@ -1,0 +1,3271 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style=""><!--<![endif]--><script id="IC_GTagScript" src="https://www.googletagmanager.com/gtag/js?id=G-5EST90M6PX" type="text/javascript" async=""></script><head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="canonical" href="https://www.macrotrends.net/stocks/charts/WDAY/workday/operating-margin">
+		<link rel="alternate" media="only screen and (max-width: 768px)" href="https://m.macrotrends.net/stocks/charts/WDAY/workday/operating-margin">
+		<title>Workday Operating Margin 2011-2024 | WDAY | MacroTrends</title>
+		<link rel="icon" type="image/x-icon" href="/assets/images/icons/FAVICON/macrotrends-favicon.ico">
+		<meta name="description" content="Current and historical operating margin for Workday (WDAY) over the last 10 years.  The current operating profit margin for Workday as of July 31, 2024 is <strong>5.30%</strong>.">
+		<meta name="robots" content="">
+				
+
+		<meta name="msvalidate.01" content="1228954C688F5907894001CD8E5E624B">
+		<meta name="google-site-verification" content="6MnD_3iDtAP1ZyoGK1YMyVIVck4r5Ws80I9xD3ue4_A">
+
+		<!-- Load in Roboto Font -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,600,700">
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--for Bootstrap CDN version-->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--for Font Awesome CDN version-->
+    		
+		<!-- Jquery, Bootstrap and Menu Javascript -->	
+		<script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+				
+		<!-- Modernizr for cross-browser support -->		
+		<script type="text/javascript" src="/assets/javascript/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//www.fuelcdn.com/fuelux/3.13.0/css/fuelux.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="//www.fuelcdn.com/fuelux/3.13.0/js/fuelux.min.js"></script>
+		
+		
+		 <!-- Twitter Card data -->
+		  <meta name="twitter:card" content="summary_large_image">
+		  <meta name="twitter:site" content="@tmacrotrends">
+		  <meta name="twitter:title" content="Workday Operating Margin 2011-2024 | WDAY">
+		  <meta name="twitter:description" content="Current and historical operating margin for Workday (WDAY) over the last 10 years.  The current operating profit margin for Workday as of July 31, 2024 is <strong>5.30%</strong>.">
+
+		  <!-- Open Graph data -->
+		  <meta property="og:url" content="https://www.macrotrends.net/stocks/charts/WDAY/workday/operating-margin">  
+		  <meta property="og:title" content="Workday Operating Margin 2011-2024 | WDAY">
+		  <meta property="og:description" content="Current and historical operating margin for Workday (WDAY) over the last 10 years.  The current operating profit margin for Workday as of July 31, 2024 is <strong>5.30%</strong>.">
+
+		<!-- JQXGRID STYLES AND JAVASCRIPT -->
+		<link rel="stylesheet" href="/assets/php/jqfiles/jqwidgets/styles/jqx.base.css" type="text/css">
+		<link rel="stylesheet" href="/assets/php/jqfiles/jqwidgets/styles/jqx.bootstrap.css" type="text/css">
+
+		<!-- LOAD THESE SCRIPTS EARLY SO THE TICKER INPUT FIELD IS STYLED INSTANTLY -->
+		<script type="text/javascript" src="/assets/php/jqfiles/jqwidgets/jqxcore.js"></script>
+		<script type="text/javascript" src="/assets/php/jqfiles/jqwidgets/jqxdata.js"></script> 
+		<script type="text/javascript" src="/assets/php/jqfiles/jqwidgets/jqxinput.js"></script> 
+
+		<!-- Styling for search box -->	
+		<link rel="stylesheet" type="text/css" href="/assets/php/jquery-typeahead/jquery.typeahead_pages.css">
+
+		<!-- Search box javascript -->
+		<script src="/assets/php/jquery-typeahead/jquery.typeahead.min.js"></script>
+		
+
+		<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+	
+	<!-- ToolTips -->	
+		<script src="/assets/php/tipped-4.6.1/js/tipped/tipped.js"></script>
+		<link rel="stylesheet" href="/assets/php/tipped-4.6.1/css/tipped/tipped.css">
+		
+		<!-- FORM VALIDATION -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+		
+			
+		<!-- START IC AD INSERT -->
+		
+		<script>InvestingChannelQueue = window.InvestingChannelQueue || [];</script>
+		
+		<script async="" src="https://u5.investingchannel.com/static/uat.js"></script>
+		
+		<script>
+			var ic_page;
+			InvestingChannelQueue.push(function() {
+				ic_page = InvestingChannel.UAT.Run("df17ac1e-cc7f-11e8-82a5-0abbb61c4a6a");
+			});
+		</script>	
+
+		<!-- END IC AD INSERT -->
+		
+		<!-- Google tag (gtag.js) -->
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3KL0LYERBH"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-3KL0LYERBH');
+		</script>	
+
+		
+<style> 
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 18px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #5B9BD5;
+}
+
+html {
+	width:100%;
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	
+	width:100%;
+
+	/* Margin bottom by footer height */
+	  margin-bottom: 80px;
+	  color: #444;
+	  background-color:#fff;
+	  font-family: 'Roboto', sans-serif;
+	  font-size:14px;
+}
+
+
+
+
+
+.header_content_container {
+	
+	min-width: 1280px;
+	padding: 0px;
+}
+
+.main_content_container {
+	
+	min-width: 1280px;
+	max-width: 1280px;
+	padding: 0px 30px 100px 30px;
+	
+}
+
+.sub_main_content_container {
+	
+	
+}
+
+
+
+#main_content {
+	
+	padding:0px 20px 0px 0px;
+	width:826px;
+    float:left;
+	
+}
+
+#right_sidebar {
+	
+  width: 300px;
+  float:left;
+  height:8150px;
+	
+}
+
+#sticky_ad_left {
+	
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+	
+	
+}
+
+#sticky_ad_right {
+	
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+	
+	
+}
+
+
+
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  margin-top: 10px;	
+  padding: 30px 20px 20px 20px;
+  color:#fff !important;
+  background-color:#444;
+  text-align: center;
+  font-size:16px;
+}
+
+.footer a {
+  color:#fff !important;
+}
+
+.ticker_search_box {
+	
+	background-color:#F5F5F5;
+	border: 1px solid #E0E0E0;
+	border-bottom:none;
+	padding:10px 30px 10px 10px;
+	margin:0px 0px 0px 0px;
+	text-align:center;
+	
+}
+
+.related_tickers {
+	
+	width:100%;
+	background-color:#F5F5F5;
+	border: 1px solid #E0E0E0;
+	border-top: 0px;
+	padding:3px 30px 3px 10px;
+	margin:0px 0px 0px 0px;
+	text-align:center;
+	
+}
+
+.statement_type_select {
+
+	width:100%;
+	height:28px;
+	
+}
+
+.frequency_select {
+
+	width:100%;
+	height:28px;
+	font-weight:600;
+	
+}
+
+
+.select2 {
+	
+	text-align:left;
+	font-weight:600;
+	
+	}
+	
+#jqxInput {
+
+		width:100%;
+		height:28px;
+		
+}
+
+
+
+.header__parent_container {
+
+	width:100%;
+	height:50px;
+	padding:15px 0px 10px -20px; 
+	margin:0px 0px 0px 0px;
+	background-color:#444;
+
+}
+
+.header_container {
+
+	width:100%;
+	height:50px;
+	padding:15px 0px 10px -20px; 
+	margin:0px 0px 0px 0px;
+	background-color:#444;
+
+}
+
+.header_logo {
+	
+	padding-top:10px;
+	margin-left:50px;
+	
+}
+
+.menu_parent_container {
+	
+	width:100%;
+	height:34px;
+	font-size:16px;
+	padding:15px 0px 10px -20px; 
+	margin:0px 0px 0px 0px;
+	background-color:#0089de;
+}
+
+.menu_container {
+	
+	width:1280px;
+	height:34px;
+	font-size:16px;
+	padding:11px 0px 0px -20px; 
+	margin: 0 auto;
+	background-color:#0089de;
+	z-index:1000;
+}
+
+.menu_item {
+
+	height:34px;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+	padding:7px 16px 0px 16px;	
+
+}
+
+.menu_item:hover
+{
+	background-color:#32a0e4;
+	cursor: pointer;
+}
+
+.menu_item a
+{
+	color:#fff;
+	cursor: pointer;
+}
+
+.menu_item a:hover
+{
+	text-decoration:none;
+	cursor: pointer;
+}
+
+.leaderboard_ad {
+
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	min-height:100px;
+
+}
+
+#filter_result_count {
+	
+	width:100%;
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+	padding:10px 15px;
+	background-color:#efefef;
+	border: 1px solid #dfdfdf;
+	margin:20px;
+	
+}
+
+
+select {
+  color: #444;
+  background-color: #FFF;
+  border: 1px solid #AAA;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height:40px;
+  line-height: 40px;
+}
+
+.historical_data_table  {
+    table-layout: fixed;
+	margin:20px;
+}
+
+.historical_data_table tbody tr td {
+	
+	padding:6px;
+	vertical-align: middle !important;
+
+}
+
+
+.descriptors {
+	
+	text-align:center;
+	font-size:14px;
+	padding:15px;
+	
+}
+
+.td_metric_name {
+	
+	width:110px;
+	padding-top:17px;
+	
+}
+
+.metric_link {
+	
+	font-size:14px;
+	font-weight:bold;
+
+}
+
+.help_icon {
+	
+	width:15px;
+	height:18px; 
+	padding-bottom:3px;
+	
+}
+
+.td_min_value {
+	
+	width:75px;
+	text-align:center;
+	font-size:13px;
+	
+}
+
+.td_max_value {
+	
+	width:75px;
+	text-align:center;
+	font-size:13px;
+	
+}
+
+#myCombobox .form-control {
+	
+	background-color: #99d5ff;
+
+	
+}
+
+.dropdown-toggle {
+	
+	height:24px;
+	padding-top:0px;
+	padding-left:7px;
+	width:24px;
+	
+}
+
+.dropdown-menu-right {
+	
+	min-width:75px;
+	font-size:13px;
+	
+}
+
+#myPills1 {
+	
+	margin:0px 15px 10px 0px;
+	
+}
+
+#jqxgrid {
+	
+	border-radius:0px;
+	
+}
+
+.jqx-widget-header {
+	
+    font-family: 'Roboto', sans-serif;
+	font-size:13px;	
+	
+}
+
+.jqx-item {
+	
+    font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	
+}
+
+.jqx-widget-content {
+	
+	border-color: #E0E0E0;
+	
+}
+
+#jqxgrid .jqx-grid-cell {
+	
+	border-color: #E0E0E0;
+	
+}
+
+#jqxgrid .jqx-grid-cell-pinned {
+	
+	border-color: #E0E0E0;
+	background-color: #F5F5F5;
+	
+}
+
+#jqxgrid .jqx-grid-column-header {
+	
+	border-color: #E0E0E0;
+	background-color: #F5F5F5;
+	
+}
+
+.clear_zero {
+
+	height:0px;
+
+}
+
+
+
+/* Styles for Popup Charts */
+
+.tpd-size-large {
+	
+	margin:0px;	
+	padding: 0px;
+}
+
+.popup_window_wrapper {
+	
+	margin:15px;
+	
+}
+
+.popup_stock_name {
+
+	font-size:16px;
+	font-weight:bold;
+	margin:5px;
+
+}
+
+.popup_stock_attributes {
+
+	font-size:13px;
+	font-weight:bold;
+	margin:5px;
+
+}
+
+.popup_stock_description {
+
+	font-size:12px;
+	margin:5px;
+
+}
+
+.jqx-input {
+	
+	font-size:14px;
+	
+} 
+
+.jqx-menu-item {
+	
+	font-size:14px;
+	
+}
+
+.jqx-input {
+	
+	padding:5px 10px;
+	
+}
+
+.nav-tabs {
+    border: 1px solid #E0E0E0;
+	background-color:#F5F5F5;
+	padding: 3px 5px 0px 5px;
+	margin: 0px 0px 10px 0px;
+}
+
+.nav-tabs>li>a {
+	font-size:13px;
+	padding:7px 11px;
+	font-weight:600;
+    margin-right: 0px;
+    line-height: 1.42857143;
+    border: 0px;
+    border-radius: 0px 0px 0 0;
+	background-color:#F5F5F5;
+
+}
+
+.nav-tabs>li>a .active {
+    margin-right: 0px;
+    line-height: 1.42857143;
+    border: 1px solid #E0E0E0;
+    border-radius: 0px 0px 0 0;
+	background-color:#F5F5F5;
+
+}
+
+.nav-tabs>li>a:hover { 
+    background-color: #F5F5F5;
+	text-decoration: underline;
+
+}
+
+.donate_buttons {
+
+	margin-left:20px;
+	
+	}	
+
+
+</style>	
+
+
+<script type="text/javascript" defer="" src="//cdn.mouseflow.com/projects/de879dfd-36cc-4d5e-adcd-3e97d4a41e06.js"></script><link href="https://u5.investingchannel.com/prebid/7.28.0/v3/prebid.js" rel="preload" as="script"><link href="https://u5.investingchannel.com/static/uat-internal.js" rel="preload" as="script"><link href="https://u5.investingchannel.com/static/uat-tag.js" rel="preload" as="script"></head>
+	<body class="fuelux">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<div class="header_content_container container-fluid">
+
+
+<div class="header_parent_container">
+
+<div class="header_container">
+
+	<div class="header_logo col-xs-2">
+		<a class="logo" href="/" title="MacroTrends Home Page"><img src="/assets/images/logo_bright1.png"></a>
+	</div>
+
+
+	  <div class="col-xs-1 pull-right" style="padding-top:8px; margin-right:10px; margin-left:0px; padding-left:0px;">
+	  	 					
+		<div id="IC_d_88x31_1">
+
+					
+		</div> 
+	  
+	  </div>
+	  
+
+	  <div class="col-xs-5 pull-right" style="padding-top:8px;">
+       <form>
+        <div class="typeahead__container">
+            <div class="typeahead__field">
+
+            <span class="typeahead__query">
+                <span class="typeahead__cancel-button">×</span><input class="js-typeahead" name="q" type="search" placeholder="Search over 200,000 charts..." autofocus="" autocomplete="off">
+            </span>
+            <span class="typeahead__button">
+                <button type="submit">
+                    <span class="typeahead__search-icon"></span>
+                </button>
+            </span>
+
+            </div>
+        </div>
+    </form>
+		
+	  </div>
+	  
+	  </div>
+
+
+
+</div>
+
+<div class="menu_parent_container">
+
+<div class="menu_container">
+		
+	<a href="/stocks/stock-screener"><div class="menu_item">Stock Screener</div></a>
+	<a href="/stocks/research"><div class="menu_item">Stock Research</div></a>
+	<a href="/stocks/delisted"><div class="menu_item">Delisted Stocks</div></a>
+	<a href="/charts/stock-indexes"><div class="menu_item">Market Indexes</div></a>
+	<a href="/charts/precious-metals"><div class="menu_item">Precious Metals</div></a>
+	<a href="/charts/energy"><div class="menu_item">Energy</div></a>
+	<a href="/charts/commodities"><div class="menu_item">Commodities</div></a>
+	<a href="/charts/interest-rates"><div class="menu_item">Interest Rates</div></a>
+	<a href="/charts/economy"><div class="menu_item">Economy</div></a>
+	<a href="/countries/topic-overview"><div class="menu_item">Global Metrics</div></a>
+	
+
+		
+</div>
+
+</div>
+
+</div>
+
+<div id="main_content_container" class="main_content_container container-fluid">
+
+
+	<div id="ic_leaderboard" class="adx_top_ad col-xs-12" style="margin: 20px 20px 30px 20px; min-height:265px; text-align:center;">
+		<!--Smartad # 4058: Macrotrends - 970x250 Image - Placement 2-->
+		<iframe id="dianomi_leaderboard" width="970" height="250" scrolling="NO" src="//www.dianomi.com/smartads.epl?id=4058" style="height: 250px; border: none; overflow: hidden;"></iframe>
+				 		
+	</div>
+			
+			<div style="margin:20px 20px 20px 5px;">
+			
+				<h2 style="margin-left:0px; font-weight:600; color:#444;">Workday Operating Margin 2011-2024 | WDAY</h2>
+			
+			</div>
+			
+			
+	<div class="sub_main_content_container">
+		
+
+
+		
+
+			<div id="main_content">
+			
+			
+			
+<div class="navigation_tabs" style="margin-bottom:20px;">
+			
+	<ul class="nav nav-tabs" id="myTabs" style="font-size:15px;">
+
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/stock-price-history">Prices</a></li>
+
+			
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/financial-statements">Financials</a></li>
+
+			
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/revenue">Revenue &amp; Profit</a></li>
+
+			
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/total-assets">Assets &amp; Liabilities</a></li>
+
+			
+		
+			
+			
+				<li class="active"><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/profit-margins">Margins</a></li>
+
+			
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/pe-ratio">Price Ratios</a></li>
+
+			
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/current-ratio">Other Ratios</a></li>
+
+			
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/dividend-yield-history">Other Metrics</a></li>
+
+			
+		
+	</ul>
+
+
+	<ul class="nav nav-tabs" id="myTabs" style="font-size:15px;">
+
+		
+			
+						
+				<li><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/profit-margins">Profit Margins</a></li>			
+
+						
+		
+			
+						
+				<li><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/gross-margin">Gross Margin</a></li>			
+
+						
+		
+			
+			
+				<li class="active"><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/operating-margin">Operating Margin</a></li>
+
+
+						
+		
+			
+						
+				<li><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/ebitda-margin">EBITDA Margin</a></li>			
+
+						
+		
+			
+						
+				<li><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/pre-tax-profit-margin">Pre-Tax Margin</a></li>			
+
+						
+		
+			
+						
+				<li><a href="https://www.macrotrends.net/stocks/charts/WDAY/workday/net-profit-margin">Net Margin</a></li>			
+
+						
+		
+
+	</ul>
+	
+			
+</div>
+
+
+
+
+			
+
+		
+
+			<div style="background-color:#fff; margin: 0px 0px 20px 0px; padding:20px 30px; border:1px solid #dfdfdf;">
+			
+				<span style="color:#444; line-height: 1.8;">Current and historical operating margin for Workday (WDAY) over the last 10 years.  The current operating profit margin for Workday as of July 31, 2024 is <strong>5.30%</strong>.</span>
+			
+			</div>
+
+		
+			
+			<div style="background-color:#fff; margin: 0px 0px 0px 0px; text-align:center; min-height:90px;">
+			
+			
+
+				<div id="IC_d_728x90_1" style="min-height:100px; margin:10px;">
+
+
+				</div>
+
+
+				<!--<iframe id="dianomi_leaderboard" WIDTH="728" HEIGHT="50" SCROLLING="NO" src="//www.dianomi.com/smartads.epl?id=6341"  style="border: none; overflow: hidden;"></iframe>-->
+
+			
+			</div>		
+			
+			
+
+			<div class="ticker_search_box" style="text-align:center;">			
+
+		<div style="width:400px; margin-left:20px; border-bottom:none;">
+		
+		
+
+		
+        <script type="text/javascript">
+            $(document).ready(function () {
+				                
+					var url = "https://www.macrotrends.net/assets/php/ticker_search_list.php";
+				
+                // prepare the data
+                var source =
+                {
+                    datatype: "json",
+					cache: true,
+                    datafields: [
+                        { name: 'n' },
+						{ name: 's'}
+                    ],
+                    url: url
+                };
+                var dataAdapter = new $.jqx.dataAdapter(source);
+                // Create a jqxInput
+                $("#jqxInput").jqxInput({ source: dataAdapter, minLength: 1, placeHolder: "Search for ticker or company name...", items: 20, searchMode: 'containsignorecase', displayMember: "n", valueMember: "s", width: '100%', height: 22, theme: 'bootstrap'});
+                $("#jqxInput").on('select', function (event) {
+                    if (event.args) {
+                        var item = event.args.item;
+						
+						//Have to split the ticker and slug back out since jqxinput only seems to allow one data value
+						var itemArray = item.value.split("\/"); 
+						var ticker = itemArray[0];
+						var slug = itemArray[1];
+                        if (item) {
+							
+														
+								window.location = "https://www.macrotrends.net/stocks/charts/" + ticker + "/" + slug + "/operating-margin";
+							
+							                        }
+                    }
+                });
+            });
+        </script>
+        <input id="jqxInput" autocomplete="off" role="textbox" aria-autocomplete="both" aria-disabled="false" aria-readonly="false" aria-multiline="false" class="jqx-widget-content jqx-widget-content-bootstrap jqx-input jqx-input-bootstrap jqx-widget jqx-widget-bootstrap jqx-rc-all jqx-rc-all-bootstrap" placeholder="Search for ticker or company name..." style="width: 100%; height: 22px;">
+
+		</div>
+				
+		<div style="width:280px; margin-top: -32px; margin-left:80px; border-bottom:none; float:right;">
+		
+		
+<button id="compareStocks" style="margin-right:15px;" class="chart_buttons btn btn-success btn-sm"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;<strong>Compare WDAY With Other Stocks</strong></button>&nbsp;&nbsp;
+
+</div>	
+		
+		</div>
+		
+			<div style="border:1px solid #dfdfdf; border-bottom:none; background-color:#fff; padding: 10px 30px; height:70px;">
+
+				<iframe id="dianomi_leaderboard" width="728" height="50" scrolling="NO" src="//www.dianomi.com/smartads.epl?id=6341" style="border: none; overflow: hidden;"></iframe>
+
+			
+			</div>			
+		
+		<div style="height:690px; background-color:#fff; border:1px solid #dfdfdf;">
+		
+<iframe id="chart_iframe" title="Interactive chart: Workday Operating Margin 2011-2024 | WDAY" valign="middle" margin="0px" width="800" height="680" marginheight="0" marginwidth="0" frameborder="0" vspace="0" hspace="0" scrolling="NO" src="https://www.macrotrends.net/assets/php/fundamental_iframe.php?t=WDAY&amp;type=operating-margin&amp;statement=ratios&amp;freq=Q"></iframe>	
+	
+		
+		</div>
+		
+		
+
+			<!--<div id="ic_video_ad" style="height:317px; margin:30px;">
+			
+			
+				<div id="IC_d_3x6_1"></div>
+						
+			
+			</div>-->
+
+			
+
+			<div style="background-color:#fff; margin: 20px 0px; padding:10px 30px; border:1px solid #dfdfdf;">
+			
+			
+		
+		
+			<iframe id="dianomi_below_chart" valign="middle" width="100%" height="300" marginheight="0" marginwidth="0" frameborder="0" vspace="0" hspace="0" scrolling="NO" src="//www.dianomi.com/smartads.epl?id=4057"></iframe>
+
+			<!--<div id="IC_D_3x7_BCC"></div>-->
+			
+		
+		</div>		
+
+			
+
+<div id="style-1" style="background-color:#fff; height: 500px; overflow:auto; margin: 0px 0px 30px 0px; padding:0px 30px 20px 0px; border:1px solid #dfdfdf;">
+			
+
+				<table class="table">
+				<thead>
+				  <tr>
+					<th colspan="4" style="text-align:center;">Workday Operating Margin Historical Data</th>
+				  </tr>
+				</thead>
+				<thead>
+				  <tr>
+					<th style="text-align:center;">Date</th>
+					<th style="text-align:center;">TTM Revenue</th>
+					<th style="text-align:center;">TTM Operating Income</th>
+					<th style="text-align:center;">Operating Margin</th>
+				  </tr>
+				</thead>
+				<tbody><tr>
+					<td style="text-align:center;">2024-07-31</td>
+					<td style="text-align:center;">$7.86B</td>
+					<td style="text-align:center;">$0.34B</td>
+					<td style="text-align:center;">4.35%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2024-04-30</td>
+					<td style="text-align:center;">$7.57B</td>
+					<td style="text-align:center;">$0.27B</td>
+					<td style="text-align:center;">3.53%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2024-01-31</td>
+					<td style="text-align:center;">$7.26B</td>
+					<td style="text-align:center;">$0.18B</td>
+					<td style="text-align:center;">2.52%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2023-10-31</td>
+					<td style="text-align:center;">$6.98B</td>
+					<td style="text-align:center;">$0.02B</td>
+					<td style="text-align:center;">0.21%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2023-07-31</td>
+					<td style="text-align:center;">$6.72B</td>
+					<td style="text-align:center;">$-0.10B</td>
+					<td style="text-align:center;">-1.47%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2023-04-30</td>
+					<td style="text-align:center;">$6.47B</td>
+					<td style="text-align:center;">$-0.17B</td>
+					<td style="text-align:center;">-2.61%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2023-01-31</td>
+					<td style="text-align:center;">$6.22B</td>
+					<td style="text-align:center;">$-0.22B</td>
+					<td style="text-align:center;">-3.57%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2022-10-31</td>
+					<td style="text-align:center;">$5.95B</td>
+					<td style="text-align:center;">$-0.23B</td>
+					<td style="text-align:center;">-3.94%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2022-07-31</td>
+					<td style="text-align:center;">$5.67B</td>
+					<td style="text-align:center;">$-0.18B</td>
+					<td style="text-align:center;">-3.24%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2022-04-30</td>
+					<td style="text-align:center;">$5.40B</td>
+					<td style="text-align:center;">$-0.15B</td>
+					<td style="text-align:center;">-2.80%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2022-01-31</td>
+					<td style="text-align:center;">$5.14B</td>
+					<td style="text-align:center;">$-0.12B</td>
+					<td style="text-align:center;">-2.26%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2021-10-31</td>
+					<td style="text-align:center;">$4.89B</td>
+					<td style="text-align:center;">$-0.09B</td>
+					<td style="text-align:center;">-1.80%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2021-07-31</td>
+					<td style="text-align:center;">$4.67B</td>
+					<td style="text-align:center;">$-0.13B</td>
+					<td style="text-align:center;">-2.70%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2021-04-30</td>
+					<td style="text-align:center;">$4.48B</td>
+					<td style="text-align:center;">$-0.14B</td>
+					<td style="text-align:center;">-3.17%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2021-01-31</td>
+					<td style="text-align:center;">$4.32B</td>
+					<td style="text-align:center;">$-0.25B</td>
+					<td style="text-align:center;">-5.74%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2020-10-31</td>
+					<td style="text-align:center;">$4.16B</td>
+					<td style="text-align:center;">$-0.32B</td>
+					<td style="text-align:center;">-7.71%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2020-07-31</td>
+					<td style="text-align:center;">$3.99B</td>
+					<td style="text-align:center;">$-0.42B</td>
+					<td style="text-align:center;">-10.44%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2020-04-30</td>
+					<td style="text-align:center;">$3.82B</td>
+					<td style="text-align:center;">$-0.52B</td>
+					<td style="text-align:center;">-13.66%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2020-01-31</td>
+					<td style="text-align:center;">$3.63B</td>
+					<td style="text-align:center;">$-0.50B</td>
+					<td style="text-align:center;">-13.81%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2019-10-31</td>
+					<td style="text-align:center;">$3.44B</td>
+					<td style="text-align:center;">$-0.48B</td>
+					<td style="text-align:center;">-13.81%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2019-07-31</td>
+					<td style="text-align:center;">$3.25B</td>
+					<td style="text-align:center;">$-0.55B</td>
+					<td style="text-align:center;">-16.89%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2019-04-30</td>
+					<td style="text-align:center;">$3.03B</td>
+					<td style="text-align:center;">$-0.52B</td>
+					<td style="text-align:center;">-17.00%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2019-01-31</td>
+					<td style="text-align:center;">$2.82B</td>
+					<td style="text-align:center;">$-0.46B</td>
+					<td style="text-align:center;">-16.40%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2018-10-31</td>
+					<td style="text-align:center;">$2.62B</td>
+					<td style="text-align:center;">$-0.42B</td>
+					<td style="text-align:center;">-16.21%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2018-07-31</td>
+					<td style="text-align:center;">$2.43B</td>
+					<td style="text-align:center;">$-0.32B</td>
+					<td style="text-align:center;">-13.22%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2018-04-30</td>
+					<td style="text-align:center;">$2.28B</td>
+					<td style="text-align:center;">$-0.31B</td>
+					<td style="text-align:center;">-13.77%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2018-01-31</td>
+					<td style="text-align:center;">$2.14B</td>
+					<td style="text-align:center;">$-0.30B</td>
+					<td style="text-align:center;">-14.15%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2017-10-31</td>
+					<td style="text-align:center;">$2.00B</td>
+					<td style="text-align:center;">$-0.31B</td>
+					<td style="text-align:center;">-15.23%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2017-07-31</td>
+					<td style="text-align:center;">$1.86B</td>
+					<td style="text-align:center;">$-0.34B</td>
+					<td style="text-align:center;">-18.04%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2017-04-30</td>
+					<td style="text-align:center;">$1.71B</td>
+					<td style="text-align:center;">$-0.34B</td>
+					<td style="text-align:center;">-19.88%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2017-01-31</td>
+					<td style="text-align:center;">$1.58B</td>
+					<td style="text-align:center;">$-0.35B</td>
+					<td style="text-align:center;">-22.48%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2016-10-31</td>
+					<td style="text-align:center;">$1.45B</td>
+					<td style="text-align:center;">$-0.33B</td>
+					<td style="text-align:center;">-22.74%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2016-07-31</td>
+					<td style="text-align:center;">$1.35B</td>
+					<td style="text-align:center;">$-0.29B</td>
+					<td style="text-align:center;">-21.55%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2016-04-30</td>
+					<td style="text-align:center;">$1.25B</td>
+					<td style="text-align:center;">$-0.27B</td>
+					<td style="text-align:center;">-21.66%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2016-01-31</td>
+					<td style="text-align:center;">$1.16B</td>
+					<td style="text-align:center;">$-0.25B</td>
+					<td style="text-align:center;">-21.61%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2015-10-31</td>
+					<td style="text-align:center;">$1.07B</td>
+					<td style="text-align:center;">$-0.24B</td>
+					<td style="text-align:center;">-22.63%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2015-07-31</td>
+					<td style="text-align:center;">$0.98B</td>
+					<td style="text-align:center;">$-0.22B</td>
+					<td style="text-align:center;">-22.77%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2015-04-30</td>
+					<td style="text-align:center;">$0.88B</td>
+					<td style="text-align:center;">$-0.22B</td>
+					<td style="text-align:center;">-24.57%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2015-01-31</td>
+					<td style="text-align:center;">$0.79B</td>
+					<td style="text-align:center;">$-0.22B</td>
+					<td style="text-align:center;">-27.28%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2014-10-31</td>
+					<td style="text-align:center;">$0.70B</td>
+					<td style="text-align:center;">$-0.21B</td>
+					<td style="text-align:center;">-30.26%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2014-07-31</td>
+					<td style="text-align:center;">$0.62B</td>
+					<td style="text-align:center;">$-0.20B</td>
+					<td style="text-align:center;">-32.74%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2014-04-30</td>
+					<td style="text-align:center;">$0.54B</td>
+					<td style="text-align:center;">$-0.17B</td>
+					<td style="text-align:center;">-31.97%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2014-01-31</td>
+					<td style="text-align:center;">$0.47B</td>
+					<td style="text-align:center;">$-0.15B</td>
+					<td style="text-align:center;">-32.55%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2013-10-31</td>
+					<td style="text-align:center;">$0.41B</td>
+					<td style="text-align:center;">$-0.14B</td>
+					<td style="text-align:center;">-33.17%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2013-07-31</td>
+					<td style="text-align:center;">$0.36B</td>
+					<td style="text-align:center;">$-0.14B</td>
+					<td style="text-align:center;">-38.59%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2013-04-30</td>
+					<td style="text-align:center;">$0.31B</td>
+					<td style="text-align:center;">$-0.13B</td>
+					<td style="text-align:center;">-42.26%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2013-01-31</td>
+					<td style="text-align:center;">$0.28B</td>
+					<td style="text-align:center;">$-0.12B</td>
+					<td style="text-align:center;">-42.91%</td>
+				 </tr><tr>
+					<td style="text-align:center;">2012-07-31</td>
+					<td style="text-align:center;">$0.16B</td>
+					<td style="text-align:center;">$-0.07B</td>
+					<td style="text-align:center;">-41.67%</td>
+				 </tr></tbody>
+			  </table>			
+			
+			</div>
+
+			
+		
+		<div style="background-color:#fff; margin: 0px 0px 20px 0px; padding:5px 50px 5px 10px; border:1px solid #dfdfdf;">
+
+			  <table class="historical_data_table table">
+				<thead>
+				  <tr>
+					<th style="text-align:center">Sector</th>
+					<th style="text-align:center">Industry</th>
+					<th style="text-align:center">Market Cap</th>
+					<th style="text-align:center">Revenue</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td style="text-align:center"><a href="https://www.macrotrends.net/stocks/sector/10/computer-and-technology">Computer and Technology</a></td>
+					<td style="text-align:center"><a href="https://www.macrotrends.net/stocks/industry/214/">Internet Software</a></td>
+					<td style="text-align:center">$67.469B</td>
+					<td style="text-align:center">$7.259B</td>
+				  </tr>
+				  <tr>
+					  <td colspan="4" style="padding:15px;">
+						<span>Workday Inc. is a provider of enterprise-level software solutions for financial management and human resource domains. The company's cloud-based platform combines finance and HR in a single system that makes it easier for organizations to provide analytical insights and decision support. Notably, organizations ranging from medium-sized businesses to enterprises have opted for Workday solutions. The company also offers open, standards-based web-services application programming interfaces and pre-built packaged integrations and connectors. The company also offers applications related to Payroll, Time Tracking, Recruiting, Learning, Planning, Professional Services Automation and Student. Workday offers Adaptive Insights Business Planning Cloud solutions, Workday Prism Analytics, Workday Data-as-a-Service and Workday Marketplace.?Workday serves technology, financial services, business services, healthcare and life sciences, manufacturing, and consumer and retail industries, education and government industries.</span>
+					  </td>
+				  </tr>
+				</tbody>
+			  </table>			
+			</div>	
+	
+		
+		<div style="background-color:#fff; margin: 20px 0px 30px 0px; padding:5px 50px 5px 10px; border:1px solid #dfdfdf;">
+			
+
+				<table class="historical_data_table table">
+				<thead>
+				  <tr>
+					<th style="text-align:center; width:40%;">Stock Name</th>
+					<th style="text-align:center; width:20%;">Country</th>
+					<th style="text-align:center; width:20%;">Market Cap</th>
+					<th style="text-align:center; width:20%;">PE Ratio</th>
+				  </tr>
+				</thead>
+				<tbody>			
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/META/meta-platforms/operating-margin">Meta Platforms (META)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1265.592B</td>
+					<td style="text-align:center">25.54</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PANW/palo-alto-networks/operating-margin">Palo Alto Networks (PANW)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$108.739B</td>
+					<td style="text-align:center">105.94</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PYPL/paypal-holdings/operating-margin">PayPal Holdings (PYPL)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$70.429B</td>
+					<td style="text-align:center">15.84</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/CRWD/crowdstrike/operating-margin">CrowdStrike (CRWD)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$60.397B</td>
+					<td style="text-align:center">293.32</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/FTNT/fortinet/operating-margin">Fortinet (FTNT)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$57.487B</td>
+					<td style="text-align:center">45.27</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/SE/sea/operating-margin">Sea (SE)</a></td>
+					<td style="text-align:center">Singapore</td>
+					<td style="text-align:center">$44.173B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/TEAM/atlassian/operating-margin">Atlassian (TEAM)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$41.945B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/SNOW/snowflake/operating-margin">Snowflake (SNOW)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$36.389B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/DDOG/datadog/operating-margin">Datadog (DDOG)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$36.143B</td>
+					<td style="text-align:center">202.26</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/VEEV/veeva-systems/operating-margin">Veeva Systems (VEEV)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$34.899B</td>
+					<td style="text-align:center">55.79</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/NET/cloudflare/operating-margin">Cloudflare (NET)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$25.986B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/HUBS/hubspot/operating-margin">HubSpot (HUBS)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$25.494B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/IOT/samsara/operating-margin">Samsara (IOT)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$24.246B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/MDB/mongodb/operating-margin">MongoDB (MDB)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$20.822B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ZM/zoom-video-communications/operating-margin">Zoom Video Communications (ZM)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$20.677B</td>
+					<td style="text-align:center">24.34</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/TOITF/topicus/operating-margin">Topicus (TOITF)</a></td>
+					<td style="text-align:center">Canada</td>
+					<td style="text-align:center">$20.369B</td>
+					<td style="text-align:center">101.26</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PINS/pinterest/operating-margin">Pinterest (PINS)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$20.071B</td>
+					<td style="text-align:center">100.86</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/SNAP/snap/operating-margin">Snap (SNAP)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$14.305B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/AZPN/aspen-technology/operating-margin">Aspen Technology (AZPN)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$14.239B</td>
+					<td style="text-align:center">38.02</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/BSY/bentley-systems/operating-margin">Bentley Systems (BSY)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$14.034B</td>
+					<td style="text-align:center">56.81</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/MNDY/monday/operating-margin">Monday (MNDY)</a></td>
+					<td style="text-align:center">Israel</td>
+					<td style="text-align:center">$11.639B</td>
+					<td style="text-align:center">313.09</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/FFIV/f5/operating-margin">F5 (FFIV)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$11.595B</td>
+					<td style="text-align:center">19.39</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/TOST/toast/operating-margin">Toast (TOST)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$10.737B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/NICE/nice/operating-margin">Nice (NICE)</a></td>
+					<td style="text-align:center">Israel</td>
+					<td style="text-align:center">$10.005B</td>
+					<td style="text-align:center">21.22</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/RDDT/reddit/operating-margin">Reddit (RDDT)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$9.430B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/TWLO/twilio/operating-margin">Twilio (TWLO)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$9.331B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PAYC/paycom-software/operating-margin">Paycom Software (PAYC)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$8.897B</td>
+					<td style="text-align:center">18.89</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/DAY/dayforce/operating-margin">Dayforce (DAY)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$8.612B</td>
+					<td style="text-align:center">56.74</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PCTY/paylocity-holding/operating-margin">Paylocity Holding (PCTY)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$8.541B</td>
+					<td style="text-align:center">39.31</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/GTLB/gitlab/operating-margin">GitLab (GTLB)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$8.436B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/APPF/appfolio/operating-margin">AppFolio (APPF)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$8.086B</td>
+					<td style="text-align:center">94.06</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/INFA/informatica/operating-margin">Informatica (INFA)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$7.325B</td>
+					<td style="text-align:center">53.73</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/SMAR/smartsheet/operating-margin">Smartsheet (SMAR)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$7.231B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/HCP/hashicorp/operating-margin">HashiCorp (HCP)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$6.827B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/OS/onestream/operating-margin">OneStream (OS)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$6.578B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/U/unity-software/operating-margin">Unity Software (U)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$6.294B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/BILL/bill-holdings/operating-margin">BILL Holdings (BILL)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$5.874B</td>
+					<td style="text-align:center">189.86</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/CWAN/clearwater-analytics-holdings/operating-margin">Clearwater Analytics Holdings (CWAN)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$5.865B</td>
+					<td style="text-align:center">476.20</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/RBRK/rubrik/operating-margin">Rubrik (RBRK)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$5.532B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/VERX/vertex/operating-margin">Vertex (VERX)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$5.482B</td>
+					<td style="text-align:center">110.16</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/CLVT/clarivate/operating-margin">Clarivate (CLVT)</a></td>
+					<td style="text-align:center">United Kingdom</td>
+					<td style="text-align:center">$4.830B</td>
+					<td style="text-align:center">9.81</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/BZ/kanzhun-limited/operating-margin">KANZHUN LIMITED (BZ)</a></td>
+					<td style="text-align:center">China</td>
+					<td style="text-align:center">$4.747B</td>
+					<td style="text-align:center">29.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/TENB/tenable-holdings/operating-margin">Tenable Holdings (TENB)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$4.658B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/BOX/box/operating-margin">Box (BOX)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$4.643B</td>
+					<td style="text-align:center">140.96</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/WAY/waystar-holding/operating-margin">Waystar Holding (WAY)</a></td>
+					<td style="text-align:center"></td>
+					<td style="text-align:center">$4.556B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/WK/workiva/operating-margin">Workiva (WK)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$4.037B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ALIT/alight/operating-margin">Alight (ALIT)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$3.912B</td>
+					<td style="text-align:center">15.56</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/EVH/evolent-health/operating-margin">Evolent Health (EVH)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$3.548B</td>
+					<td style="text-align:center">44.22</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/STNE/stoneco/operating-margin">StoneCo (STNE)</a></td>
+					<td style="text-align:center">Cayman Islands </td>
+					<td style="text-align:center">$3.500B</td>
+					<td style="text-align:center">9.29</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/NCNO/ncino/operating-margin">NCino (NCNO)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$3.473B</td>
+					<td style="text-align:center">333.89</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/FRSH/freshworks/operating-margin">Freshworks (FRSH)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$3.429B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/DOCN/digitalocean-holdings/operating-margin">DigitalOcean Holdings (DOCN)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$3.351B</td>
+					<td style="text-align:center">36.04</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/DJT/trump-media-technology-group/operating-margin">Trump Media &amp; Technology Group (DJT)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$3.330B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/INTA/intapp/operating-margin">Intapp (INTA)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$3.224B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/DV/doubleverify-holdings/operating-margin">DoubleVerify Holdings (DV)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$3.081B</td>
+					<td style="text-align:center">51.77</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/BL/blackline/operating-margin">BlackLine (BL)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$2.979B</td>
+					<td style="text-align:center">35.50</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ALKT/alkami-technology/operating-margin">Alkami Technology (ALKT)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$2.902B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/KGDEY/kingdee-software-group/operating-margin">Kingdee Software Group (KGDEY)</a></td>
+					<td style="text-align:center">China</td>
+					<td style="text-align:center">$2.816B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/FROG/jfrog/operating-margin">JFrog (FROG)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$2.788B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ASAN/asana/operating-margin">Asana (ASAN)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$2.687B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PYCR/paycor-hcm/operating-margin">Paycor HCM (PYCR)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$2.464B</td>
+					<td style="text-align:center">65.62</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/CALX/calix/operating-margin">Calix (CALX)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$2.269B</td>
+					<td style="text-align:center">78.36</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/RPD/rapid7/operating-margin">Rapid7 (RPD)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$2.181B</td>
+					<td style="text-align:center">37.78</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/APPN/appian/operating-margin">Appian (APPN)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$2.173B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/FIVN/five9/operating-margin">Five9 (FIVN)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$2.138B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/SWI/solarwinds/operating-margin">SolarWinds (SWI)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$2.080B</td>
+					<td style="text-align:center">21.54</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ZD/ziff-davis/operating-margin">Ziff Davis (ZD)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$2.076B</td>
+					<td style="text-align:center">8.27</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/GRND/grindr/operating-margin">Grindr (GRND)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$2.043B</td>
+					<td style="text-align:center">58.05</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/RUM/rumble/operating-margin">Rumble (RUM)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.976B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/SEMR/semrush-holdings/operating-margin">SEMrush Holdings (SEMR)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.936B</td>
+					<td style="text-align:center">132.20</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ODD/oddity-tech/operating-margin">ODDITY Tech (ODD)</a></td>
+					<td style="text-align:center">Israel</td>
+					<td style="text-align:center">$1.923B</td>
+					<td style="text-align:center">25.05</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/EVCM/evercommerce/operating-margin">EverCommerce (EVCM)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.866B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/MGNI/magnite/operating-margin">Magnite (MGNI)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.852B</td>
+					<td style="text-align:center">109.33</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PD/pagerduty/operating-margin">PagerDuty (PD)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.655B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/AVDX/avidxchange-holdings/operating-margin">AvidXchange Holdings (AVDX)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.648B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/WBTN/webtoon-entertainment/operating-margin">WEBTOON Entertainment (WBTN)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.561B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/DBD/diebold-nixdorf/operating-margin">Diebold Nixdorf (DBD)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.539B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/GETY/getty-images-holdings/operating-margin">Getty Images Holdings (GETY)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.457B</td>
+					<td style="text-align:center">23.67</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ETWO/e2open-parent-holdings/operating-margin">E2open Parent Holdings (ETWO)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.446B</td>
+					<td style="text-align:center">24.88</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ZUO/zuora/operating-margin">Zuora (ZUO)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.298B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/VTEX/vtex/operating-margin">VTEX (VTEX)</a></td>
+					<td style="text-align:center">United Kingdom</td>
+					<td style="text-align:center">$1.237B</td>
+					<td style="text-align:center">224.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/DCBO/docebo/operating-margin">Docebo (DCBO)</a></td>
+					<td style="text-align:center">Canada</td>
+					<td style="text-align:center">$1.213B</td>
+					<td style="text-align:center">59.88</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/WKME/walkme/operating-margin">WalkMe (WKME)</a></td>
+					<td style="text-align:center">Israel</td>
+					<td style="text-align:center">$1.209B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/UDMY/udemy/operating-margin">Udemy (UDMY)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.168B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/SHCO/soho-house-co/operating-margin">Soho House &amp; Co (SHCO)</a></td>
+					<td style="text-align:center">United Kingdom</td>
+					<td style="text-align:center">$1.146B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ARLO/arlo-technologies/operating-margin">Arlo Technologies (ARLO)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.101B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ENFN/enfusion/operating-margin">Enfusion (ENFN)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$1.034B</td>
+					<td style="text-align:center">201.25</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/CINT/ci-t/operating-margin">CI&amp;T (CINT)</a></td>
+					<td style="text-align:center">Brazil</td>
+					<td style="text-align:center">$0.925B</td>
+					<td style="text-align:center">31.27</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/MOMO/hello-group/operating-margin">Hello Group (MOMO)</a></td>
+					<td style="text-align:center">China</td>
+					<td style="text-align:center">$0.924B</td>
+					<td style="text-align:center">6.38</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/RDWR/radware/operating-margin">Radware (RDWR)</a></td>
+					<td style="text-align:center">Israel</td>
+					<td style="text-align:center">$0.865B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/KIND/nextdoor-holdings/operating-margin">Nextdoor Holdings (KIND)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.859B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/BMBL/bumble/operating-margin">Bumble (BMBL)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.858B</td>
+					<td style="text-align:center">19.94</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/BLND/blend-labs/operating-margin">Blend Labs (BLND)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.854B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/RSKD/riskified/operating-margin">Riskified (RSKD)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.852B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/BASE/couchbase/operating-margin">Couchbase (BASE)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.813B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/OLO/olo/operating-margin">Olo (OLO)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.798B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/FSLY/fastly/operating-margin">Fastly (FSLY)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.783B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/IIIV/i3-verticals/operating-margin">I3 Verticals (IIIV)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.722B</td>
+					<td style="text-align:center">43.61</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PUBM/pubmatic/operating-margin">PubMatic (PUBM)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.719B</td>
+					<td style="text-align:center">40.31</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/TUYA/tuya/operating-margin">Tuya (TUYA)</a></td>
+					<td style="text-align:center">China</td>
+					<td style="text-align:center">$0.706B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/YALA/yalla-group/operating-margin">Yalla Group (YALA)</a></td>
+					<td style="text-align:center"></td>
+					<td style="text-align:center">$0.648B</td>
+					<td style="text-align:center">5.76</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/THRY/thryv-holdings/operating-margin">Thryv Holdings (THRY)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.635B</td>
+					<td style="text-align:center">194.33</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/OSPN/onespan-inc/operating-margin">ONESPAN INC (OSPN)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.567B</td>
+					<td style="text-align:center">18.05</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/CGNT/cognyte-software/operating-margin">Cognyte Software (CGNT)</a></td>
+					<td style="text-align:center">Israel</td>
+					<td style="text-align:center">$0.531B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/KC/kingsoft-cloud-holdings/operating-margin">Kingsoft Cloud Holdings (KC)</a></td>
+					<td style="text-align:center">China</td>
+					<td style="text-align:center">$0.530B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PL/planet-labs-pbc/operating-margin">Planet Labs PBC (PL)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.518B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/CCSI/consensus-cloud-solutions/operating-margin">Consensus Cloud Solutions (CCSI)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.438B</td>
+					<td style="text-align:center">4.67</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/YXT/yxtcom--/operating-margin">YXT.COM - (YXT)</a></td>
+					<td style="text-align:center"></td>
+					<td style="text-align:center">$0.392B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/TRAK/repositrak/operating-margin">ReposiTrak (TRAK)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.331B</td>
+					<td style="text-align:center">62.65</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/LAW/cs-disco/operating-margin">CS Disco (LAW)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.310B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/MTLS/materialise/operating-margin">Materialise (MTLS)</a></td>
+					<td style="text-align:center">Belgium</td>
+					<td style="text-align:center">$0.298B</td>
+					<td style="text-align:center">18.04</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/APPS/digital-turbine/operating-margin">Digital Turbine (APPS)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.292B</td>
+					<td style="text-align:center">17.75</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/JFIN/jiayin-group/operating-margin">Jiayin Group (JFIN)</a></td>
+					<td style="text-align:center">China</td>
+					<td style="text-align:center">$0.285B</td>
+					<td style="text-align:center">1.70</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/AIP/arteris/operating-margin">Arteris (AIP)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.277B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/DOMO/domo/operating-margin">Domo (DOMO)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.266B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/BLZE/backblaze/operating-margin">Backblaze (BLZE)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.247B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ONTF/on24/operating-margin">ON24 (ONTF)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.245B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/AEYE/audioeye/operating-margin">Audioeye (AEYE)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.233B</td>
+					<td style="text-align:center">280.29</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/CTV/innovid/operating-margin">Innovid (CTV)</a></td>
+					<td style="text-align:center">Israel</td>
+					<td style="text-align:center">$0.233B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/EGHT/8x8-inc/operating-margin">8x8 Inc (EGHT)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.226B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/CHGG/chegg/operating-margin">Chegg (CHGG)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.194B</td>
+					<td style="text-align:center">13.57</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/QBTS/d-wave-quantum/operating-margin">D-Wave Quantum (QBTS)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.177B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/INSG/inseego/operating-margin">Inseego (INSG)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.177B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/EGAN/egain/operating-margin">EGain (EGAN)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.166B</td>
+					<td style="text-align:center">22.32</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/KLTR/kaltura/operating-margin">Kaltura (KLTR)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.162B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/RMNI/rimini-street/operating-margin">Rimini Street (RMNI)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.160B</td>
+					<td style="text-align:center">5.33</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PERF/perfect/operating-margin">Perfect (PERF)</a></td>
+					<td style="text-align:center">Taiwan</td>
+					<td style="text-align:center">$0.157B</td>
+					<td style="text-align:center">20.56</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PRCH/porch/operating-margin">Porch (PRCH)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.147B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/SNCR/synchronoss-technologies/operating-margin">Synchronoss Technologies (SNCR)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.141B</td>
+					<td style="text-align:center">86.98</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/SANG/sangoma-technologies/operating-margin">Sangoma Technologies (SANG)</a></td>
+					<td style="text-align:center">Canada</td>
+					<td style="text-align:center">$0.125B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PLMI/plum-acquisition-i/operating-margin">Plum Acquisition I (PLMI)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.116B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/CMCM/cheetah-mobile/operating-margin">Cheetah Mobile (CMCM)</a></td>
+					<td style="text-align:center">China</td>
+					<td style="text-align:center">$0.106B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/REKR/rekor-systems/operating-margin">Rekor Systems (REKR)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.101B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/GAN/gan/operating-margin">GAN (GAN)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.079B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/UPLD/upland-software/operating-margin">Upland Software (UPLD)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.062B</td>
+					<td style="text-align:center">7.60</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/QUBT/quantum-computing/operating-margin">Quantum Computing (QUBT)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.054B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/MSAI/multisensor-ai-holdings/operating-margin">MultiSensor AI Holdings (MSAI)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.053B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/KORE/kores/operating-margin">KOREs (KORE)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.046B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/CREX/wireless-ronin-technologies/operating-margin">Wireless Ronin Technologies (CREX)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.046B</td>
+					<td style="text-align:center">62.29</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/SHMD/schmid-group/operating-margin">SCHMID Group (SHMD)</a></td>
+					<td style="text-align:center">Cayman Islands </td>
+					<td style="text-align:center">$0.039B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/MNDO/mind-cti/operating-margin">MIND C.T.I (MNDO)</a></td>
+					<td style="text-align:center">Israel</td>
+					<td style="text-align:center">$0.037B</td>
+					<td style="text-align:center">7.73</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PHUN/phunware/operating-margin">Phunware (PHUN)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.037B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/EGIO/edgio/operating-margin">Edgio (EGIO)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.036B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/IZEA/izea-worldwide,-inc/operating-margin">IZEA WORLDWIDE, INC (IZEA)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.035B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ONMD/onemednet/operating-margin">OneMedNet (ONMD)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.029B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/SURG/surgepays/operating-margin">SurgePays (SURG)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.027B</td>
+					<td style="text-align:center">15.33</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/VHC/virnetx-holding-corp/operating-margin">VirnetX Holding Corp (VHC)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.027B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/JG/aurora-mobile/operating-margin">Aurora Mobile (JG)</a></td>
+					<td style="text-align:center">China</td>
+					<td style="text-align:center">$0.026B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/AZ/a2z-cust2mate-solutions/operating-margin">A2Z Cust2Mate Solutions (AZ)</a></td>
+					<td style="text-align:center">Canada</td>
+					<td style="text-align:center">$0.024B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/LDTC/leddartech-holdings/operating-margin">LeddarTech Holdings (LDTC)</a></td>
+					<td style="text-align:center">Canada</td>
+					<td style="text-align:center">$0.012B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/VERB/verb-technology/operating-margin">Verb Technology (VERB)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.010B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/NVNI/nvni-group/operating-margin">Nvni Group (NVNI)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.010B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/EZFL/ezfill-holdings/operating-margin">EzFill Holdings (EZFL)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.008B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/PIXY/shiftpixy/operating-margin">Shiftpixy (PIXY)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.008B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/LCFY/locafy/operating-margin">Locafy (LCFY)</a></td>
+					<td style="text-align:center">Australia</td>
+					<td style="text-align:center">$0.008B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/MFI/mf/operating-margin">MF (MFI)</a></td>
+					<td style="text-align:center">Hong Kong, SAR China</td>
+					<td style="text-align:center">$0.007B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ARBB/arb-iot-group/operating-margin">ARB IOT Group (ARBB)</a></td>
+					<td style="text-align:center"></td>
+					<td style="text-align:center">$0.007B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/AMST/amesite/operating-margin">Amesite (AMST)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.006B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/IVDA/iveda-solutions/operating-margin">Iveda Solutions (IVDA)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.006B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/ICCT/icoreconnect/operating-margin">ICoreConnect (ICCT)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.006B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/CISO/ciso-global/operating-margin">CISO Global (CISO)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.005B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/BCAN/femto-technologies/operating-margin">Femto Technologies (BCAN)</a></td>
+					<td style="text-align:center">Israel</td>
+					<td style="text-align:center">$0.005B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/VS/versus-systems/operating-margin">Versus Systems (VS)</a></td>
+					<td style="text-align:center">Canada</td>
+					<td style="text-align:center">$0.004B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/DATS/datchat/operating-margin">DatChat (DATS)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.003B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/NXTT/next-technology-holding/operating-margin">Next Technology Holding (NXTT)</a></td>
+					<td style="text-align:center">China</td>
+					<td style="text-align:center">$0.003B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/OBLG/oblong/operating-margin">Oblong (OBLG)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.002B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/MYSZ/my-size/operating-margin">My Size (MYSZ)</a></td>
+					<td style="text-align:center">Israel</td>
+					<td style="text-align:center">$0.002B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/WORX/scworx/operating-margin">SCWorx (WORX)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.001B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/QTT/qutoutiao/operating-margin">Qutoutiao (QTT)</a></td>
+					<td style="text-align:center">China</td>
+					<td style="text-align:center">$0.000B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/COMP/compass/operating-margin">Compass (COMP)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.000B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/CSLT/castlight-health,-inc/operating-margin">Castlight Health, Inc (CSLT)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.000B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/FORG/forgerock/operating-margin">ForgeRock (FORG)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.000B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/KARO/karooooo/operating-margin">Karooooo (KARO)</a></td>
+					<td style="text-align:center">Singapore</td>
+					<td style="text-align:center">$0.000B</td>
+					<td style="text-align:center">27.63</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/RAAS/cloopen/operating-margin">Cloopen (RAAS)</a></td>
+					<td style="text-align:center">China</td>
+					<td style="text-align:center">$0.000B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/VSEE/vsee-health/operating-margin">VSee Health (VSEE)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$0.000B</td>
+					<td style="text-align:center">0.00</td>
+				 </tr>
+
+						
+				</tbody>
+			  </table>			
+			
+			</div>
+			
+			
+			<div>
+			
+			<!-- Partner Center Ad Unit -->
+			<div id="IC_d_728x214_1" style="width:728px; height:214px; margin-left:30px;">
+			
+			
+			</div>
+			
+			
+			</div>
+			
+			
+
+			</div>
+			
+
+			<div id="right_sidebar">
+
+				<!--<a href="/stocks/stock-screener" style="text-decoration:none; color: #fff; ">
+					<div style="margin:0px; padding: 20px; width:300px; background-color: #01579b; min-height:150px; text-align:center;">
+
+						<h2 style="font-weight:600;">Try our new<br />stock screener!</h2></a>
+
+					</div>
+				</a>-->
+
+				<!--<div style="margin-top:0px; min-height:250px;">
+
+					<script src='//ads.investingchannel.com/adtags/Macrotrends/fundamentalanalysis/300x600.js?zhpos=300_2&multi_size=false' type='text/javascript' charset='utf-8'></script>
+
+				</div>-->
+				
+							
+				
+				
+				
+				
+				<div style="margin-top:0px; min-height:270px;">
+
+					<div id="IC_d_300x250_1">
+
+					
+					</div>
+					
+				</div>
+				
+				<div id="sticky_ad_right" style="margin-top:10px;">
+				
+					<!--<div id="IC_d_300x250_2" style="width:300px; height:250px; margin-bottom:20px; overflow:hidden;">
+
+
+					</div>
+					
+					<div style="width:300px; height: 310px; margin-bottom:10px; overflow:hidden;">
+
+						<script type="text/javascript" id="dianomi_context_script" src="https://www.dianomi.com/js/contextfeed.js"></script>
+						<div class="dianomi_context" data-dianomi-context-id="2234"></div>
+						
+					</div>
+
+					<div id="IC_d_300x250_3" style="width:300px; height:250px;">
+
+
+					</div>-->
+
+
+					<script type="text/javascript" id="dianomi_context_script" src="https://www.dianomi.com/js/contextfeed.js"></script>
+					<div class="dianomi_context" data-dianomi-context-id="743" data-dianomi-complete="1"><iframe class="dianomi-parent-iframe" title="Dianomi ad container (743-996)" id="743-996" height="0px" style="width: 100%; overflow: hidden; border: none;"></iframe></div>
+
+
+					<!--Smartad # 2981: Macrotrends - 300x670 Right Rail-->
+					<iframe id="dianomi_sidebar" width="300" height="670" scrolling="NO" src="//www.dianomi.com/smartads.epl?id=4059" style="width: 300px; border: none; overflow: hidden;"></iframe>
+					
+
+
+				</div>			
+
+	
+				
+
+				
+			</div>
+			
+			
+			
+						
+		</div>
+		</div>
+		
+
+<!--This is the div for the IC OOP ad-->
+<div id="IC_d_OOP_1" style="width:1px;height:1px;"></div>
+		
+
+<footer class="footer">
+
+		<span>© 2010-2024 Macrotrends LLC</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+		  <a href="/terms">Terms of Service</a>
+		  &nbsp;&nbsp;|&nbsp;&nbsp;
+		  <a href="/privacy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		  <a href="mailto:%69n%66o@%6Dac%72otrends%2En%65t">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		  <a href="/ccpa">Do Not Sell My Personal Information</a>
+		  <br>
+		  <span>Fundamental data from </span><a target="_blank" rel="nofollow" href="https://www.zacksdata.com">Zacks Investment Research, Inc.</a>
+
+
+</footer>
+
+<div class="modal" id="smallWidthModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+	  	  
+		<div class="modal_title"><h2><strong>We Need Your Support!</strong></h2></div>
+
+		<p>Backlinks from other websites are the lifeblood of our site and a primary source of new traffic.</p><p>
+		
+</p><p>If you use our chart images on your site or blog, we ask that you provide attribution via a "dofollow" link back to this page.  We have provided a few examples below that you can copy and paste to your site:</p>
+
+<br>
+
+<table class="table">
+<thead>
+<tr>
+<th>Link Preview</th>
+<th>HTML Code (Click to Copy)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a>Workday Operating Margin 2011-2024 | WDAY</a></td>
+<td><input type="text" class="modal_link" size="60" value="<a href='https://www.macrotrends.net/stocks/charts/WDAY/workday/operating-margin'>Workday Operating Margin 2011-2024 | WDAY</a>"></td>
+</tr>
+<tr>
+<td><a>Macrotrends</a></td>
+<td><input type="text" class="modal_link" size="60" value="<a href='https://www.macrotrends.net/stocks/charts/WDAY/workday/operating-margin'>Macrotrends</a>"></td>
+</tr>
+<tr>
+<td><a>Source</a></td>
+<td><input type="text" class="modal_link" size="60" value="<a href='https://www.macrotrends.net/stocks/charts/WDAY/workday/operating-margin'>Source</a>"></td>
+</tr>
+
+
+
+</tbody>
+</table>
+
+<br>
+
+<p style="text-align:center">Your image export is now complete.  Please check your download folder. </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close Window</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="smallWidthModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+	  	  
+		<div class="modal_title"><h2><strong>We Need Your Support!</strong></h2></div>
+
+		<p>Backlinks from other websites are the lifeblood of our site and a primary source of new traffic.</p><p>
+		
+</p><p>If you use our datasets on your site or blog, we ask that you provide attribution via a "dofollow" link back to this page.  We have provided a few examples below that you can copy and paste to your site:</p>
+
+<br>
+
+<table class="table">
+<thead>
+<tr>
+<th>Link Preview</th>
+<th>HTML Code (Click to Copy)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a>Workday Operating Margin 2011-2024 | WDAY</a></td>
+<td><input type="text" class="modal_link" size="50" value="<a href='https://www.macrotrends.net/stocks/charts/WDAY/workday/operating-margin'>Workday Operating Margin 2011-2024 | WDAY</a>"></td>
+</tr>
+<tr>
+<td><a>Macrotrends</a></td>
+<td><input type="text" class="modal_link" size="50" value="<a href='https://www.macrotrends.net/stocks/charts/WDAY/workday/operating-margin'>Macrotrends</a>"></td>
+</tr>
+<tr>
+<td><a>Source</a></td>
+<td><input type="text" class="modal_link" size="50" value="<a href='https://www.macrotrends.net/stocks/charts/WDAY/workday/operating-margin'>Source</a>"></td>
+</tr>
+
+
+
+</tbody>
+</table>
+
+<br>
+
+<p style="text-align:center">Your data export is now complete.  Please check your download folder. </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close Window</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div style="padding:20px 40px;" class="modal-content">
+      <div class="modal-body">
+	  	  
+		<div style="font-size:24px;" class="modal_title"><span><strong>Thanks for Registering!</strong></span></div>
+		
+		<br>
+
+		<p>Please click the button below to continue using the site.</p><p>
+
+<br>
+      </p></div>
+      <div class="text-center">
+        <button id="finish_registration" type="submit" class="btn btn-primary btn-lg">Return to Page</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div style="padding:20px 40px;" class="modal-content">
+      <div class="modal-body">
+	  	  
+		<div style="font-size:24px;" class="modal_title"><span><strong>Register to Continue Using Macrotrends</strong></span></div>
+		
+		<br>
+
+		<p>Please register using your email address to continue enjoying our free content.</p><p>
+
+<br>
+</p><form class="registration">
+  <div class="form-group">
+	<div class="row">
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="firstName" placeholder="First Name" required="">
+		</div>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="lastName" placeholder="Last Name" required="">
+		</div>
+	</div>
+  </div>
+  <div class="form-group">
+    <select class="form-control" name="jobFunction">
+      <option disabled="" selected="">Select your Job Function...</option>
+	  <option>Registered Investment Advisor</option>
+      <option>Investment Professional</option>
+      <option>Finance Professional</option>
+      <option>Consultant/Banker</option>
+      <option>Personal Investor</option>
+      <option>Student/Educator</option>
+   </select>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="companyName" placeholder="Company Name (Optional)">
+  </div>
+  
+  <div class="form-group">
+    <input type="email" class="form-control" name="emailAddress" placeholder="Email Address" required="">
+  </div>
+  
+   <div class="form-group">
+    <input id="user_id_hidden" type="hidden" class="form-control" name="userID" value="" required="">
+  </div> 
+</form>
+
+      </div>
+      <div class="text-center">
+        <button id="submit_registration" type="submit" class="btn btn-primary btn-lg">Complete Registration</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	$.typeahead({
+		input: '.js-typeahead',
+		minLength: 0,
+		filter: false,  //Disables typahead filter to just show everything in the results from the database
+		debug: false,
+		highlight: true,
+		maxItem: 10,
+		dynamic: true,
+		delay: 200,
+		searchOnFocus: true,
+		backdrop: {
+			"background-color": "#fff"
+		},
+		href: "{{url}}",
+		emptyTemplate: "no result for {{query}}",
+		display: ["name"],
+		source: {
+			users: {
+				ajax: {
+					url: '/assets/php/all_pages_query.php',
+					data: {
+						q: '{{query}}'
+					}
+				}
+			}
+		}
+	});
+</script>					
+
+
+<script>
+
+$(document).ready(function() {
+	
+	// Selects all of the text in the chart export window when clicked
+	$(".modal_link").focus(function() {
+		var $this = $(this);
+		$this.select();
+
+		// Work around Chrome's little problem
+		$this.mouseup(function() {
+			// Prevent further mouseup intervention
+			$this.unbind("mouseup");
+			return false;
+		});
+	});	
+	
+	
+	$('[data-toggle="tooltip"]').tooltip();
+	
+    $('.statement_type_select').select2({
+	
+	theme: "classic",
+	minimumResultsForSearch: 20
+	
+	});
+
+    $('.frequency_select').select2({
+	
+	theme: "classic",
+	minimumResultsForSearch: 20
+	
+	});
+	
+	
+});
+
+$( "#compareStocks" ).click(function() {
+	
+	
+	window.location.href = '/stocks/stock-comparison?s=operating-margin&axis=single&comp=WDAY';
+	
+	
+});
+
+$( "#chartExport" ).click(function() {
+	
+		window.$('#smallWidthModal1').modal();
+
+		//Turn off scroll bar for image export
+		chart.chartScrollbarSettings.enabled = false;
+		chart.validateNow(); 
+		
+		
+		chart.export.capture({},function() {
+			this.toPNG({},function(data) {
+				// Download the image to the browser
+				this.download( data, "image/png", "WDAY-operating-margin-2024-09-09-macrotrends.png" );
+				
+				});
+
+		//Turn scroll bar back on again
+		chart.chartScrollbarSettings.enabled = true;
+		chart.validateNow(); 
+				
+	});
+
+});
+
+$( ".frequency_select" ).change(function() {
+  
+  window.location.href = '/assets/php/new_chart_page.php?t=VSEE&type=operating-margin&freq=' + this.value;
+
+});
+
+</script>
+
+<!--CLICKY ANALYTICS CODE-->
+<script async="" data-id="100827248" src="//static.getclicky.com/js"></script>
+
+<script type="text/javascript">
+  window._mfq = window._mfq || [];
+  (function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.defer = true;
+    mf.src = "//cdn.mouseflow.com/projects/de879dfd-36cc-4d5e-adcd-3e97d4a41e06.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
+</script>
+
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8c0b7b544fb11ce7',t:'MTcyNTkzMDAzMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="G-3KL0LYERBH" data-load-time="1725930036362" height="0" width="0" src="https://td.doubleclick.net/td/ga/rul?tid=G-3KL0LYERBH&amp;gacid=506934317.1725930036&amp;gtm=45je4940v891196886za200&amp;dma=0&amp;gcd=13l3l3l3l1l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;tag_exp=0&amp;z=155692957" style="display: none; visibility: hidden;"></iframe>
+
+
+
+	
+<script type="text/javascript" async="" src="//in.getclicky.com/in.php?site_id=100827248&amp;href=%2Fstocks%2Fcharts%2FWDAY%2Fworkday%2Foperating-margin&amp;title=Workday%20Operating%20Margin%202011-2024%20%7C%20WDAY%20%7C%20MacroTrends&amp;res=1536x864&amp;lang=es-419&amp;tz=America%2FBuenos_Aires&amp;tc=&amp;ck=1&amp;x=55v9th"></script></body></html>
