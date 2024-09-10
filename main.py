@@ -1,5 +1,6 @@
 import time
 
+
 def mainRun():
     """
     Main function called when button is pressed on excel file to refresh the data
@@ -7,7 +8,7 @@ def mainRun():
 
     time.sleep(1)
     print("its working")
-    time.sleep(1)
+    time.sleep(10)
 
 
 mainRun()
