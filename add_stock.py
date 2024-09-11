@@ -6,15 +6,7 @@ from time import sleep
 def main(new_symbol, file_name):
     try:
 
-        """
-        Do this when script is ready
-        value = input(
-            "To execute this action you need to close Excel, once you close it, type '1' and enter")
-        while value != '1':
-            value = input(
-                "To execute this action you need to close Excel, once you close it, type '1' and enter")
-
-        """
+        sleep(2)
 
         excel_file = pd.ExcelFile(file_name)
 
