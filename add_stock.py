@@ -1,32 +1,27 @@
 import sys
+import openpyxl
 import pandas as pd
 from time import sleep
 
 
 def main(new_symbol, file_name):
     try:
-
-        """
-        Do this when script is ready
         value = input(
-            "To execute this action you need to close Excel, once you close it, type '1' and enter")
+            "To execute this action you need to close Excel, once you close it, type '1' and enter: ")
         while value != '1':
             value = input(
-                "To execute this action you need to close Excel, once you close it, type '1' and enter")
+                "To execute this action you need to close Excel, once you close it, type '1' and enter: ")
 
-        """
+        wb = openpyxl.load_workbook(file_name, keep_vba=True)
 
-        excel_file = pd.ExcelFile(file_name)
-
-        if new_symbol in excel_file.sheet_names:
-            # refresh
-            print("already exist a tab with this name, refreshing it!")
-
+        if new_symbol not in wb.sheetnames:
+            nueva_hoja = wb.create_sheet(title=new_symbol)
+            nueva_hoja['A1'] = 'NEW DATA'
         else:
-            # first ask the user to close excel, then add tab, then re-open or ask user to re-open
-            dataFrame = pd.DataFrame()
-            with pd.ExcelWriter(file_name, engine='openpyxl', mode='a') as writer:
-                dataFrame.to_excel(writer, sheet_name=new_symbol, index=False)
+            print("La hoja ya existe.")
+
+        wb.save(file_name)
+
     except Exception as e:
         print(e)
 
@@ -36,5 +31,8 @@ def main(new_symbol, file_name):
 if __name__ == '__main__':
     new_symbol = sys.argv[1]
     file_name = sys.argv[2]
+
+    print(f"new_symbol: {new_symbol}")
+    print(f"file_name: {file_name}")
 
     main(new_symbol, file_name)
