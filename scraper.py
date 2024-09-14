@@ -44,7 +44,7 @@ def filter_revenue_TTM(driver) -> dict:
         revenue = {"revenue": revenue, "date": cells_dates[0]}
         return revenue
 
-    except OSError:
+    except MaxRetryError:
         pass
     finally:
         driver.quit()
