@@ -1,7 +1,5 @@
-from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import undetected_chromedriver as uc
-from bs4 import BeautifulSoup
 
 
 def TTM_revenue(driver):
@@ -47,6 +45,27 @@ def income_statement(driver):
         debug.write(html)
 
 
+def total_assets(driver):
+    # Expenses TTM; Net Income TTM; Num Shares; SG&A
+
+    URL = "https://www.macrotrends.net/stocks/charts/AAPL/apple/total-assets"
+    try:
+        # Open URL
+        driver.get(URL)
+
+        # Getting the full html
+        html = driver.page_source
+
+    finally:
+        try:
+            driver.quit()
+        except OSError as e:
+            print('el error fue: ', e)
+    # DEBUG
+    with open('./Debug/debug2.txt', 'w')as debug:
+        debug.write(html)
+
+
 def main():
     # EXCEL Variables:
     tag = ''
@@ -62,7 +81,7 @@ def main():
     # setting the sleep times to 0 when not necessary
     driver.implicitly_wait(0)
 
-    income_statement(driver)
+    total_assets(driver)
 
 
 if __name__ == '__main__':

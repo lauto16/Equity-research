@@ -1,0 +1,3326 @@
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style=""><!--<![endif]--><script async="" type="text/javascript" src="https://static.kueezrtb.com/js/latest.js?_=1726278926561"></script><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202409130301/pubads_impl_page_level_ads.js?cb=31087120"></script><script async="" src="https://ml314.com/tag.aspx?138"></script><script src="https://HyHEfbQhu3t7h6NBC.ay.delivery/client-v2.js"></script><script src="https://HyHEfbQhu3t7h6NBC.ay.delivery/manager-script/yield-manager-script-v3.0.16-hotfix.4-prod"></script><script src="https://c.amazon-adsystem.com/aax2/apstag.js" async=""></script><script src="https://HyHEfbQhu3t7h6NBC.ay.delivery/manager-script/HyHEfbQhu3t7h6NBC.splitTest.0?v=Ginxx5MpxpHKruY5D"></script><script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script src="https://HyHEfbQhu3t7h6NBC.ay.delivery/floorPrice/HyHEfbQhu3t7h6NBC/js/floorPrice/linreg.min.js"></script><script async="" src="https://lovelydrum.com/v2jbbXk84-txhGwfJumfINrX_4g6RjDrlLrT3MAMX1mSdL5rsvR_BzvhI"></script><script id="IC_Admiral_Script_Id" src="https://u5.investingchannel.com/cmp_v2/admiral/macrotrends.js" type="text/javascript" defer=""></script><script defer="" id="sovrnScript" type="text/javascript" src="//get.s-onetag.com/5953ed02-1e0b-4cc7-bc8f-26d349047301/tag.min.js"></script><script defer="" id="IC_MarkitScript" type="text/javascript" src="https://ad.wsod.com/pub/37693cfc748049e45d87b8c7d8b9aacd/0.0.async/"></script><script id="IC_GTagScript" src="https://www.googletagmanager.com/gtag/js?id=G-5EST90M6PX" type="text/javascript" async=""></script><script id="IC_UAT_TAG_SCRIPT" src="https://u5.investingchannel.com/static/uat-tag.js" type="text/javascript" async=""></script><head><script type="text/javascript" async="" src="https://static.criteo.net/js/ld/publishertag.prebid.139.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="canonical" href="https://www.macrotrends.net/stocks/charts/AAPL/apple/total-assets">
+		<link rel="alternate" media="only screen and (max-width: 768px)" href="https://m.macrotrends.net/stocks/charts/AAPL/apple/total-assets">
+		<title>Apple Total Assets 2010-2024 | AAPL | MacroTrends</title>
+		<link rel="icon" type="image/x-icon" href="/assets/images/icons/FAVICON/macrotrends-favicon.ico">
+		<meta name="description" content="Apple total assets from 2010 to 2024. Total assets can be defined as the sum of all assets on a company's balance sheet.    
+				
+				<ul style='margin-top:10px;'>
+				<li>Apple total assets for the quarter ending June 30, 2024 were <strong>$331.612B</strong>, a <strong>1.02% decline</strong> year-over-year.</li>
+				<li>Apple total assets for 2023 were <strong>$352.583B</strong>, a <strong>0.05% decline</strong> from 2022.</li>
+				<li>Apple total assets for 2022 were <strong>$352.755B</strong>, a <strong>0.5% increase</strong> from 2021.</li>
+				<li>Apple total assets for 2021 were <strong>$351.002B</strong>, a <strong>8.37% increase</strong> from 2020.</li>
+				</ul>">
+		<meta name="robots" content="">
+				
+
+		<meta name="msvalidate.01" content="1228954C688F5907894001CD8E5E624B">
+		<meta name="google-site-verification" content="6MnD_3iDtAP1ZyoGK1YMyVIVck4r5Ws80I9xD3ue4_A">
+
+		<!-- Load in Roboto Font -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,600,700">
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> <!--for Bootstrap CDN version-->
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--for Font Awesome CDN version-->
+    		
+		<!-- Jquery, Bootstrap and Menu Javascript -->	
+		<script src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+				
+		<!-- Modernizr for cross-browser support -->		
+		<script type="text/javascript" src="/assets/javascript/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="//www.fuelcdn.com/fuelux/3.13.0/css/fuelux.min.css">
+
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="//www.fuelcdn.com/fuelux/3.13.0/js/fuelux.min.js"></script>
+		
+		
+		 <!-- Twitter Card data -->
+		  <meta name="twitter:card" content="summary_large_image">
+		  <meta name="twitter:site" content="@tmacrotrends">
+		  <meta name="twitter:title" content="Apple Total Assets 2010-2024 | AAPL">
+		  <meta name="twitter:description" content="Apple total assets from 2010 to 2024. Total assets can be defined as the sum of all assets on a company's balance sheet.    
+				
+				<ul style='margin-top:10px;'>
+				<li>Apple total assets for the quarter ending June 30, 2024 were <strong>$331.612B</strong>, a <strong>1.02% decline</strong> year-over-year.</li>
+				<li>Apple total assets for 2023 were <strong>$352.583B</strong>, a <strong>0.05% decline</strong> from 2022.</li>
+				<li>Apple total assets for 2022 were <strong>$352.755B</strong>, a <strong>0.5% increase</strong> from 2021.</li>
+				<li>Apple total assets for 2021 were <strong>$351.002B</strong>, a <strong>8.37% increase</strong> from 2020.</li>
+				</ul>">
+
+		  <!-- Open Graph data -->
+		  <meta property="og:url" content="https://www.macrotrends.net/stocks/charts/AAPL/apple/total-assets">  
+		  <meta property="og:title" content="Apple Total Assets 2010-2024 | AAPL">
+		  <meta property="og:description" content="Apple total assets from 2010 to 2024. Total assets can be defined as the sum of all assets on a company's balance sheet.    
+				
+				<ul style='margin-top:10px;'>
+				<li>Apple total assets for the quarter ending June 30, 2024 were <strong>$331.612B</strong>, a <strong>1.02% decline</strong> year-over-year.</li>
+				<li>Apple total assets for 2023 were <strong>$352.583B</strong>, a <strong>0.05% decline</strong> from 2022.</li>
+				<li>Apple total assets for 2022 were <strong>$352.755B</strong>, a <strong>0.5% increase</strong> from 2021.</li>
+				<li>Apple total assets for 2021 were <strong>$351.002B</strong>, a <strong>8.37% increase</strong> from 2020.</li>
+				</ul>">
+
+		<!-- JQXGRID STYLES AND JAVASCRIPT -->
+		<link rel="stylesheet" href="/assets/php/jqfiles/jqwidgets/styles/jqx.base.css" type="text/css">
+		<link rel="stylesheet" href="/assets/php/jqfiles/jqwidgets/styles/jqx.bootstrap.css" type="text/css">
+
+		<!-- LOAD THESE SCRIPTS EARLY SO THE TICKER INPUT FIELD IS STYLED INSTANTLY -->
+		<script type="text/javascript" src="/assets/php/jqfiles/jqwidgets/jqxcore.js"></script>
+		<script type="text/javascript" src="/assets/php/jqfiles/jqwidgets/jqxdata.js"></script> 
+		<script type="text/javascript" src="/assets/php/jqfiles/jqwidgets/jqxinput.js"></script> 
+
+		<!-- Styling for search box -->	
+		<link rel="stylesheet" type="text/css" href="/assets/php/jquery-typeahead/jquery.typeahead_pages.css">
+
+		<!-- Search box javascript -->
+		<script src="/assets/php/jquery-typeahead/jquery.typeahead.min.js"></script>
+		
+
+		<link href="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet">
+		<script src="//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+	
+	<!-- ToolTips -->	
+		<script src="/assets/php/tipped-4.6.1/js/tipped/tipped.js"></script>
+		<link rel="stylesheet" href="/assets/php/tipped-4.6.1/css/tipped/tipped.css">
+		
+		<!-- FORM VALIDATION -->
+		<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+
+		
+			
+		<!-- START IC AD INSERT -->
+		
+		<script>InvestingChannelQueue = window.InvestingChannelQueue || [];</script>
+		
+		<script async="" src="https://u5.investingchannel.com/static/uat.js"></script>
+		
+		<script>
+			var ic_page;
+			InvestingChannelQueue.push(function() {
+				ic_page = InvestingChannel.UAT.Run("df17ac1e-cc7f-11e8-82a5-0abbb61c4a6a");
+			});
+		</script>	
+
+		<!-- END IC AD INSERT -->
+		
+		<!-- Google tag (gtag.js) -->
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-3KL0LYERBH"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-3KL0LYERBH');
+		</script>	
+
+		
+<style> 
+
+#style-1::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 3px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar
+{
+	width: 18px;
+	background-color: #F5F5F5;
+}
+
+#style-1::-webkit-scrollbar-thumb
+{
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #5B9BD5;
+}
+
+html {
+	width:100%;
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+	
+	width:100%;
+
+	/* Margin bottom by footer height */
+	  margin-bottom: 80px;
+	  color: #444;
+	  background-color:#fff;
+	  font-family: 'Roboto', sans-serif;
+	  font-size:14px;
+}
+
+
+
+
+
+.header_content_container {
+	
+	min-width: 1280px;
+	padding: 0px;
+}
+
+.main_content_container {
+	
+	min-width: 1280px;
+	max-width: 1280px;
+	padding: 0px 30px 100px 30px;
+	
+}
+
+.sub_main_content_container {
+	
+	
+}
+
+
+
+#main_content {
+	
+	padding:0px 20px 0px 0px;
+	width:826px;
+    float:left;
+	
+}
+
+#right_sidebar {
+	
+  width: 300px;
+  float:left;
+  height:2990px;
+	
+}
+
+#sticky_ad_left {
+	
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+	
+	
+}
+
+#sticky_ad_right {
+	
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+	
+	
+}
+
+
+
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  margin-top: 10px;	
+  padding: 30px 20px 20px 20px;
+  color:#fff !important;
+  background-color:#444;
+  text-align: center;
+  font-size:16px;
+}
+
+.footer a {
+  color:#fff !important;
+}
+
+.ticker_search_box {
+	
+	background-color:#F5F5F5;
+	border: 1px solid #E0E0E0;
+	border-bottom:none;
+	padding:10px 30px 10px 10px;
+	margin:0px 0px 0px 0px;
+	text-align:center;
+	
+}
+
+.related_tickers {
+	
+	width:100%;
+	background-color:#F5F5F5;
+	border: 1px solid #E0E0E0;
+	border-top: 0px;
+	padding:3px 30px 3px 10px;
+	margin:0px 0px 0px 0px;
+	text-align:center;
+	
+}
+
+.statement_type_select {
+
+	width:100%;
+	height:28px;
+	
+}
+
+.frequency_select {
+
+	width:100%;
+	height:28px;
+	font-weight:600;
+	
+}
+
+
+.select2 {
+	
+	text-align:left;
+	font-weight:600;
+	
+	}
+	
+#jqxInput {
+
+		width:100%;
+		height:28px;
+		
+}
+
+
+
+.header__parent_container {
+
+	width:100%;
+	height:50px;
+	padding:15px 0px 10px -20px; 
+	margin:0px 0px 0px 0px;
+	background-color:#444;
+
+}
+
+.header_container {
+
+	width:100%;
+	height:50px;
+	padding:15px 0px 10px -20px; 
+	margin:0px 0px 0px 0px;
+	background-color:#444;
+
+}
+
+.header_logo {
+	
+	padding-top:10px;
+	margin-left:50px;
+	
+}
+
+.menu_parent_container {
+	
+	width:100%;
+	height:34px;
+	font-size:16px;
+	padding:15px 0px 10px -20px; 
+	margin:0px 0px 0px 0px;
+	background-color:#0089de;
+}
+
+.menu_container {
+	
+	width:1280px;
+	height:34px;
+	font-size:16px;
+	padding:11px 0px 0px -20px; 
+	margin: 0 auto;
+	background-color:#0089de;
+	z-index:1000;
+}
+
+.menu_item {
+
+	height:34px;
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	text-align:center;
+	padding:7px 16px 0px 16px;	
+
+}
+
+.menu_item:hover
+{
+	background-color:#32a0e4;
+	cursor: pointer;
+}
+
+.menu_item a
+{
+	color:#fff;
+	cursor: pointer;
+}
+
+.menu_item a:hover
+{
+	text-decoration:none;
+	cursor: pointer;
+}
+
+.leaderboard_ad {
+
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	min-height:100px;
+
+}
+
+#filter_result_count {
+	
+	width:100%;
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+	padding:10px 15px;
+	background-color:#efefef;
+	border: 1px solid #dfdfdf;
+	margin:20px;
+	
+}
+
+
+select {
+  color: #444;
+  background-color: #FFF;
+  border: 1px solid #AAA;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  height:40px;
+  line-height: 40px;
+}
+
+.historical_data_table  {
+    table-layout: fixed;
+	margin:20px;
+}
+
+.historical_data_table tbody tr td {
+	
+	padding:6px;
+	vertical-align: middle !important;
+
+}
+
+
+.descriptors {
+	
+	text-align:center;
+	font-size:14px;
+	padding:15px;
+	
+}
+
+.td_metric_name {
+	
+	width:110px;
+	padding-top:17px;
+	
+}
+
+.metric_link {
+	
+	font-size:14px;
+	font-weight:bold;
+
+}
+
+.help_icon {
+	
+	width:15px;
+	height:18px; 
+	padding-bottom:3px;
+	
+}
+
+.td_min_value {
+	
+	width:75px;
+	text-align:center;
+	font-size:13px;
+	
+}
+
+.td_max_value {
+	
+	width:75px;
+	text-align:center;
+	font-size:13px;
+	
+}
+
+#myCombobox .form-control {
+	
+	background-color: #99d5ff;
+
+	
+}
+
+.dropdown-toggle {
+	
+	height:24px;
+	padding-top:0px;
+	padding-left:7px;
+	width:24px;
+	
+}
+
+.dropdown-menu-right {
+	
+	min-width:75px;
+	font-size:13px;
+	
+}
+
+#myPills1 {
+	
+	margin:0px 15px 10px 0px;
+	
+}
+
+#jqxgrid {
+	
+	border-radius:0px;
+	
+}
+
+.jqx-widget-header {
+	
+    font-family: 'Roboto', sans-serif;
+	font-size:13px;	
+	
+}
+
+.jqx-item {
+	
+    font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	
+}
+
+.jqx-widget-content {
+	
+	border-color: #E0E0E0;
+	
+}
+
+#jqxgrid .jqx-grid-cell {
+	
+	border-color: #E0E0E0;
+	
+}
+
+#jqxgrid .jqx-grid-cell-pinned {
+	
+	border-color: #E0E0E0;
+	background-color: #F5F5F5;
+	
+}
+
+#jqxgrid .jqx-grid-column-header {
+	
+	border-color: #E0E0E0;
+	background-color: #F5F5F5;
+	
+}
+
+.clear_zero {
+
+	height:0px;
+
+}
+
+
+
+/* Styles for Popup Charts */
+
+.tpd-size-large {
+	
+	margin:0px;	
+	padding: 0px;
+}
+
+.popup_window_wrapper {
+	
+	margin:15px;
+	
+}
+
+.popup_stock_name {
+
+	font-size:16px;
+	font-weight:bold;
+	margin:5px;
+
+}
+
+.popup_stock_attributes {
+
+	font-size:13px;
+	font-weight:bold;
+	margin:5px;
+
+}
+
+.popup_stock_description {
+
+	font-size:12px;
+	margin:5px;
+
+}
+
+.jqx-input {
+	
+	font-size:14px;
+	
+} 
+
+.jqx-menu-item {
+	
+	font-size:14px;
+	
+}
+
+.jqx-input {
+	
+	padding:5px 10px;
+	
+}
+
+.nav-tabs {
+    border: 1px solid #E0E0E0;
+	background-color:#F5F5F5;
+	padding: 3px 5px 0px 5px;
+	margin: 0px 0px 10px 0px;
+}
+
+.nav-tabs>li>a {
+	font-size:13px;
+	padding:7px 11px;
+	font-weight:600;
+    margin-right: 0px;
+    line-height: 1.42857143;
+    border: 0px;
+    border-radius: 0px 0px 0 0;
+	background-color:#F5F5F5;
+
+}
+
+.nav-tabs>li>a .active {
+    margin-right: 0px;
+    line-height: 1.42857143;
+    border: 1px solid #E0E0E0;
+    border-radius: 0px 0px 0 0;
+	background-color:#F5F5F5;
+
+}
+
+.nav-tabs>li>a:hover { 
+    background-color: #F5F5F5;
+	text-decoration: underline;
+
+}
+
+.donate_buttons {
+
+	margin-left:20px;
+	
+	}	
+
+
+</style>	
+
+
+<script type="text/javascript" defer="" src="//cdn.mouseflow.com/projects/de879dfd-36cc-4d5e-adcd-3e97d4a41e06.js"></script><link href="https://u5.investingchannel.com/prebid/7.28.0/v3/prebid.js" rel="preload" as="script"><link href="https://u5.investingchannel.com/static/uat-internal.js" rel="preload" as="script"><link href="https://u5.investingchannel.com/static/uat-tag.js" rel="preload" as="script"><script src="https://investingchannel.ay.delivery/manager/HyHEfbQhu3t7h6NBC" id="TagManager" referrerpolicy="no-referrer-when-downgrade"></script><script src="https://signal-beacon.s-onetag.com/beacon.min.js"></script><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9uiHDzQFAhqALUhTgTYJcz9XrGH2y0/9AORwCSapUO/f7Uh7ysIzyszNkuWDLqNYg8446Uj48XIstBW1qv/wAQAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9R+gkZL3TWq+Z7RJ2L0c7ZN7FZD5z4mHmVvjrPitg/EMz9P3j5d3W7Vw5ZR9jtJGmWKltM4BO3smNzpCgwYuwwAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202409130301/pubads_impl.js?cb=31087120" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/3310" type="text/javascript" async="async"></script><style>
+            .ayManagerEnv_slug:before {
+                content: 'Ad';
+                display: block;
+                width: 100%;
+                text-align: center;
+                font-size: 10px;
+                color: #6a737c;
+            }
+        </style><script id="IC_HEAD__ayManagerEnv__1" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__2" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__3" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__4" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__5" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__6" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__7" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__8" type="yield-manager/html-unit-placeholder"></script><script src="https://z.moatads.com/investingchannelgamheader935674053006/moatheader.js" data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__1"></script><script data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__2" type="text/javascript">
+  try {
+    if (!window._ml) {
+      (function (w,d,t) {
+        _ml = w._ml || {};
+        _ml.eid = '50114';
+        var s, cd, tag; s = d.getElementsByTagName(t)[0]; cd = new Date();
+        tag = d.createElement(t); tag.async = 1;
+        tag.src = 'https://ml314.com/tag.aspx?' + cd.getDate() + cd.getMonth();
+        s.parentNode.insertBefore(tag, s);
+      })(window,document,'script');
+    } else {
+      _ml.q = _ml.q || [];
+      _ml.q.push(['track']);
+    }
+  } catch (e) {
+    console.log(e);
+  }
+</script><script data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__3" type="text/javascript">
+    googletag.cmd.push(function () {
+        googletag.pubads().setTargeting('AYV', 'AY');
+        // use AY line items
+        googletag.pubads().setTargeting('ay_hb_system', 'client');
+    }); 
+    window.tile = window.tile || 1;
+    ayManagerEnv.__setSlotTargeting = function (adUnitInstanceCode, slot) {
+        var adUnitCode = adUnitInstanceCode.replace(/__ayManagerEnv__.+$/, '');
+        var adUnitPath = slot.getAdUnitPath(); 
+        var IC_AYTestingV = 'AY_TestCase5'
+        // console.log("IC_AYTestingV", IC_AYTestingV);
+        if (IC_AYTestingV) {
+            slot.setTargeting('AYTesting', IC_AYTestingV);
+        } 
+        // Placement level key values 
+        if (adUnitCode.indexOf("88x31") >= 0) {
+            slot.setTargeting("kval", "searchbx");
+        }
+
+        // Placement level key values 
+        if (adUnitCode.indexOf("300x125") >= 0) {
+            slot.setTargeting("pc", "pc");
+        }
+        var device = false ? "m_" : "d_";
+
+        var adUnitCodeMatch = adUnitCode.match(/_([0-9]+)$/);
+        var adSlotId = adUnitCode.toLowerCase().replace('ic_', '').replace('div_', '').replace("d_", device);
+        var targetingMap = {
+            pos: adUnitCodeMatch ? adUnitCodeMatch[1] : adUnitCode,
+            adslot: adUnitCode.toLowerCase().replace('ic_', '').replace('div_', '').replace("d_", device),
+            tl: adUnitPath.split('/').pop(),
+            art: 'o',
+            arc: '0',
+            rnd: String(Math.floor(Math.random() * 1e16)),
+            tile: window.tile,
+        };
+        window.tile = window.tile + 1;
+
+        slot.updateTargetingFromMap(targetingMap);
+
+        if (window.ICTAG) {
+            var dfpObj = window.ICTAG.getPage().getDFPKeyValuesList(adSlotId);
+            var keyValues = dfpObj;
+            for (const key in keyValues) {
+                if (key == 'kval') {
+                    kval = keyValues[key];
+                    try {
+                        if (typeof kval == 'object') {
+                            for (const k in kval) {
+                                slot.setTargeting(k, kval[k]);
+                                // console.log("Key :"+k+" , Value: " + kval[k] );
+                            }
+                        }
+                    } catch (e) {
+                        console.log(e);
+                    }
+                } else {
+                    slot.setTargeting(key, keyValues[key]);
+                }
+                // console.log("Key :"+key+" , Value: " + keyValues[key] );
+            }
+            ayManagerEnv.__updateSlotTargeting(slot);
+        }
+        };
+        ayManagerEnv.__updateSlotTargeting = function (slot) {
+            if (!window.ICTAG) {
+                return;
+            }
+            var adUnitDiv = slot.getSlotElementId();
+            var adSize = slot.getSizes();
+            var adSizeString = adSize[0].width + 'x' + adSize[0].height;
+            slot.setTargeting("rp", window.ICTAG.getRelativePosition(adUnitDiv));
+            slot.setTargeting("ap", window.ICTAG.getAbsolutePosition(adUnitDiv));
+            slot.setTargeting("fp", "" + window.ICTAG.getFoldPosition(adUnitDiv, adSizeString));
+            slot.setTargeting("ivp", "" + window.ICTAG.getViewPercentage(adUnitDiv, adSizeString));
+            slot.setTargeting("bs", window.ICTAG.getBrowsersize());
+            slot.setTargeting("isloggedin", window._isLoggedIn);
+
+            // fetch ticker and Key val
+            let tickerObj = window.ICTAG.getPage().getTickerKeyValues()
+            if (tickerObj != null && tickerObj != "" && typeof tickerObj == 'object' && Object.keys(tickerObj).length > 0) {
+                for (tKey in tickerObj) {
+                    try {
+                        slot.setTargeting(tKey, tickerObj[tKey]);
+                    } catch (e) { }
+                }
+            }
+        };
+
+        ayManagerEnv.onEvent("afterDefineSlot", function (adUnitInstanceCode, slot) {
+            ayManagerEnv.__setSlotTargeting(adUnitInstanceCode, slot);
+        });
+
+        window.addEventListener('assertive_logImpression', function (event) {
+            var payload = event.data.payload;
+            var slot = googletag.pubads().getSlots().find(function (slot) {
+                return slot.getSlotElementId() == payload.slotId;
+            });
+
+            if (slot) {
+                slot.setTargeting('art', 't');
+                slot.setTargeting('arc', String(1 + payload.pageView_refreshCount));
+                //console.log("targeting - ay " + payload.slotId + " art = t, arc = " + payload.pageView_refreshCount)
+
+            }
+        });
+
+        ic_pbjs.que.push(function () {
+            var s2s = ic_pbjs.getConfig('s2sConfig');
+            s2s = s2s && s2s[0];
+            var s2sBidders = s2s && s2s.bidders;
+
+            ic_pbjs.onEvent('setTargeting', function (event) {
+                var adUnitCodes = Object.keys(event);
+                googletag.pubads().getSlots().forEach(function (slot) {
+                    var slotId = slot.getSlotElementId();
+                    if (adUnitCodes.includes(slotId)) {
+                        var bidder = event[slotId]['hb_bidder'];
+                        var system = 'client';
+                        if (bidder && s2sBidders && s2sBidders.includes(bidder)) {
+                            system = 'server';
+                        }
+                        slot.setTargeting('ay_hb_system', system);
+
+                        ayManagerEnv.__updateSlotTargeting(slot);
+                    }
+                });
+            });
+        });
+
+        (function () {
+            var map = {
+                layout: '',
+                userState: 'isloggedin',
+                custom_1: 'adslot',
+                custom_2: 'arc',
+                custom_3: 'art',
+                custom_4: 'uc',
+                custom_5: 'pos',
+                custom_6: 'fp',
+                custom_7: 'rft',
+                custom_8: 'viewCount',
+            };
+            window.addEventListener('assertive_logImpression', function (event) {
+                var payload = event.data.payload;
+                var targeting = payload.dfpTargetingMap;
+
+                if (targeting) {
+                    Object.keys(map).forEach(function (key) {
+                        try {
+                            if (map[key]) {
+                                var targetingValues = targeting[map[key]];
+                                if (targetingValues && targetingValues.length) {
+                                    payload[key] = targetingValues[0];
+                                }
+                            }
+                        } catch (e) {
+                            console.error(e);
+                        }
+                    });
+                }
+            });
+        })();
+</script><script type="text/javascript" data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__4"> 
+    googletag.cmd.push(function () {
+        var slotElementId = 'ic_d_OOP_1';
+        var wrapper = document.createElement('div');
+        wrapper.id = slotElementId;
+        document.body.appendChild(wrapper);
+        var oopSlot = googletag.defineOutOfPageSlot('/5206,22423423770/Macrotrends/stocks_assets', slotElementId)
+            .addService(googletag.pubads()); 
+        oopSlot.setTargeting("isloggedin", window._isLoggedIn);
+        ayManagerEnv.__setSlotTargeting(slotElementId, oopSlot); 
+        if (oopSlot) { 
+            var IC_AYTestingV = 'AY_TestCase5'
+            // console.log("IC_AYTestingV", IC_AYTestingV);
+            if (IC_AYTestingV) {
+                oopSlot.setTargeting('AYTesting', IC_AYTestingV);
+            }
+
+            window.tile = (window.tile ? window.tile : 1); 
+            //Compute rnd
+            oopSlot.setTargeting("rnd", Math.floor(Math.random() * 1e16));
+            try {
+                oopSlot.setTargeting("art", "o");
+                oopSlot.setTargeting("arc", "0");
+                var device = (false) ? "m" : "d";
+                oopSlot.setTargeting("adslot", device + "_" + "oop_1");
+                oopSlot.setTargeting("tile", window.tile);
+                oopSlot.setTargeting("fp", "1");
+                oopSlot.setTargeting("ivp", "100");
+                oopSlot.setTargeting("ap", "0x0");
+                oopSlot.setTargeting("rp", "0x0");
+                window.tile = window.tile + 1;
+                let adUnitPath = oopSlot.getAdUnitPath();
+                let zone = adUnitPath.split('/')[3];
+                oopSlot.setTargeting("tl", zone);
+            } catch (e) { console.log(e); }
+
+            if (window.ICTAG) {
+                //console.log("ICTAG is defined");
+                var keyValues = window.ICTAG.getPage().getDFPKeyValuesList(device + "_" + "oop_1");
+                for (const key in keyValues) {
+                    if (key === 'kval') {
+                        var kval = keyValues[key];
+                        try {
+                            if (typeof kval == 'object') {
+                                for (const k in kval) {
+                                    oopSlot.setTargeting(k, kval[k]);
+                                }
+                                oopSlot.setTargeting("kval", "");
+                            } else if (typeof kval == 'string') {
+                                var convertedString = kval.replace(";", ",");
+                                oopSlot.setTargeting("kval", convertedString);
+                            }
+                        } catch (e) {
+                            console.log(e);
+                        }
+                    } else {
+                        oopSlot.setTargeting(key, keyValues[key]);
+                    }
+                }
+                // fetch ticker and Key val
+                let tickerObj = window.ICTAG.getPage().getTickerKeyValues()
+                if (tickerObj != null && tickerObj != "" && typeof tickerObj == 'object' && Object.keys(tickerObj).length > 0) {
+                    for (tKey in tickerObj) {
+                        try {
+                            oopSlot.setTargeting(tKey, tickerObj[tKey]);
+                        } catch (e) { }
+                    }
+                }
+            }
+        }
+        googletag.pubads().refresh([oopSlot]); 
+        googletag.pubads().addEventListener('slotRenderEnded', function (event) {
+            if (event.slot === oopSlot) {
+                if (event.isEmpty || event.slot.getHtml().indexOf("setAttribute('ic-adhesion', true)") !== -1) {
+                    ayManagerEnv.__isOopUnfilled = true;
+                    ayManagerEnv.changePage();
+                }
+            }
+        });
+    });
+</script><script data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__5" type="text/javascript">(function(){
+    try {
+        var head = document.getElementsByTagName('head')[0];
+            var a = document.createElement('script');
+            a.src = "https://cdn.browsiprod.com/bootstrap/bootstrap.js";
+            a.setAttribute("id", "browsi-tag");
+            a.setAttribute("data-pubKey","investingchannel");
+            a.setAttribute("data-siteKey","Macrotrends");
+            a.setAttribute("async", "");
+        head.appendChild(a)
+    } catch(e) {console.log(e.message)}
+})();</script><script src="https://cdn.browsiprod.com/bootstrap/bootstrap.js" id="browsi-tag" data-pubkey="investingchannel" data-sitekey="Macrotrends" async=""></script><script type="text/javascript" data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__6"> 
+    googletag.cmd.push(function () {
+        // Interstitial
+        try {
+            var path = '/5206,22423423770/Macrotrends/WebInterstitial';
+            var interstitialSlot = googletag.defineOutOfPageSlot(path, googletag.enums.OutOfPageFormat.INTERSTITIAL).addService(googletag.pubads());
+            if (interstitialSlot) {
+                var IC_AYTestingV = 'AY_TestCase5'; 
+                if (IC_AYTestingV) {
+                    interstitialSlot.setTargeting('AYTesting', IC_AYTestingV);
+                };  
+                var slot_position = {};
+                window.tile = (window.tile ? window.tile : 1);
+                //Compute Postion
+                if (interstitialSlot.getSizes() && interstitialSlot.getSizes()[0]) {
+                    if (!slot_position[interstitialSlot.getSizes()[0].width + "x" + interstitialSlot.getSizes()[0].height]){ 
+                        slot_position[interstitialSlot.getSizes()[0].width + "x" + interstitialSlot.getSizes()[0].height] = 1;
+                    }
+                    else{
+                      slot_position[interstitialSlot.getSizes()[0].width + "x" + interstitialSlot.getSizes()[0].height] = slot_position[interstitialSlot.getSizes()[0].width + "x" + interstitialSlot.getSizes()[0].height] + 1;
+                    }
+                    interstitialSlot.setTargeting("pos", slot_position[interstitialSlot.getSizes()[0].width + "x" + interstitialSlot.getSizes()[0].height]);
+                }
+                //Compute rnd
+                interstitialSlot.setTargeting("rnd", Math.floor(Math.random() * 1e16));
+                try {
+                    interstitialSlot.setTargeting("art", "o");
+                    interstitialSlot.setTargeting("arc", "0");
+                    interstitialSlot.setTargeting("dcopt", "wi");
+                    var device = (false) ? "m" : "d";
+                    interstitialSlot.setTargeting("adslot", device + "_" + "webinterstitial");
+                    interstitialSlot.setTargeting("tile", window.tile);
+                    interstitialSlot.setTargeting("fp", "1");
+                    interstitialSlot.setTargeting("ivp", "100");
+                    interstitialSlot.setTargeting("ap", "0x0");
+                    interstitialSlot.setTargeting("rp", "0x0");
+                    window.tile = window.tile + 1;
+                    let adUnitPath = interstitialSlot.getAdUnitPath();
+                    let zone = adUnitPath.split('/')[3];
+                    interstitialSlot.setTargeting("tl", zone);
+                } catch (e) { console.log(e); }
+
+                if (window.ICTAG) { 
+                    var keyValues = window.ICTAG.getPage().getDFPKeyValuesList(device + "_" + "webinterstitial");
+                    for (const key in keyValues) {
+                        if (key === 'kval') {
+                            var kval = keyValues[key];
+                            try {
+                                if (typeof kval == 'object') {
+                                    for (const k in kval) {
+                                        interstitialSlot.setTargeting(k, kval[k]);
+                                    }
+                                    interstitialSlot.setTargeting("kval", "");
+                                } else if (typeof kval == 'string') {
+                                    var convertedString = kval.replace(";", ",");
+                                    interstitialSlot.setTargeting("kval", convertedString);
+                                }
+                            } catch (e) { console.log(e) }
+                        } else {
+                            interstitialSlot.setTargeting(key, keyValues[key]);
+                        }
+                    }
+                    let tickerObj = window.ICTAG.getPage().getTickerKeyValues()
+                    if (tickerObj != null && tickerObj != "" && typeof tickerObj == 'object' && Object.keys(tickerObj).length > 0) {
+                        for (tKey in tickerObj) {
+                            try {
+                                interstitialSlot.setTargeting(tKey, tickerObj[tKey]);
+                            } catch (e) {  console.log(e) }
+                        }
+                    }
+                }
+                googletag.display(interstitialSlot);
+      }
+    } catch (e) {
+       console.log("interstitialSlotDfpError: ", e)
+    }
+  });
+</script><script data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__7" type="text/javascript">
+(function() {
+    var config = {
+        accountId: 'HyHEfbQhu3t7h6NBC',
+        useBidderAlias: false,
+        includeBidders: [], // defaults to all supported bidders
+        excludeBidders: [],
+        serverOnlyBidders: [],
+        // reportRandomToCustomDimension: 'custom_9',
+    };
+
+    var pbjs = window[ayManagerEnv.settings.prebidSettings.prebidScript.windowName];
+    var supportedBidders = ['33across','aax','aceex','acuityads','adf','adgeneration','adhese','adkernel','adkernelAdn','adman','admixer','adnuntius','adocean','adoppler','adot','adpone','adprime','adquery','adrino','adsinteractive','adsyield','adtarget','adtelligent','adtrgtme','advangelists','AdView','adxcg','adyoulike','aidem','aja','algorix','alkimi','amx','beyondmedia','apacdex','applogy','appnexus','appstock','appush','audienceNetwork','automatad','avct','axonix','beachfront','beintoo','bematterfull','between','bidmachine','bidmyadz','bidscube','bidstack','bizzclick','bliink','blue','bmtm','boldwin','brave','cadent_aperture_mx','ccx','CodeFuel','coinzilla','colossus','compass','connectad','consumable','copper6','cpmstar','criteo','cwire','datablocks','deepintent','definemedia','dianomi','dmx','duration','e_volution','edge226','emtv','engagebdr','eplanning','epom','conversant','ergadx','evtech','flipp','freewheelssp','frvradn','futureads','gamma','gamoshi','globalsun','gothamads','greedygame','grid','gumgum','huaweiads','iionads','imds','impactify','improvedigital','infytv','inmobi','interactiveOffers','intertech','invibes','iqzone','ix','janet','jixie','kargo','kidoz','kiviads','krushmedia','kubient','lifestreet','liftoff','limelightDigital','lm_kiviads','lockerdome','logan','logicad','lunamedia','mabidder','madvertise','marsmedia','mediafuse','medianet','mgid','mgidX','mobfoxpb','mobilefuse','motorik','nextMillennium','ninthdecimal','nobid','onetag','openweb','openx','operaads','optout','orbidder','outbrain','outbrain','ownadx','pangle','pgamssp','preciso','pubmatic','pubnative','pulsepoint','pwbid','quantumdex','resetdigital','revcontent','rhythmone','richaudience','rise','roundel','rtbhouse','rubicon','sa_lunamedia','screencore','seedingAlliance','sharethrough','silvermob','silverpush','smaato','smartadserver','smarthub','smartx','smartyads','smilewanted','sonobi','sovrn','sspBC','streamkey','stroeerCore','suntContent','synacormedia','taboola','tappx','tpmn','trafficgate','triplelift','triplelift_native','trustedstack','trustx','ucfunnel','undertone','unicorn','unruly','valueimpression','videobyte','videoheroes','vidoomy','viewdeos','visiblemeasures','visx','vrtcal','xe','xtrmqb','yahooAds','yandex','yeahmobi','yieldlab','yieldmo','yieldone','zeroclickfraud','zeta_global_ssp','minutemedia'];
+    var forcedBidderAliases = { 'minutemedia': 918, 'rise': 1043 };
+    var availableBidders = [];
+    var endpoint = 'pbs-eu-central';
+    if (['NA', 'SA',].includes('SA')) {
+        endpoint = 'pbs-us-east';
+    }
+
+    pbjs.que.push(function() {
+        ayManagerEnv.settings.bidderSettings.bidders.forEach(function(bid) {
+            var bidder = bid.alias || bid.bidder;
+            if (
+                !availableBidders.includes(bidder) &&
+                supportedBidders.includes(bid.bidder) &&
+                !config.excludeBidders.includes(bidder) &&
+                (!config.includeBidders.length || config.includeBidders.includes(bid.bidder))
+            ) {
+                var forcedAlias = forcedBidderAliases[bid.bidder];
+                if (config.useBidderAlias || forcedAlias) {
+                    if (bid.alias && bid.alias.includes('_s2s')) {
+                        availableBidders.push(bidder);
+                        return;
+                    }
+                    var opts = {};
+                    if (forcedAlias) {
+                        opts.gvlid = forcedAlias;
+                    }
+                    pbjs.aliasBidder(bid.bidder, bidder + '_s2s', opts);
+                    availableBidders.push(bidder + '_s2s');
+                } else {
+                    availableBidders.push(bidder.replace('_s2s', ''));
+                }
+            }
+        });
+
+        var random = Math.floor(Math.random()*10);;
+        if (config.reportRandomToCustomDimension) {
+            window.assertiveQueue.push(function () {
+                assertive.setConfig('analytics.custom.' + config.reportRandomToCustomDimension, 's2s-' + random);
+            });
+        }
+        pbjs.setConfig({
+            s2sConfig: {
+                enabled: true,
+                testing: true,
+                accountId: config.accountId,
+                bidders: availableBidders,
+                timeout: Math.round(pbjs.getConfig('bidderTimeout') * 0.75),
+                endpoint: {
+                    p1Consent: 'https://' + endpoint + '.ay.delivery/openrtb2/auction',
+                    noP1Consent: 'https://' + endpoint + '.ay.delivery/openrtb2/auction'
+                },
+                syncEndpoint: {
+                    p1Consent: 'https://' + endpoint + '.ay.delivery/cookie_sync',
+                    noP1Consent: 'https://' + endpoint + '.ay.delivery/cookie_sync'
+                },
+                extPrebid: { rnd: random }
+            }
+        });
+    });
+
+    ayManagerEnv.onEvent('prebidBeforeFetchBids', function(bidConfig) {
+        if (!availableBidders.length) {
+            return;
+        }
+        bidConfig.adUnits.forEach(function(adUnit) {
+            var s2sBidders = adUnit.bids.reduce(function(acc, bid) {
+                if (bid.bidder.includes('_s2s')) {
+                    acc.push(bid.bidder.replace('_s2s', ''));
+                }
+                return acc;
+            }, []);
+            adUnit.bids.forEach(function(bid) {
+                var bidder = bid.bidder;
+                if (bidder.includes('_s2s') || config.serverOnlyBidders.includes(bidder)) {
+                    bid.bidSource = { server: 100 };
+                    bid.includeSourceKvp = true;
+
+                    var normalizedBidder = bidder.replace('_s2s', '');
+                    if (!config.useBidderAlias && !forcedBidderAliases[normalizedBidder]) {
+                        bid.bidder = normalizedBidder;
+                    }
+                    return;
+                }
+                if (config.useBidderAlias || forcedBidderAliases[bidder]) {
+                    bidder = bidder + '_s2s';
+                }
+                if (availableBidders.includes(bidder)) {
+                    bid.bidSource = { client: 100 };
+                    bid.includeSourceKvp = true;
+
+                    if (!s2sBidders.includes(bid.bidder)) {
+                        var s2sBid = JSON.parse(JSON.stringify(bid));
+                        s2sBid.bidSource = { server: 100 };
+                        s2sBid.includeSourceKvp = true;
+                        s2sBid.bidder = bidder;
+                        adUnit.bids.push(s2sBid);
+                    }
+                }
+            });
+        });
+    });
+})();
+</script><script type="text/javascript" data-cfasync="false" crossorigin="anonymous" src="https://static.kueezrtb.com/latest.js" id="kueezrtb_latest" data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__7"></script><script data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__8" type="text/javascript">
+    googletag.cmd.push(function() {
+    try{googletag.pubads().addEventListener("slotRenderEnded", (event) => {
+        const slot = event.slot;
+        // console.group("Slot", slot.getSlotElementId(), "finished rendering.");
+        // console.log("Inside slotRenderEvent" , event);
+        var slotId = slot.getSlotElementId();
+        var slotElement = document.querySelector('#' + slotId);
+        var size = event.size;
+        if (size && size.length == 2 && size[0] == 3) {
+            var tmpl = native_template;
+
+            if(size[0] == 3 && size[1] == 1) {
+                tmpl = native_template;
+            }
+
+            if (!event.isEmpty) {
+                var slotQueryId = slotElement.dataset.googleQueryId;
+                var rnd = Math.floor(Math.random() * 1e16);
+                if (typeof window['native_ad' + slotQueryId] != "undefined" && window['native_ad' + slotQueryId]) {
+                    if (tmpl != null && tmpl.trim() != '') {
+                        var nativeElement = document.querySelector('#investingchannel_native_div_' + rnd);
+                        if (!nativeElement) {
+                            nativeElement = document.createElement('div');
+                            nativeElement.id = 'investingchannel_native_div_' + rnd;
+                            slotElement.insertBefore(nativeElement, null);
+                        }
+                        var native_ad = window['native_ad' + slotQueryId];
+                        var rm = /\\bcta-\\s*([^\\s]*)\\s*-repl\\b/; // Read More
+                        var cta = rm.exec(tmpl);
+                        if (native_ad.callToAction == "" && cta) {
+                            native_ad.callToAction = cta[1];
+                        } // end Read More
+                        tmpl = tmpl.replace('data-id=""', 'data-id="' + rnd + '"'); // pass random id to template
+                        if (document.querySelector('#investingchannel_native_div_' + rnd)) {
+                            document.querySelector('#investingchannel_native_div_' + rnd).innerHTML = replaceTemplate(tmpl, native_ad);
+                        }
+                        slotElement.setAttribute('empty', 'false');
+                        var childrens = slotElement.children;
+                        if (childrens.length >= 1) {
+                            childrens[0].style.position = "absolute";
+                        }
+                    } else {
+                        console.log("Template Not Define");
+                    }
+                }
+            }
+        }
+    });
+
+    function replaceTemplate(templateSource, data){
+           
+       if(data.type != 'SCR'){
+        data.url = data.clickTrackingUrl + data.url;
+       }
+
+    for (var prop in data) {
+           if (data.hasOwnProperty(prop)) {
+               var pr = data[prop];
+
+    if(pr == data['thumbnail']){
+                   var r = /\\bpref-\\s*[^\\s]*\\s*-ratio\\b/;
+    var m = r.exec(templateSource);
+    if(m) pr = getThumb(pr, m[1]);
+               }
+    templateSource = templateSource.replace(new RegExp('\\[\\['+prop+'\\]\\]',"g"), pr);
+           }
+       }
+    console.log("Native Template",templateSource);
+    return templateSource;
+   }
+    function getThumb(obj, arr){
+           var b = arr.split('-');
+    var z = [];
+    for (var i in b){
+               for ( var j in obj ){
+                   if(j == b[i] && obj[j] != ""){z.push(obj[j])}
+               }
+           }
+    if(z[0]) var src = (z[0]);
+    return src;
+       }
+     }catch(e){console.log("Error occurred while loading native template script", e)}
+   });
+
+
+var native_template = ' \
+<style> \
+    .ic_header{text - overflow: ellipsis; white-space: nowrap; overflow: hidden; margin:0;} \
+    .ic_header a {font - size:16px;} \
+    #ic_nat {margin - top: 15px; padding: 10px; text-align: left;} \
+    #ic_nat .ic_para{margin:0; text-align: left; max-height: 300px; overflow: hidden; text-overflow: ellipsis;} \
+    #ic_nat .ic_para a{font - size:12px; } \
+    #ic_nat footer { } \
+    #ic_nat .four_column_widget_chart_border{margin - right: 3px; margin-bottom:1px;}\
+    #ic_nat .ic_natImg {float: left; max-width: 106px; height: auto; margin: 0px 5px 0px 1px;}\
+</style>\
+<section \
+id="ic_nat" \
+class="ic-refresh below-article b-982 stock-talk widget widget-double orange-theme"\
+data-obj="articlePlace" data-id="">\
+<header>\
+    <h1 class="ic_header"> \
+        <a href="[[url]]" target="_blank" onclick="refreshNode(this)">[[title]]</a>\
+    </h1>\
+</header>\
+<div class="four_column_widget_chart_border">\
+    <a href="[[url]]" target="_blank" onclick="refreshNode(this)"><img width="300" height="190" src="[[thumbnail]]" onerror="this.style.display=\'none\'" class="ic_natImg" alt="credit cards" pref-l-s-p-ratio></a>\
+    <p class="ic_para">[[summary]]\
+        <a href="[[url]]" target="_blank" onclick="refreshNode(this)" "cta-Read More-repl"><b><u> [[callToAction]]</b></u></a>\
+<div style="clear: both"></div>\
+</p>\
+</div >\
+<footer class="four_column_widget_chart_border">\
+<a href="[[url]]" target="_blank" onclick="refreshNode(this)">[[sponsoredby]]</a>\
+</footer>\
+</section > ';
+
+var native_template_3x1 = ' \
+       <article id="ic_nat" \
+    class="ic-refresh below-article b-982 stock-talk widget widget-double orange-theme" \
+    data-obj="articlePlace" data-id="" \
+    class="sub-article"> \
+    <div style="width: 204px; height: 137px;"> \
+        [[summary]] \
+            <a href="[[url]]" target="_blank" onclick="refreshNode(this)" "cta-Read More-repl"><b><u>[[callToAction]]</b></u></a> \
+            <div style="clear: both"></div>\
+    </div>\
+    <h2>\
+        <a href="[[url]]" target="_blank" onclick="refreshNode(this)">[[title]]</a>\
+        <br/>\
+        <a href="[[url]]" target="_blank" onclick="refreshNode(this)">[[sponsoredby]]</a>\
+    </h2>\
+    </article>';
+</script><meta http-equiv="origin-trial" content="A15LsJSPgMV7w0Kc5TYHyc1UNzggyebBmE3sj4JP9UJSUVJgucSFQRyN470L3hnsTddsFRSgM695VmLGwBiFngwAAACAeyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5uZXQ6NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY5NTE2Nzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="AwnOWg2dzaxHPelVjqOT/Y02cSxnG2FkjXO7DlX9VZF0eyD0In8IIJ9fbDFZGXvxNvn6HaF51qFHycDGLOkj1AUAAACAeyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5jb206NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY5NTE2Nzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="></head>
+	<body class="fuelux" aria-hidden="false"><div id="aymStickyFooter" class="" data-ay-manager-placement-id="IC_Body_Adhesion__ayManagerEnv__2"><div id="IC_D_Adhesion_1__ayManagerEnv__1_580c7453" data-google-query-id="CObY6JKqwYgDFR1s3QId12Av7Q" style=""><div id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_2__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_2" name="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_2" title="3rd party ad content" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-load-complete="true" style="border: 0px; vertical-align: bottom;" data-google-container-id="5"></iframe></div></div><div id="IC_M_Adhesion_1__ayManagerEnv__1"></div>
+    <div id="aymStickyFooterClose">X</div>
+</div><script data-ay-manager-placement-id="IC_Body_Adhesion__ayManagerEnv__2" type="text/javascript"> 
+    googletag.cmd.push(function() {
+        var hasAd = false;
+        const sticky = document.getElementById("aymStickyFooter");
+
+        function updatePosition(height, isFluid) {
+            if (height > 100) {
+                sticky.style.left = "0px";
+                sticky.style.transform = "unset";
+                sticky.style.right = "unset";
+                if (isFluid) {
+                    sticky.style.maxWidth = "336px";
+                    sticky.style.width = "100%";
+                }
+            } else {
+                sticky.style.left = null;
+                sticky.style.transform = null;
+                sticky.style.maxWidth = null;
+                sticky.style.width = null;
+            }
+        }
+        
+        function startObserver(target) {
+            var previousStyleHeight = target.style.height;
+            var observer = new MutationObserver(function(mutationList, observer) {
+                mutationList.forEach(function(mutation) {
+                    if (mutation.attributeName === "height") {
+                        updatePosition(parseInt(mutation.target.height));
+                    } else if (mutation.attributeName === "style" && target.style.height !== previousStyleHeight) {
+                        updatePosition(parseInt(target.style.height));
+                    }
+                });
+                observer.disconnect();
+            });
+            observer.observe(target, { attributes: true, attributeFilter: ["height", "style"] });
+        }
+
+        var slotRenderEndedListener = function(event) {
+            const slot = event.slot;
+            const elemId = slot.getSlotElementId();
+            if (elemId.toLowerCase().indexOf("adhesion") !== -1) {
+                const sticky = document.getElementById("aymStickyFooter");
+                var width = event.size && event.size[0];
+                var height = event.size && event.size[1];
+                if (event.isEmpty || (width === 2 && height === 1)) {
+                    if (!hasAd) {
+                        if (sticky.classList.contains("empty")) return;
+                        sticky.classList.add("empty");
+                    }
+                } else {
+                    hasAd = true;
+                    if (height === 0 && width === 0) {
+                        // update as fluid size
+                        updatePosition(280, true);
+                    } else if (!height || height === 1) {
+                        // unknown height, wait for height mutation
+                        var iframe = sticky.querySelector('iframe[id^="google_ads_iframe"]');
+                        if (iframe) {
+                            startObserver(iframe);
+                        }
+                    } else {
+                        updatePosition(height);
+                    }
+  
+                    sticky.classList.remove("empty");
+                }
+            }
+        };
+        googletag.pubads().addEventListener("slotRenderEnded", slotRenderEndedListener);
+
+        document.getElementById("aymStickyFooterClose").addEventListener("click", function() {
+            googletag.pubads().removeEventListener("slotRenderEnded", slotRenderEndedListener);
+            window.ayManagerEnv.destroy([sticky.querySelector('div[id*="IC_D_Adhesion"]').id], { useInstanceCodes: true }); //D_adhesion
+            sticky.remove();
+        });
+    });
+</script><style data-ay-manager-placement-id="IC_Body_Adhesion__ayManagerEnv__2">
+    #aymStickyFooter.empty {
+        bottom: -50%;
+    }
+    #aymStickyFooter.empty #aymStickyFooterClose {
+        display: none;
+    }
+    #aymStickyFooter {
+        display: block;
+        position: fixed;
+        bottom: 0px;
+        background-color: white;
+        border-top: 1px solid rgb(239, 239, 239);
+        z-index: 1500;
+        padding: 5px 5px 0;
+        transform: translate(50%);
+        right: 50%;
+    }
+    #aymStickyFooterClose {
+        position: absolute;
+        top: -20px;
+        right: 0px;
+        background-color: white;
+        font-family: sans-serif;
+        float: right;
+        text-align: center;
+        border-top: 1px solid gray;
+        border-left: 1px solid gray;
+        border-radius: 50% 0% 0% 0%;
+        padding: 3px 3px 0 3px;
+        height: 20px;
+        width: 20px;
+        cursor: pointer;
+        line-height: 10px;
+        font-size: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style><script data-ay-manager-placement-id="IC_Body_Adhesion__ayManagerEnv__1" type="text/javascript">
+   //TODO - Need to update the getQueryParam code as per PUBLISHER
+    ayManagerEnv.onEvent("beforePageChange", function(adUnitInstanceCode, slot) {
+        getQueryParam();
+    });
+
+    function getQueryParam() {
+        function extractTicker(url) {
+
+            var loc = window.location;
+            var pathname = loc.pathname.split("/");
+            if (
+                pathname &&
+                pathname.length >= 4 &&
+                pathname[1] == "stocks" &&
+                pathname[2] == "charts" &&
+                pathname[3].trim()
+            ) {
+                return decodeURIComponent(pathname[3]).replace(/[^a-zA-Z0-9]/g, "");
+            }
+
+            // Return null if no match is found
+            return null;
+        }
+
+      var ticker = extractTicker(window.location.pathname);
+
+    if (ticker != null && ticker != "") {
+        ticker = ticker.toUpperCase()
+        console.log("ticker " + ticker)
+        if (window.ICTAG) {
+            window.ICTAG.setTicker(ticker);
+        }
+      }
+        return ticker;
+    }
+</script><script id="IC_Body_Adhesion__ayManagerEnv__2" type="yield-manager/html-unit-placeholder"></script><script id="IC_Body_Adhesion__ayManagerEnv__1" type="yield-manager/html-unit-placeholder"></script>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+<div class="header_content_container container-fluid">
+
+
+<div class="header_parent_container">
+
+<div class="header_container">
+
+	<div class="header_logo col-xs-2">
+		<a class="logo" href="/" title="MacroTrends Home Page"><img src="/assets/images/logo_bright1.png"></a>
+	</div>
+
+
+	  <div class="col-xs-1 pull-right" style="padding-top:8px; margin-right:10px; margin-left:0px; padding-left:0px;">
+	  	 					
+		<div id="IC_d_88x31_1">
+
+					
+		</div> 
+	  
+	  </div>
+	  
+
+	  <div class="col-xs-5 pull-right" style="padding-top:8px;">
+       <form>
+        <div class="typeahead__container">
+            <div class="typeahead__field">
+
+            <span class="typeahead__query">
+                <span class="typeahead__cancel-button">×</span><input class="js-typeahead" name="q" type="search" placeholder="Search over 200,000 charts..." autofocus="" autocomplete="off">
+            </span>
+            <span class="typeahead__button">
+                <button type="submit">
+                    <span class="typeahead__search-icon"></span>
+                </button>
+            </span>
+
+            </div>
+        </div>
+    </form>
+		
+	  </div>
+	  
+	  </div>
+
+
+
+</div>
+
+<div class="menu_parent_container">
+
+<div class="menu_container">
+		
+	<a href="/stocks/stock-screener"><div class="menu_item">Stock Screener</div></a>
+	<a href="/stocks/research"><div class="menu_item">Stock Research</div></a>
+	<a href="/stocks/delisted"><div class="menu_item">Delisted Stocks</div></a>
+	<a href="/charts/stock-indexes"><div class="menu_item">Market Indexes</div></a>
+	<a href="/charts/precious-metals"><div class="menu_item">Precious Metals</div></a>
+	<a href="/charts/energy"><div class="menu_item">Energy</div></a>
+	<a href="/charts/commodities"><div class="menu_item">Commodities</div></a>
+	<a href="/charts/interest-rates"><div class="menu_item">Interest Rates</div></a>
+	<a href="/charts/economy"><div class="menu_item">Economy</div></a>
+	<a href="/countries/topic-overview"><div class="menu_item">Global Metrics</div></a>
+	
+
+		
+</div>
+
+</div>
+
+</div>
+
+<div id="main_content_container" class="main_content_container container-fluid">
+
+
+	<div id="ic_leaderboard" class="adx_top_ad col-xs-12" style="margin: 20px 20px 30px 20px; min-height:265px; text-align:center;">
+		<!--Smartad # 4058: Macrotrends - 970x250 Image - Placement 2-->
+		<iframe id="dianomi_leaderboard" width="970" height="250" scrolling="NO" src="//www.dianomi.com/smartads.epl?id=4058" style="height: 250px; border: none; overflow: hidden;"></iframe>
+				 		
+	</div>
+			
+			<div style="margin:20px 20px 20px 5px;">
+			
+				<h2 style="margin-left:0px; font-weight:600; color:#444;">Apple Total Assets 2010-2024 | AAPL</h2>
+			
+			</div>
+			
+			
+	<div class="sub_main_content_container">
+		
+
+
+		
+
+			<div id="main_content">
+			
+			
+			
+<div class="navigation_tabs" style="margin-bottom:20px;">
+			
+	<ul class="nav nav-tabs" id="myTabs" style="font-size:15px;">
+
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/stock-price-history">Prices</a></li>
+
+			
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/financial-statements">Financials</a></li>
+
+			
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/revenue">Revenue &amp; Profit</a></li>
+
+			
+		
+			
+			
+				<li class="active"><a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/total-assets">Assets &amp; Liabilities</a></li>
+
+			
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/profit-margins">Margins</a></li>
+
+			
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/pe-ratio">Price Ratios</a></li>
+
+			
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/current-ratio">Other Ratios</a></li>
+
+			
+		
+			
+			
+				<li><a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/dividend-yield-history">Other Metrics</a></li>
+
+			
+		
+	</ul>
+
+
+	<ul class="nav nav-tabs" id="myTabs" style="font-size:15px;">
+
+		
+			
+			
+				<li class="active"><a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/total-assets">Total Assets</a></li>
+
+
+						
+		
+			
+						
+				<li><a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/cash-on-hand">Cash on Hand</a></li>			
+
+						
+		
+			
+						
+				<li><a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/long-term-debt">Long Term Debt</a></li>			
+
+						
+		
+			
+						
+				<li><a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/total-liabilities">Total Liabilities</a></li>			
+
+						
+		
+			
+						
+				<li><a href="https://www.macrotrends.net/stocks/charts/AAPL/apple/total-share-holder-equity">Share Holder Equity</a></li>			
+
+						
+		
+
+	</ul>
+	
+			
+</div>
+
+
+
+
+			
+
+		
+
+			<div style="background-color:#fff; margin: 0px 0px 20px 0px; padding:20px 30px; border:1px solid #dfdfdf;">
+			
+				<span style="color:#444; line-height: 1.8;">Apple total assets from 2010 to 2024. Total assets can be defined as the sum of all assets on a company's balance sheet.    
+				
+				<ul style="margin-top:10px;">
+				<li>Apple total assets for the quarter ending June 30, 2024 were <strong>$331.612B</strong>, a <strong>1.02% decline</strong> year-over-year.</li>
+				<li>Apple total assets for 2023 were <strong>$352.583B</strong>, a <strong>0.05% decline</strong> from 2022.</li>
+				<li>Apple total assets for 2022 were <strong>$352.755B</strong>, a <strong>0.5% increase</strong> from 2021.</li>
+				<li>Apple total assets for 2021 were <strong>$351.002B</strong>, a <strong>8.37% increase</strong> from 2020.</li>
+				</ul></span>
+			
+			</div>
+
+		
+			
+			<div style="background-color:#fff; margin: 0px 0px 0px 0px; text-align:center; min-height:90px;">
+			
+			
+
+				<div id="IC_d_728x90_1" style="min-height:100px; margin:10px;"><div id="IC_D_728x90_1__ayManagerEnv__1_8de1698f" data-google-query-id="CPfrvpKqwYgDFf5YuAQdo2w8Hw" style=""><div id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_1__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_1" name="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_1" title="3rd party ad content" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-load-complete="true" data-google-container-id="3" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+
+
+				</div>
+
+
+				<!--<iframe id="dianomi_leaderboard" WIDTH="728" HEIGHT="50" SCROLLING="NO" src="//www.dianomi.com/smartads.epl?id=6341"  style="border: none; overflow: hidden;"></iframe>-->
+
+			
+			</div>		
+			
+			
+
+			<div class="ticker_search_box" style="text-align:center;">			
+
+		<div style="width:400px; margin-left:20px; border-bottom:none;">
+		
+		
+
+		
+        <script type="text/javascript">
+            $(document).ready(function () {
+				                
+					var url = "https://www.macrotrends.net/assets/php/ticker_search_list.php";
+				
+                // prepare the data
+                var source =
+                {
+                    datatype: "json",
+					cache: true,
+                    datafields: [
+                        { name: 'n' },
+						{ name: 's'}
+                    ],
+                    url: url
+                };
+                var dataAdapter = new $.jqx.dataAdapter(source);
+                // Create a jqxInput
+                $("#jqxInput").jqxInput({ source: dataAdapter, minLength: 1, placeHolder: "Search for ticker or company name...", items: 20, searchMode: 'containsignorecase', displayMember: "n", valueMember: "s", width: '100%', height: 22, theme: 'bootstrap'});
+                $("#jqxInput").on('select', function (event) {
+                    if (event.args) {
+                        var item = event.args.item;
+						
+						//Have to split the ticker and slug back out since jqxinput only seems to allow one data value
+						var itemArray = item.value.split("\/"); 
+						var ticker = itemArray[0];
+						var slug = itemArray[1];
+                        if (item) {
+							
+														
+								window.location = "https://www.macrotrends.net/stocks/charts/" + ticker + "/" + slug + "/total-assets";
+							
+							                        }
+                    }
+                });
+            });
+        </script>
+        <input id="jqxInput" autocomplete="off" role="textbox" aria-autocomplete="both" aria-disabled="false" aria-readonly="false" aria-multiline="false" class="jqx-widget-content jqx-widget-content-bootstrap jqx-input jqx-input-bootstrap jqx-widget jqx-widget-bootstrap jqx-rc-all jqx-rc-all-bootstrap" placeholder="Search for ticker or company name..." style="width: 100%; height: 22px;">
+
+		</div>
+				
+		<div style="width:280px; margin-top: -32px; margin-left:80px; border-bottom:none; float:right;">
+		
+		
+<button id="compareStocks" style="margin-right:15px;" class="chart_buttons btn btn-success btn-sm"><span class="glyphicon glyphicon-stats"></span>&nbsp;&nbsp;<strong>Compare AAPL With Other Stocks</strong></button>&nbsp;&nbsp;
+
+</div>	
+		
+		</div>
+		
+			<div style="border:1px solid #dfdfdf; border-bottom:none; background-color:#fff; padding: 10px 30px; height:70px;">
+
+				<iframe id="dianomi_leaderboard" width="728" height="50" scrolling="NO" src="//www.dianomi.com/smartads.epl?id=6341" style="border: none; overflow: hidden;"></iframe>
+
+			
+			</div>			
+		
+		<div style="height:690px; background-color:#fff; border:1px solid #dfdfdf;">
+		
+<iframe id="chart_iframe" title="Interactive chart: Apple Total Assets 2010-2024 | AAPL" valign="middle" margin="0px" width="800" height="680" marginheight="0" marginwidth="0" frameborder="0" vspace="0" hspace="0" scrolling="NO" src="https://www.macrotrends.net/assets/php/fundamental_iframe.php?t=AAPL&amp;type=total-assets&amp;statement=balance-sheet&amp;freq=Q"></iframe>	
+	
+		
+		</div>
+		
+		
+
+			<!--<div id="ic_video_ad" style="height:317px; margin:30px;">
+			
+			
+				<div id="IC_d_3x6_1"></div>
+						
+			
+			</div>-->
+
+			
+
+			<div style="background-color:#fff; margin: 20px 0px; padding:10px 30px; border:1px solid #dfdfdf;">
+			
+			
+		
+		
+			<iframe id="dianomi_below_chart" valign="middle" width="100%" height="300" marginheight="0" marginwidth="0" frameborder="0" vspace="0" hspace="0" scrolling="NO" src="//www.dianomi.com/smartads.epl?id=4057"></iframe>
+
+			<!--<div id="IC_D_3x7_BCC"></div>-->
+			
+		
+		</div>		
+
+			
+ 
+			
+			<div id="style-1" style="background-color:#fff; height:510px; overflow:auto; margin: 30px 0px 30px 0px; padding:0px 30px 20px 0px; border:1px solid #dfdfdf;">
+			
+			  	<div class="col-xs-6">
+			
+				<table class="historical_data_table table">
+				<thead>
+				  <tr>
+					<th colspan="2" style="text-align:center">Apple Annual Total Assets<br><span style="font-size:14px;">(Millions of US $)</span></th>
+				  </tr>
+				</thead>					
+				<tbody>
+								
+												
+				<tr>
+					<td style="text-align:center">2023</td>
+				
+				
+				
+										<td style="text-align:center">$352,583</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2022</td>
+				
+				
+				
+										<td style="text-align:center">$352,755</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2021</td>
+				
+				
+				
+										<td style="text-align:center">$351,002</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2020</td>
+				
+				
+				
+										<td style="text-align:center">$323,888</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2019</td>
+				
+				
+				
+										<td style="text-align:center">$338,516</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2018</td>
+				
+				
+				
+										<td style="text-align:center">$365,725</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2017</td>
+				
+				
+				
+										<td style="text-align:center">$375,319</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2016</td>
+				
+				
+				
+										<td style="text-align:center">$321,686</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2015</td>
+				
+				
+				
+										<td style="text-align:center">$290,345</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2014</td>
+				
+				
+				
+										<td style="text-align:center">$231,839</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2013</td>
+				
+				
+				
+										<td style="text-align:center">$207,000</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2012</td>
+				
+				
+				
+										<td style="text-align:center">$176,064</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2011</td>
+				
+				
+				
+										<td style="text-align:center">$116,371</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2010</td>
+				
+				
+				
+										<td style="text-align:center">$75,183</td>
+				
+								
+				</tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2009</td>
+				
+				
+				
+										<td style="text-align:center">$47,501</td>
+				
+								
+				</tr>
+				  
+				  
+				</tbody>
+			  </table>
+			  
+			  </div>
+
+			  <div class="col-xs-6">
+			
+				<table class="historical_data_table table">
+				<thead>
+				  <tr>
+					<th colspan="2" style="text-align:center">Apple Quarterly Total Assets<br><span style="font-size:14px;">(Millions of US $)</span></th>
+				  </tr>
+				</thead>				
+				<tbody>
+				
+												
+				<tr>
+					<td style="text-align:center">2024-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$331,612</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2024-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$337,411</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2023-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$353,514</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2023-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$352,583</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2023-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$335,038</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2023-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$332,160</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2022-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$346,747</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2022-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$352,755</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2022-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$336,309</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2022-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$350,662</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2021-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$381,191</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2021-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$351,002</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2021-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$329,840</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2021-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$337,158</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2020-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$354,054</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2020-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$323,888</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2020-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$317,344</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2020-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$320,400</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2019-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$340,618</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2019-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$338,516</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2019-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$322,239</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2019-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$341,998</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2018-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$373,719</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2018-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$365,725</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2018-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$349,197</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2018-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$367,502</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2017-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$406,794</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2017-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$375,319</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2017-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$345,173</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2017-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$334,532</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2016-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$331,141</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2016-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$321,686</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2016-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$305,602</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2016-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$305,277</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2015-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$293,284</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2015-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$290,345</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2015-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$273,151</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2015-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$261,194</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2014-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$261,894</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2014-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$231,839</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2014-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$222,520</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2014-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$205,989</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2013-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$225,184</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2013-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$207,000</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2013-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$199,856</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2013-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$194,743</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2012-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$196,088</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2012-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$176,064</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2012-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$162,896</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2012-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$150,934</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2011-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$138,681</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2011-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$116,371</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2011-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$106,758</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2011-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$94,904</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2010-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$86,742</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2010-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$75,183</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2010-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$64,725</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2010-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$57,057</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2009-12-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$53,926</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2009-09-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$47,501</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2009-06-30</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$48,140</td>
+						
+									
+								
+				  </tr>
+				  
+												
+				<tr>
+					<td style="text-align:center">2009-03-31</td>
+				
+				
+				
+										
+										
+						<td style="text-align:center">$43,237</td>
+						
+									
+								
+				  </tr>
+				  
+				  
+				</tbody>
+			  </table>
+			  
+			  </div>
+			  
+
+			
+</div>			
+			
+			
+		
+		<div style="background-color:#fff; margin: 0px 0px 20px 0px; padding:5px 50px 5px 10px; border:1px solid #dfdfdf;">
+
+			  <table class="historical_data_table table">
+				<thead>
+				  <tr>
+					<th style="text-align:center">Sector</th>
+					<th style="text-align:center">Industry</th>
+					<th style="text-align:center">Market Cap</th>
+					<th style="text-align:center">Revenue</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td style="text-align:center"><a href="https://www.macrotrends.net/stocks/sector/10/computer-and-technology">Computer and Technology</a></td>
+					<td style="text-align:center"><a href="https://www.macrotrends.net/stocks/industry/41/">Computer - Microcomputers</a></td>
+					<td style="text-align:center">$3387.026B</td>
+					<td style="text-align:center">$383.285B</td>
+				  </tr>
+				  <tr>
+					  <td colspan="4" style="padding:15px;">
+						<span>Apple's business primarily runs around its flagship iPhone. However, the Services portfolio that includes cloud services, App store, Apple Music, AppleCare, Apple Pay &amp; licensing and other services which become the cash cow. Moreover, non-iPhone devices like Apple Watch and AirPod have gained significant traction. In fact, Apple dominates the Wearables and Hearables markets due to the growing adoption of Watch and AirPods. Solid uptake of Apple Watch also helps Apple to strengthen its presence in the personal health monitoring space. Apple also designs, manufactures and sells iPad, MacBookand HomePod. These devices are powered by software applications including iOS, macOS, watchOS and tvOS operating systems. Apple's other services include subscription-based Apple News, Apple Card, Apple Arcade, new Apple TV app, Apple TV channels and Apple TV, a new subscription service.</span>
+					  </td>
+				  </tr>
+				</tbody>
+			  </table>			
+			</div>	
+	
+		
+		<div style="background-color:#fff; margin: 20px 0px 30px 0px; padding:5px 50px 5px 10px; border:1px solid #dfdfdf;">
+			
+
+				<table class="historical_data_table table">
+				<thead>
+				  <tr>
+					<th style="text-align:center; width:40%;">Stock Name</th>
+					<th style="text-align:center; width:20%;">Country</th>
+					<th style="text-align:center; width:20%;">Market Cap</th>
+					<th style="text-align:center; width:20%;">PE Ratio</th>
+				  </tr>
+				</thead>
+				<tbody>			
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/DELL/dell/total-assets">Dell (DELL)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$79.548B</td>
+					<td style="text-align:center">17.75</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/HPQ/hp/total-assets">HP (HPQ)</a></td>
+					<td style="text-align:center">United States</td>
+					<td style="text-align:center">$31.899B</td>
+					<td style="text-align:center">9.85</td>
+				 </tr>
+
+						
+						
+				<tr>
+					<td style="text-align:left"><a href="/stocks/charts/LNVGY/lenovo-group/total-assets">Lenovo Group (LNVGY)</a></td>
+					<td style="text-align:center">Hong Kong, SAR China</td>
+					<td style="text-align:center">$14.489B</td>
+					<td style="text-align:center">13.74</td>
+				 </tr>
+
+						
+				</tbody>
+			  </table>			
+			
+			</div>
+			
+			
+			<div>
+			
+			<!-- Partner Center Ad Unit -->
+			<div id="IC_d_728x214_1" style="width:728px; height:214px; margin-left:30px;"><div id="IC_D_728x214_1__ayManagerEnv__1"></div>
+			
+			
+			</div>
+			
+			
+			</div>
+			
+			
+
+			</div>
+			
+
+			<div id="right_sidebar">
+
+				<!--<a href="/stocks/stock-screener" style="text-decoration:none; color: #fff; ">
+					<div style="margin:0px; padding: 20px; width:300px; background-color: #01579b; min-height:150px; text-align:center;">
+
+						<h2 style="font-weight:600;">Try our new<br />stock screener!</h2></a>
+
+					</div>
+				</a>-->
+
+				<!--<div style="margin-top:0px; min-height:250px;">
+
+					<script src='//ads.investingchannel.com/adtags/Macrotrends/fundamentalanalysis/300x600.js?zhpos=300_2&multi_size=false' type='text/javascript' charset='utf-8'></script>
+
+				</div>-->
+				
+							
+				
+				
+				
+				
+				<div style="margin-top:0px; min-height:270px;">
+
+					<div id="IC_d_300x250_1"><div id="IC_D_300x250_1__ayManagerEnv__1_d8df1964" data-google-query-id="COqXwJKqwYgDFf5YuAQdo2w8Hw" style=""><div id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets.bottom_0__container__" style="border: 0pt none; margin: auto; text-align: center; width: 300px; height: 250px;"><iframe frameborder="0" src="https://0f50c04067c596386b26582c5bf5cdd5.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets.bottom_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="250" data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="4" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div>
+
+					
+					</div>
+					
+				</div>
+				
+				<div id="sticky_ad_right" style="margin-top:10px;">
+				
+					<!--<div id="IC_d_300x250_2" style="width:300px; height:250px; margin-bottom:20px; overflow:hidden;">
+
+
+					</div>
+					
+					<div style="width:300px; height: 310px; margin-bottom:10px; overflow:hidden;">
+
+						<script type="text/javascript" id="dianomi_context_script" src="https://www.dianomi.com/js/contextfeed.js"></script>
+						<div class="dianomi_context" data-dianomi-context-id="2234"></div>
+						
+					</div>
+
+					<div id="IC_d_300x250_3" style="width:300px; height:250px;">
+
+
+					</div>-->
+
+
+					<script type="text/javascript" id="dianomi_context_script" src="https://www.dianomi.com/js/contextfeed.js"></script>
+					<div class="dianomi_context" data-dianomi-context-id="743" data-dianomi-complete="1"><iframe class="dianomi-parent-iframe" title="Dianomi ad container (743-376)" id="743-376" height="0px" style="width: 100%; overflow: hidden; border: none;"></iframe></div>
+
+
+					<!--Smartad # 2981: Macrotrends - 300x670 Right Rail-->
+					<iframe id="dianomi_sidebar" width="300" height="670" scrolling="NO" src="//www.dianomi.com/smartads.epl?id=4059" style="width: 300px; border: none; overflow: hidden;"></iframe>
+					
+
+
+				</div>			
+
+	
+				
+
+				
+			</div>
+			
+			
+			
+						
+		</div>
+		</div>
+		
+
+<!--This is the div for the IC OOP ad-->
+<div id="IC_d_OOP_1" style="width:1px;height:1px;"></div>
+		
+
+<footer class="footer">
+
+		<span>© 2010-2024 Macrotrends LLC</span>&nbsp;&nbsp;|&nbsp;&nbsp;
+		  <a href="/terms">Terms of Service</a>
+		  &nbsp;&nbsp;|&nbsp;&nbsp;
+		  <a href="/privacy">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		  <a href="mailto:%69n%66o@%6Dac%72otrends%2En%65t">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+		  <a href="/ccpa">Do Not Sell My Personal Information</a>
+		  <br>
+		  <span>Fundamental data from </span><a target="_blank" rel="nofollow" href="https://www.zacksdata.com">Zacks Investment Research, Inc.</a>
+
+
+</footer>
+
+<div class="modal" id="smallWidthModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+	  	  
+		<div class="modal_title"><h2><strong>We Need Your Support!</strong></h2></div>
+
+		<p>Backlinks from other websites are the lifeblood of our site and a primary source of new traffic.</p><p>
+		
+</p><p>If you use our chart images on your site or blog, we ask that you provide attribution via a "dofollow" link back to this page.  We have provided a few examples below that you can copy and paste to your site:</p>
+
+<br>
+
+<table class="table">
+<thead>
+<tr>
+<th>Link Preview</th>
+<th>HTML Code (Click to Copy)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a>Apple Total Assets 2010-2024 | AAPL</a></td>
+<td><input type="text" class="modal_link" size="60" value="<a href='https://www.macrotrends.net/stocks/charts/AAPL/apple/total-assets'>Apple Total Assets 2010-2024 | AAPL</a>"></td>
+</tr>
+<tr>
+<td><a>Macrotrends</a></td>
+<td><input type="text" class="modal_link" size="60" value="<a href='https://www.macrotrends.net/stocks/charts/AAPL/apple/total-assets'>Macrotrends</a>"></td>
+</tr>
+<tr>
+<td><a>Source</a></td>
+<td><input type="text" class="modal_link" size="60" value="<a href='https://www.macrotrends.net/stocks/charts/AAPL/apple/total-assets'>Source</a>"></td>
+</tr>
+
+
+
+</tbody>
+</table>
+
+<br>
+
+<p style="text-align:center">Your image export is now complete.  Please check your download folder. </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close Window</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="smallWidthModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+	  	  
+		<div class="modal_title"><h2><strong>We Need Your Support!</strong></h2></div>
+
+		<p>Backlinks from other websites are the lifeblood of our site and a primary source of new traffic.</p><p>
+		
+</p><p>If you use our datasets on your site or blog, we ask that you provide attribution via a "dofollow" link back to this page.  We have provided a few examples below that you can copy and paste to your site:</p>
+
+<br>
+
+<table class="table">
+<thead>
+<tr>
+<th>Link Preview</th>
+<th>HTML Code (Click to Copy)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a>Apple Total Assets 2010-2024 | AAPL</a></td>
+<td><input type="text" class="modal_link" size="50" value="<a href='https://www.macrotrends.net/stocks/charts/AAPL/apple/total-assets'>Apple Total Assets 2010-2024 | AAPL</a>"></td>
+</tr>
+<tr>
+<td><a>Macrotrends</a></td>
+<td><input type="text" class="modal_link" size="50" value="<a href='https://www.macrotrends.net/stocks/charts/AAPL/apple/total-assets'>Macrotrends</a>"></td>
+</tr>
+<tr>
+<td><a>Source</a></td>
+<td><input type="text" class="modal_link" size="50" value="<a href='https://www.macrotrends.net/stocks/charts/AAPL/apple/total-assets'>Source</a>"></td>
+</tr>
+
+
+
+</tbody>
+</table>
+
+<br>
+
+<p style="text-align:center">Your data export is now complete.  Please check your download folder. </p>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close Window</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="thanksModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div style="padding:20px 40px;" class="modal-content">
+      <div class="modal-body">
+	  	  
+		<div style="font-size:24px;" class="modal_title"><span><strong>Thanks for Registering!</strong></span></div>
+		
+		<br>
+
+		<p>Please click the button below to continue using the site.</p><p>
+
+<br>
+      </p></div>
+      <div class="text-center">
+        <button id="finish_registration" type="submit" class="btn btn-primary btn-lg">Return to Page</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" id="registrationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div style="padding:20px 40px;" class="modal-content">
+      <div class="modal-body">
+	  	  
+		<div style="font-size:24px;" class="modal_title"><span><strong>Register to Continue Using Macrotrends</strong></span></div>
+		
+		<br>
+
+		<p>Please register using your email address to continue enjoying our free content.</p><p>
+
+<br>
+</p><form class="registration">
+  <div class="form-group">
+	<div class="row">
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="firstName" placeholder="First Name" required="">
+		</div>
+		<div class="col-sm-6">
+			<input type="text" class="form-control" name="lastName" placeholder="Last Name" required="">
+		</div>
+	</div>
+  </div>
+  <div class="form-group">
+    <select class="form-control" name="jobFunction">
+      <option disabled="" selected="">Select your Job Function...</option>
+	  <option>Registered Investment Advisor</option>
+      <option>Investment Professional</option>
+      <option>Finance Professional</option>
+      <option>Consultant/Banker</option>
+      <option>Personal Investor</option>
+      <option>Student/Educator</option>
+   </select>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" name="companyName" placeholder="Company Name (Optional)">
+  </div>
+  
+  <div class="form-group">
+    <input type="email" class="form-control" name="emailAddress" placeholder="Email Address" required="">
+  </div>
+  
+   <div class="form-group">
+    <input id="user_id_hidden" type="hidden" class="form-control" name="userID" value="" required="">
+  </div> 
+</form>
+
+      </div>
+      <div class="text-center">
+        <button id="submit_registration" type="submit" class="btn btn-primary btn-lg">Complete Registration</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	$.typeahead({
+		input: '.js-typeahead',
+		minLength: 0,
+		filter: false,  //Disables typahead filter to just show everything in the results from the database
+		debug: false,
+		highlight: true,
+		maxItem: 10,
+		dynamic: true,
+		delay: 200,
+		searchOnFocus: true,
+		backdrop: {
+			"background-color": "#fff"
+		},
+		href: "{{url}}",
+		emptyTemplate: "no result for {{query}}",
+		display: ["name"],
+		source: {
+			users: {
+				ajax: {
+					url: '/assets/php/all_pages_query.php',
+					data: {
+						q: '{{query}}'
+					}
+				}
+			}
+		}
+	});
+</script>					
+
+
+<script>
+
+$(document).ready(function() {
+	
+	// Selects all of the text in the chart export window when clicked
+	$(".modal_link").focus(function() {
+		var $this = $(this);
+		$this.select();
+
+		// Work around Chrome's little problem
+		$this.mouseup(function() {
+			// Prevent further mouseup intervention
+			$this.unbind("mouseup");
+			return false;
+		});
+	});	
+	
+	
+	$('[data-toggle="tooltip"]').tooltip();
+	
+    $('.statement_type_select').select2({
+	
+	theme: "classic",
+	minimumResultsForSearch: 20
+	
+	});
+
+    $('.frequency_select').select2({
+	
+	theme: "classic",
+	minimumResultsForSearch: 20
+	
+	});
+	
+	
+});
+
+$( "#compareStocks" ).click(function() {
+	
+	
+	window.location.href = '/stocks/stock-comparison?s=total-assets&axis=single&comp=AAPL';
+	
+	
+});
+
+$( "#chartExport" ).click(function() {
+	
+		window.$('#smallWidthModal1').modal();
+
+		//Turn off scroll bar for image export
+		chart.chartScrollbarSettings.enabled = false;
+		chart.validateNow(); 
+		
+		
+		chart.export.capture({},function() {
+			this.toPNG({},function(data) {
+				// Download the image to the browser
+				this.download( data, "image/png", "AAPL-total-assets-2024-09-13-macrotrends.png" );
+				
+				});
+
+		//Turn scroll bar back on again
+		chart.chartScrollbarSettings.enabled = true;
+		chart.validateNow(); 
+				
+	});
+
+});
+
+$( ".frequency_select" ).change(function() {
+  
+  window.location.href = '/assets/php/new_chart_page.php?t=LNVGY&type=total-assets&freq=' + this.value;
+
+});
+
+</script>
+
+<!--CLICKY ANALYTICS CODE-->
+<script async="" data-id="100827248" src="//static.getclicky.com/js"></script>
+
+<script type="text/javascript">
+  window._mfq = window._mfq || [];
+  (function() {
+    var mf = document.createElement("script");
+    mf.type = "text/javascript"; mf.defer = true;
+    mf.src = "//cdn.mouseflow.com/projects/de879dfd-36cc-4d5e-adcd-3e97d4a41e06.js";
+    document.getElementsByTagName("head")[0].appendChild(mf);
+  })();
+</script>
+
+
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8c2cc13189a7c196',t:'MTcyNjI3ODkyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="G-3KL0LYERBH" data-load-time="1726278924529" height="0" width="0" src="https://td.doubleclick.net/td/ga/rul?tid=G-3KL0LYERBH&amp;gacid=272496572.1726278925&amp;gtm=45je4990v891196886za200&amp;dma=0&amp;gcd=13l3l3l3l1l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;tag_exp=0&amp;z=195041565" style="display: none; visibility: hidden;"></iframe>
+
+
+
+	
+<script type="text/javascript" async="" src="//in.getclicky.com/in.php?site_id=100827248&amp;href=%2Fstocks%2Fcharts%2FAAPL%2Fapple%2Ftotal-assets&amp;title=Apple%20Total%20Assets%202010-2024%20%7C%20AAPL%20%7C%20MacroTrends&amp;res=1536x864&amp;lang=es-419&amp;tz=America%2FBuenos_Aires&amp;tc=&amp;ck=1&amp;x=8v4703"></script><iframe id="ICUid_Iframe" src="https://uat5-b.investingchannel.com/start.html" style="display: none;"></iframe><iframe id="IC_PM_Uid_Iframe" width="1" height="1" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?p=52041&amp;&amp;predirect=https%3A%2F%2Fuat5-b.investingchannel.com%2Fuser%2Fsync%2Fpubmatic%3Fpubmaticuid%3DPM_UID%26ord%3D3b8db5f1-94e4-4180-a8dc-4106a8f9edb3%26gdprapplicable%3Dfalse%26uspstatus%3DNOT_APPLICABLE&amp;userIdMacro=PM_UID" style="display: none;"></iframe><iframe name="__tcfapiLocator" style="display: none;"></iframe><div id="ic_d_OOP_1" data-google-query-id="CKDfiJKqwYgDFZVRuAQd66wx7g"><div id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_0__container__" style="border: 0pt none; margin: auto; text-align: center;"></div></div><iframe src="https://s.amazon-adsystem.com/iu3?cm3ppd=1&amp;d=dtb-pub&amp;csif=t&amp;gdpr=0&amp;dl=n-index_bf_rx_n-MediaNet_ox-db5_smrt_n-sharethrough_n-onetag_pm-db5_ym_rbd_n-nativo_an-db5_sovrn_n-Rise_3lift" style="display: none;"></iframe><iframe name="google_ads_top_frame" id="google_ads_top_frame" style="display: none; position: fixed; left: -999px; top: -999px; width: 0px; height: 0px;"></iframe><iframe src="https://gum.criteo.com/syncframe?origin=publishertag&amp;topUrl=www.macrotrends.net&amp;gdpr=0&amp;gdpr_consent=&amp;us_privacy=1---#{&quot;uid&quot;:{&quot;origin&quot;:0},&quot;lwid&quot;:{&quot;origin&quot;:0},&quot;bundle&quot;:{&quot;origin&quot;:0},&quot;optout&quot;:{&quot;value&quot;:false,&quot;origin&quot;:0},&quot;sid&quot;:{&quot;origin&quot;:0},&quot;tld&quot;:&quot;macrotrends.net&quot;,&quot;topUrl&quot;:&quot;www.macrotrends.net&quot;,&quot;version&quot;:139,&quot;cw&quot;:true,&quot;lsw&quot;:true,&quot;origin&quot;:&quot;publishertag&quot;,&quot;requestId&quot;:&quot;0.528381410988948&quot;}" width="0" height="0" frameborder="0" title="Criteo GUM iframe" style="border-width: 0px; margin: 0px; display: none;"></iframe></body><iframe name="goog_topics_frame" src="https://securepubads.g.doubleclick.net/static/topics/topics_frame.html" style="display: none;"></iframe><ins id="gpt_unit_/5206,22423423770/Macrotrends/WebInterstitial_0" data-google-query-id="CK-oipKqwYgDFW5IuAQd8Egm1g" aria-hidden="true" data-vignette-loaded="true" style="display: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; clear: none !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: fixed !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647 !important; background: transparent !important;"><div id="google_ads_iframe_/5206,22423423770/Macrotrends/WebInterstitial_0__container__" style="border: 0pt none !important; margin: auto !important; text-align: center !important; width: 100vw !important; height: 100vh !important; inset: auto !important; clear: none !important; display: inline !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: static !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;"><iframe frameborder="0" src="https://0f50c04067c596386b26582c5bf5cdd5.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/5206,22423423770/Macrotrends/WebInterstitial_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="" height="" data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting;autoplay" aria-label="Advertisement" tabindex="0" data-google-container-id="2" data-load-complete="true" style="border: 0px !important; vertical-align: bottom !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; visibility: visible !important; z-index: auto !important;"></iframe></div></ins><iframe sandbox="allow-scripts allow-same-origin" id="68e30aca4256b3a" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://ssp-sync.criteo.com/user-sync/iframe?gdprapplies=&amp;gdpr=&amp;ccpa=1---&amp;gpp=&amp;gpp_sid=&amp;redir=https%3A%2F%2Fpbs-us-east.ay.delivery%2Fsetuid%3Fbidder%3Dcriteo%26gdpr%3D%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D%24%7BCRITEO_USER_ID%7D&amp;profile=230">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="69be3588e30d6a9" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://ssum.casalemedia.com/usermatch?s=205820&amp;gdpr=&amp;gdpr_consent=&amp;us_privacy=1---&amp;cb=https%3A%2F%2Fpbs-us-east.ay.delivery%2Fsetuid%3Fbidder%3Dix%26gdpr%3D%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="708f84a63c62f15" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=&amp;gdpr_consent=&amp;us_privacy=1---&amp;predirect=https%3A%2F%2Fpbs-us-east.ay.delivery%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="7110432c5672086" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://sync.cootlogix.com/api/sync/iframe/?cid=&amp;gdpr=0&amp;gdpr_consent=&amp;us_privacy=1---">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="72abf048b0c388e" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://sync.kueezrtb.com/api/sync/iframe/?cid=&amp;gdpr=0&amp;gdpr_consent=&amp;us_privacy=1---">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="732393b53041184" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://contextual.media.net/checksync.php?vsSync=1&amp;cs=8&amp;cv=31&amp;https=1&amp;cid=8CUUWGC8M&amp;prvid=2034%2C2031%2C2030%2C590%2C233%2C157%2C2028%2C2027%2C236%2C117%2C359%2C97%2C55%2C99%2C56%2C3012%2C3010%2C122%2C201%2C3007%2C246%2C4%2C203%2C446%2C404%2C9%2C173%2C294%2C251%2C175%2C450%2C178%2C3017%2C214%2C3015%2C337%2C338%2C459%2C77%2C261%2C141%2C262%2C461%2C222%2C10000%2C80%2C108%2C229%2C109%2C307%2C82&amp;itype=PREBID&amp;purpose1=1&amp;gdprconsent=1&amp;gdpr=0&amp;coppa=0&amp;usp_status=0&amp;usp_consent=1&amp;uspstring=1---">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="741a36e924aaa13" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://acdn.adnxs.com/dmp/async_usersync.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="758f00b16d4be35" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://js-sec.indexww.com/um/ixmatch.html">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="76463a99a61916a" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://eus.rubiconproject.com/usync.html?us_privacy=1---">
+    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="77f2b6b47719f06" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?kdntuid=1&amp;p=52041&amp;us_privacy=1---">
+    </iframe></html>

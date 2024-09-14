@@ -154,30 +154,47 @@ def filter_selling_gen_admin():
     return sga
 
 
+def filter_total_assets() -> dict:
+    # Total Assets
+
+    with open('Debug/debug2.txt', 'r') as htmlfile:
+        html = htmlfile.read()
+    soup = BeautifulSoup(html, 'html.parser')
+
+    tables = soup.find_all("table", class_="historical_data_table table")
+    # stands for the fist table which contains date and total assets
+    total_assets_quarterly = tables[1]
+
+    fst_row = total_assets_quarterly.children
+
+    print(fst_row)
+    # total_assets = {'total_assets': total_assets, 'date': date}
+    return total_assets
+
+
 def main():
 
-    # Take into acount to add the billion note!!!!
-    # TTM_revenue = filter_data_TTM_revenue()
-    # TTM_revenue['TTM_revenue'] = clear_number(TTM_revenue['TTM_revenue'])
-    revenue = filter_revenue_TTM()
-    operating_exp = filter_operating_expenses()
-    net_income = filter_net_income()
-    num_shares = filter_num_shares()
-    sga = filter_selling_gen_admin()
+    # revenue = filter_revenue_TTM()
+    # operating_exp = filter_operating_expenses()
+    # net_income = filter_net_income()
+    # num_shares = filter_num_shares()
+    # sga = filter_selling_gen_admin()
 
-    revenue["revenue"] = clear_number(revenue["revenue"])
-    operating_exp["operating_expenses"] = clear_number(
-        operating_exp["operating_expenses"])
-    net_income["net_income"] = clear_number(net_income["net_income"])
-    num_shares["num_shares"] = clear_number(num_shares["num_shares"])
-    sga["sga"] = clear_number(sga["sga"])
+    # # Take into acount to add the billion note!!!!
+    # revenue["revenue"] = clear_number(revenue["revenue"])
+    # operating_exp["operating_expenses"] = clear_number(
+    #     operating_exp["operating_expenses"])
+    # net_income["net_income"] = clear_number(net_income["net_income"])
+    # num_shares["num_shares"] = clear_number(num_shares["num_shares"])
+    # sga["sga"] = clear_number(sga["sga"])
 
-    print(revenue,
-          operating_exp,
-          net_income,
-          num_shares,
-          sga
-          )
+    # print(revenue,
+    #       operating_exp,
+    #       net_income,
+    #       num_shares,
+    #       sga
+    #       )
+    total_assets = filter_total_assets()
 
 
 if __name__ == '__main__':
