@@ -1,7 +1,7 @@
 from openpyxl import load_workbook
 from openpyxl.styles import Font
 from time import sleep
-import sys
+from sys import argv
 
 
 def set_text(new_tab):
@@ -129,7 +129,7 @@ def main(new_symbol: str, file_name: str) -> None:
 
 
 if __name__ == '__main__':
-    new_symbol = sys.argv[1]
-    file_name = sys.argv[2]
+    new_symbol = argv[1]
+    file_name = argv[2]
 
     main(new_symbol, file_name)

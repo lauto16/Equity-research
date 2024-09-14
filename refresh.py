@@ -1,7 +1,6 @@
 from openpyxl import Workbook, load_workbook
 from time import sleep
-import time
-import sys
+from sys import argv
 
 
 def refresh(tab: str, workbook: Workbook) -> None:
@@ -40,5 +39,5 @@ def mainRun(file_name: str) -> None:
 
 
 if __name__ == '__main__':
-    file_name = sys.argv[1]
+    file_name = argv[1]
     mainRun(file_name)
