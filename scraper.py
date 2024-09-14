@@ -7,16 +7,10 @@ from urllib3.exceptions import MaxRetryError
 
 def filter_revenue_TTM(driver) -> dict:
     "Revenue TTM"
-    URL = "https://www.macrotrends.net/stocks/charts/AAPL/apple/income-statement?freq=Q"
-
     try:
-        # Open URL
-
-        driver.get(URL)
-
         # Getting the full html
         html = driver.page_source
-        driver.quit()
+
         soup = BeautifulSoup(html, 'html.parser')
 
         cells_revenue = []
@@ -41,27 +35,24 @@ def filter_revenue_TTM(driver) -> dict:
 
         # making the dictionary
         revenue = clear_number(cells_revenue[1])
-        revenue = {"revenue": revenue, "date": cells_dates[0]}
+        date = cells_dates[0].replace('-', '/')
+        revenue = {"revenue": revenue, "date": date}
         return revenue
 
-    except MaxRetryError:
+    except OSError:
         pass
-    finally:
-        driver.quit()
 
 
 def filter_operating_expenses(driver) -> dict:
     # Expenses TTM;
 
-    URL = "https://www.macrotrends.net/stocks/charts/AAPL/apple/income-statement?freq=Q"
     try:
-        # Open URL
-        driver.get(URL)
+
         # Getting the full html
         html = driver.page_source
-        driver.quit()
 
         soup = BeautifulSoup(html, 'html.parser')
+
         cells_operating_expenses = []
         cells_dates = []
 
@@ -79,35 +70,103 @@ def filter_operating_expenses(driver) -> dict:
                 cells_dates.append(cell)
         # deletes the first column, which doesn't have dates
         cells_dates.pop(0)
-        operating_expenses = clear_number(cells_operating_expenses[1])
+
         # making the dictionary
+        date = cells_dates[0].replace('-', '/')
+        operating_expenses = clear_number(cells_operating_expenses[1])
         operating_expenses = {
-            "operating_expenses":  operating_expenses, "date": cells_dates[0]}
+            "operating_expenses": operating_expenses, "date": date}
         return operating_expenses
 
     except MaxRetryError:
         pass
-    finally:
-        driver.quit()
 
 
-def total_assets(driver):
-    # Expenses TTM; Net Income TTM; Num Shares; SG&A
+def filter_net_income():
+    # Net Income TTM
+    cells_netIncome = []
+    cells_dates = []
 
-    URL = "https://www.macrotrends.net/stocks/charts/AAPL/apple/total-assets"
-    try:
-        # Open URL
-        driver.get(URL)
+    with open('Debug/debug1.txt', 'r') as htmlfile:
+        html = htmlfile.read()
 
-        # Getting the full html
-        html = driver.page_source
-    except OSError:
-        pass
-    finally:
-        driver.quit()
-    # DEBUG
-    with open('./Debug/debug2.txt', 'w')as debug:
-        debug.write(html)
+    soup = BeautifulSoup(html, 'html.parser')
+    Net_income = soup.find("div", id="row15jqxgrid").children
+    for cell in Net_income:
+        cell = cell.text
+        if cell:
+            cells_netIncome.append(cell)
+
+    # DATES
+    dates_row = soup.find("div", id="columntablejqxgrid").children
+    for cell in dates_row:
+        cell = cell.text
+        if cell:
+            cells_dates.append(cell)
+    # deletes the first column, which doesn't have dates
+    cells_dates.pop(0)
+
+    # making the dictionary
+    net_income = {
+        "net_income":  cells_netIncome[1], "date": cells_dates[0]}
+    return net_income
+
+
+def filter_num_shares():
+    # Num Shares
+    cells_num_shares = []
+    cells_dates = []
+    with open('Debug/debug1.txt', 'r') as htmlfile:
+        html = htmlfile.read()
+
+    soup = BeautifulSoup(html, 'html.parser')
+    num_shares = soup.find("div", id="row18jqxgrid").children
+    for cell in num_shares:
+        cell = cell.text
+        if cell:
+            cells_num_shares.append(cell)
+
+    # DATES
+    dates_row = soup.find("div", id="columntablejqxgrid").children
+    for cell in dates_row:
+        cell = cell.text
+        if cell:
+            cells_dates.append(cell)
+    # deletes the first column, which doesn't have dates
+    cells_dates.pop(0)
+
+    # making the dictionary
+    num_shares = {
+        "num_shares":  cells_num_shares[1], "date": cells_dates[0]}
+    return num_shares
+
+
+def filter_selling_gen_admin():
+    # SG&A
+    cells_S_G_A = []
+    cells_dates = []
+
+    soup = BeautifulSoup(html, 'html.parser')
+    sga = soup.find("div", id="row4jqxgrid").children
+    for cell in sga:
+        cell = cell.text
+        if cell:
+            cells_S_G_A.append(cell)
+
+    # DATES
+    dates_row = soup.find("div", id="columntablejqxgrid").children
+    for cell in dates_row:
+        cell = cell.text
+        if cell:
+            cells_dates.append(cell)
+    # deletes the first column, which doesn't have dates
+    cells_dates.pop(0)
+
+    # making the dictionary
+    sga = {
+        "sga":  cells_S_G_A[1], "date": cells_dates[0]}
+
+    return sga
 
 
 def main():
@@ -123,7 +182,6 @@ def main():
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
-    options.add_argument("start-maximized")
     options.add_argument("--disable-extensions")
     options.add_argument("--disable-popup-blocking")
     options.add_argument("--disable-images")
@@ -131,9 +189,13 @@ def main():
     # Driver sesion initialization
     driver = Chrome(options=options)
 
+    URL = "https://www.macrotrends.net/stocks/charts/AAPL/apple/income-statement?freq=Q"
+    driver.get(URL)
+    # driver.scroll_from_origin(0, 200)
     revenue = filter_revenue_TTM(driver)
     operatin_exp = filter_operating_expenses(driver)
-    print(operatin_exp)
+    driver.quit()
+    print(revenue, operatin_exp)
 
 
 if __name__ == '__main__':
