@@ -6,6 +6,7 @@ from scraper import scraper
 from json import load
 import os
 
+
 def style_tab(stock_tab) -> None:
 
     basic = Font(
@@ -33,13 +34,42 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies) -> None:
         companies (JsonDict): Contains SYMBOL:COMPANY_NAME
     """
 
+    """
+    
+        finance_variables = {"revenue": revenue,
+                         "operatin_expenses": operating_expenses,
+                         "net_income": net_income,
+                         "num_shares": num_shares,
+                         "sga": sga
+                         }
+
+    """
+
     print(f'REFRESHING {tab}')
-    revenue = scraper(symbol=tab, stock_name=getCompanyName(symbol=tab, companies=companies))
+    financial_values = scraper(
+        symbol=tab, stock_name=getCompanyName(symbol=tab, companies=companies))
     stock_tab = workbook[tab]
 
-    stock_tab['H5'] = revenue['date']
+    stock_tab['H5'] = financial_values['revenue']['date']
     stock_tab['H7'] = tab
-    stock_tab['H18'] = revenue['revenue']
+
+    # revenue
+    stock_tab['H18'] = financial_values['revenue']['revenue']
+
+    # operating expenses
+    stock_tab['H19'] = financial_values['operating_expenses']['operating_expenses']
+
+    # net income
+    stock_tab['H20'] = financial_values['net_income']['net_income']
+
+    # num shares
+    stock_tab['H32'] = financial_values['num_shares']['num_shares']
+
+    # sga
+    stock_tab['H35'] = financial_values['sga']['sga']
+
+    # give styles
+    style_tab(stock_tab)
 
     workbook.save(file_name)
 
@@ -53,7 +83,6 @@ def mainRun(file_name: str, directory) -> None:
     """
 
     try:
-        print(directory)
         json_path = os.path.join(directory, 'symbols.json')
         with open(json_path, 'r') as file:
             companies = load(file)

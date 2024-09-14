@@ -3,14 +3,12 @@ from undetected_chromedriver import ChromeOptions
 from bs4 import BeautifulSoup
 from formating_tools import clear_number
 from urllib3.exceptions import MaxRetryError
+from time import sleep
 
 
-def filter_revenue_TTM(driver, symbol: str, stock_name: str) -> dict:
+def filter_revenue_TTM(html) -> dict:
     # Revenue TTM
     try:
-        # Getting the full html
-        html = driver.page_source
-
         soup = BeautifulSoup(html, 'html.parser')
 
         cells_revenue = []
@@ -43,14 +41,10 @@ def filter_revenue_TTM(driver, symbol: str, stock_name: str) -> dict:
         pass
 
 
-def filter_operating_expenses(driver, symbol: str, stock_name: str) -> dict:
+def filter_operating_expenses(html) -> dict:
     # Expenses TTM;
 
     try:
-
-        # Getting the full html
-        html = driver.page_source
-
         soup = BeautifulSoup(html, 'html.parser')
 
         cells_operating_expenses = []
@@ -82,12 +76,9 @@ def filter_operating_expenses(driver, symbol: str, stock_name: str) -> dict:
         pass
 
 
-def filter_net_income(driver, symbol: str, stock_name: str) -> dict:
+def filter_net_income(html) -> dict:
     # Net Income TTM
     try:
-
-        # Getting the full html
-        html = driver.page_source
 
         soup = BeautifulSoup(html, 'html.parser')
 
@@ -113,25 +104,22 @@ def filter_net_income(driver, symbol: str, stock_name: str) -> dict:
         date = cells_dates[0].replace('-', '/')
         net_income = clear_number(cells_netIncome[1])
         net_income = {
-            "operating_expenses": net_income, "date": date}
+            "net_income": net_income, "date": date}
         return net_income
 
     except MaxRetryError:
         pass
 
 
-def filter_num_shares(driver, symbol: str, stock_name: str) -> dict:
+def filter_num_shares(html) -> dict:
     # Num Shares
     try:
-
-        # Getting the full html
-        html = driver.page_source
 
         cells_num_shares = []
         cells_dates = []
 
         soup = BeautifulSoup(html, 'html.parser')
-        num_shares = soup.find("div", id="row18jqxgrid").children
+        num_shares = soup.find("div", id="row19jqxgrid").children
         for cell in num_shares:
             cell = cell.text
             if cell:
@@ -151,19 +139,16 @@ def filter_num_shares(driver, symbol: str, stock_name: str) -> dict:
         date = cells_dates[0].replace('-', '/')
         num_shares = clear_number(cells_num_shares[1])
         num_shares = {
-            "operating_expenses": num_shares, "date": date}
+            "num_shares": num_shares, "date": date}
         return num_shares
 
     except MaxRetryError:
         pass
 
 
-def filter_selling_gen_admin(driver, symbol: str, stock_name: str) -> dict:
+def filter_selling_gen_admin(html) -> dict:
     # SG&A
     try:
-
-        # Getting the full html
-        html = driver.page_source
 
         # SG&A
         cells_S_G_A = []
@@ -198,47 +183,49 @@ def filter_selling_gen_admin(driver, symbol: str, stock_name: str) -> dict:
 
 
 def scraper(symbol: str, stock_name: str):
+    try:
+        # Webdriver Settings
+        options = ChromeOptions()
+        # Sesion without UI
+        # options.add_argument("--headless")
+        options.add_argument("--disable-javascript")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-gpu")
+        options.add_argument("--disable-extensions")
+        options.add_argument("--disable-popup-blocking")
+        options.add_argument("--disable-images")
 
-    # Webdriver Settings
-    options = ChromeOptions()
-    # Sesion without UI
-    # options.add_argument("--headless")
-    options.add_argument("--disable-javascript")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
-    options.add_argument("--disable-extensions")
-    options.add_argument("--disable-popup-blocking")
-    options.add_argument("--disable-images")
+        # Driver sesion initialization
+        driver = Chrome(options=options)
+        URL = str(
+            f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q")
+        driver.get(URL)
+        driver.implicitly_wait(0)
 
-    # Driver sesion initialization
-    driver = Chrome(options=options)
-    URL = str(
-        f"https://www.macrotrends.net/stocks/charts/ROP/roper-technologies/income-statement?freq=Q")
-    driver.get(URL)
-    driver.implicitly_wait(0)
+        html = driver.page_source
 
-    revenue = filter_revenue_TTM(
-        driver=driver, symbol=symbol, stock_name=stock_name)
-    operatin_exp = filter_operating_expenses(
-        driver=driver, symbol=symbol, stock_name=stock_name)
-    net_income = filter_net_income(
-        driver=driver, symbol=symbol, stock_name=stock_name)
-    num_shares = filter_num_shares(
-        driver=driver, symbol=symbol, stock_name=stock_name)
-    sga = filter_selling_gen_admin(
-        driver=driver, symbol=symbol, stock_name=stock_name)
-    driver.__del__()
-    driver.quit()
-    finance_variables = {"revenue": revenue,
-                         "operatin_exp": operatin_exp,
-                         "net_income": net_income,
-                         "num_shares": num_shares,
-                         "sga": sga
-                         }
-    print(finance_variables)
-    return finance_variables
+        revenue = filter_revenue_TTM(html)
+        operating_expenses = filter_operating_expenses(html)
+        net_income = filter_net_income(html)
+        num_shares = filter_num_shares(html)
+        sga = filter_selling_gen_admin(html)
 
+        # driver.__del__()
+        # driver.quit()
 
-if __name__ == '__main__':
-    scraper('', '')
+        finance_variables = {"revenue": revenue,
+                             "operating_expenses": operating_expenses,
+                             "net_income": net_income,
+                             "num_shares": num_shares,
+                             "sga": sga
+                             }
+        print(finance_variables)
+        return finance_variables
+
+    finally:
+        driver.quit()
+
+# if __name__ == '__main__':
+    # scraper('', '')
+#    pass
