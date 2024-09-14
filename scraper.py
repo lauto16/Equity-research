@@ -91,14 +91,14 @@ def filter_net_income(driver, symbol: str, stock_name: str) -> dict:
 
         soup = BeautifulSoup(html, 'html.parser')
 
-        cells_operating_expenses = []
+        cells_netIncome = []
         cells_dates = []
 
-        operating_row = soup.find("div", id="row6jqxgrid").children
-        for cell in operating_row:
+        Net_income = soup.find("div", id="row15jqxgrid").children
+        for cell in Net_income:
             cell = cell.text
             if cell:
-                cells_operating_expenses.append(cell)
+                cells_netIncome.append(cell)
 
         # DATES
         dates_row = soup.find("div", id="columntablejqxgrid").children
@@ -111,10 +111,10 @@ def filter_net_income(driver, symbol: str, stock_name: str) -> dict:
 
         # making the dictionary
         date = cells_dates[0].replace('-', '/')
-        operating_expenses = clear_number(cells_operating_expenses[1])
-        operating_expenses = {
-            "operating_expenses": operating_expenses, "date": date}
-        return operating_expenses
+        net_income = clear_number(cells_netIncome[1])
+        net_income = {
+            "operating_expenses": net_income, "date": date}
+        return net_income
 
     except MaxRetryError:
         pass
@@ -149,10 +149,10 @@ def filter_num_shares(driver, symbol: str, stock_name: str) -> dict:
 
         # making the dictionary
         date = cells_dates[0].replace('-', '/')
-        operating_expenses = clear_number(cells_num_shares[1])
-        operating_expenses = {
-            "operating_expenses": operating_expenses, "date": date}
-        return operating_expenses
+        num_shares = clear_number(cells_num_shares[1])
+        num_shares = {
+            "operating_expenses": num_shares, "date": date}
+        return num_shares
 
     except MaxRetryError:
         pass
@@ -198,13 +198,11 @@ def filter_selling_gen_admin(driver, symbol: str, stock_name: str) -> dict:
 
 
 def scraper(symbol: str, stock_name: str):
-    revenue = filter_revenue_TTM(
-        driver=driver, symbol=symbol, stock_name=stock_name)
 
     # Webdriver Settings
     options = ChromeOptions()
     # Sesion without UI
-    options.add_argument("--headless")
+    # options.add_argument("--headless")
     options.add_argument("--disable-javascript")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
@@ -216,7 +214,7 @@ def scraper(symbol: str, stock_name: str):
     # Driver sesion initialization
     driver = Chrome(options=options)
     URL = str(
-        f"https://www.macrotrends.net/stocks/charts/%7B{symbol}/{stock_name}/income-statement?freq=Q")
+        f"https://www.macrotrends.net/stocks/charts/ROP/roper-technologies/income-statement?freq=Q")
     driver.get(URL)
     driver.implicitly_wait(0)
 
@@ -238,8 +236,9 @@ def scraper(symbol: str, stock_name: str):
                          "num_shares": num_shares,
                          "sga": sga
                          }
+    print(finance_variables)
     return finance_variables
 
 
 if __name__ == '__main__':
-    pass
+    scraper('', '')
