@@ -14,7 +14,6 @@ def set_text(new_tab):
     Returns:
         None
     """
-
     # LEFT SIDE (NOTES)
     new_tab['A1'] = 'Date'
     new_tab['B1'] = 'Qty'
@@ -31,22 +30,25 @@ def set_text(new_tab):
     new_tab['G12'] = 'My average cost per share'
     new_tab['G13'] = 'Fair value of the stock'
     new_tab['G14'] = 'When to buy crazy'
+    new_tab['G15'] = 'FCF per share'
 
-    new_tab['G16'] = 'Revenue'
-    new_tab['G17'] = 'Expenses'
-    new_tab['G18'] = 'Net Income'
-    new_tab['G19'] = 'Net Income Margin'
-    new_tab['G20'] = 'PE ratio'
+    new_tab['G18'] = 'Revenue'
+    new_tab['G19'] = 'Expenses'
+    new_tab['G20'] = 'Net Income'
+    new_tab['G21'] = 'Net Income Margin'
+    new_tab['G22'] = 'PE ratio'
 
-    new_tab['G22'] = 'Assets'
-    new_tab['G23'] = 'Liabilities'
-    new_tab['G24'] = 'Book Value (Share equity)'
-    new_tab['G25'] = 'Current ratio'
-    new_tab['G26'] = 'Debt to equity ratio'
+    new_tab['G24'] = 'Assets'
+    new_tab['G25'] = 'Liabilities'
+    new_tab['G26'] = 'Book Value (Share equity)'
+    new_tab['G27'] = 'Current ratio'
+    new_tab['G28'] = 'Debt to equity ratio'
 
-    new_tab['G28'] = 'Market cap'
-    new_tab['G29'] = 'Num shares'
-    new_tab['G30'] = 'Dividend'
+    new_tab['G31'] = 'Market cap'
+    new_tab['G32'] = 'Num shares'
+    new_tab['G33'] = 'Dividend'
+    new_tab['G34'] = 'Free cash Flow'
+    new_tab['G35'] = 'SGA'
 
     # RIGHT SIDE (NOTES)
     new_tab['N5'] = 'CHECKLIST - Why should I NOT buy ?'
