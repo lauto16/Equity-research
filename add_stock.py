@@ -109,9 +109,7 @@ def main(new_symbol: str, file_name: str) -> None:
         if new_symbol not in wb.sheetnames:
 
             new_tab = wb.create_sheet(title=new_symbol)
-
             new_tab = set_text(new_tab)
-
             add_styles(new_tab)
 
         else:
