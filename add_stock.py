@@ -98,27 +98,31 @@ def add_styles(new_tab) -> None:
 
 def main(new_symbol: str, file_name: str) -> None:
     try:
-        value = input(
-            "To execute this action you need to close Excel, once you close it, type '1' and enter: ")
+        print("To execute this action you need to close Excel, once you close it, type '1' and enter: ")
+        value = input("> ")
         while value != '1':
-            value = input(
+            print(
                 "To execute this action you need to close Excel, once you close it, type '1' and enter: ")
+            value = input("> ")
 
         wb = openpyxl.load_workbook(file_name, keep_vba=True)
 
         if new_symbol not in wb.sheetnames:
-
             new_tab = wb.create_sheet(title=new_symbol)
             new_tab = set_text(new_tab)
             add_styles(new_tab)
 
         else:
             print("This symbol already exists.")
+            sleep(2)
+            return
 
         wb.save(file_name)
 
     except Exception as e:
         print(e)
+        sleep(2)
+        return
 
     print(f"Symbol {new_symbol} added correctly!")
     sleep(1.8)
