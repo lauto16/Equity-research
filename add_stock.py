@@ -1,7 +1,7 @@
-import sys
-import openpyxl
-from time import sleep
+from openpyxl import load_workbook
 from openpyxl.styles import Font
+from time import sleep
+import sys
 
 
 def set_text(new_tab):
@@ -105,7 +105,7 @@ def main(new_symbol: str, file_name: str) -> None:
                 "To execute this action you need to close Excel, once you close it, type '1' and enter: ")
             value = input("> ")
 
-        wb = openpyxl.load_workbook(file_name, keep_vba=True)
+        wb = load_workbook(file_name, keep_vba=True)
 
         if new_symbol not in wb.sheetnames:
             new_tab = wb.create_sheet(title=new_symbol)
