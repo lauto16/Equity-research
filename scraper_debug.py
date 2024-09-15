@@ -166,35 +166,31 @@ def filter_total_assets() -> dict:
     total_assets_quarterly = tables[1]
 
     fst_row = total_assets_quarterly.children
+    rows = []
+    for row in fst_row:
+        if row.get_text():
+            rows.append(row.get_text())
+    print(rows)
 
-    print(fst_row)
     # total_assets = {'total_assets': total_assets, 'date': date}
-    return total_assets
+    # return total_assets
 
 
 def main():
 
-    # revenue = filter_revenue_TTM()
-    # operating_exp = filter_operating_expenses()
-    # net_income = filter_net_income()
-    # num_shares = filter_num_shares()
-    # sga = filter_selling_gen_admin()
+    revenue = filter_revenue_TTM()
+    operating_exp = filter_operating_expenses()
+    net_income = filter_net_income()
+    num_shares = filter_num_shares()
+    sga = filter_selling_gen_admin()
+    # Take into acount to add the billion note!!!!
 
-    # # Take into acount to add the billion note!!!!
-    # revenue["revenue"] = clear_number(revenue["revenue"])
-    # operating_exp["operating_expenses"] = clear_number(
-    #     operating_exp["operating_expenses"])
-    # net_income["net_income"] = clear_number(net_income["net_income"])
-    # num_shares["num_shares"] = clear_number(num_shares["num_shares"])
-    # sga["sga"] = clear_number(sga["sga"])
-
-    # print(revenue,
-    #       operating_exp,
-    #       net_income,
-    #       num_shares,
-    #       sga
-    #       )
-    total_assets = filter_total_assets()
+    revenue["revenue"] = clear_number(revenue["revenue"])
+    operating_exp["operating_expenses"] = clear_number(
+        operating_exp["operating_expenses"])
+    net_income["net_income"] = clear_number(net_income["net_income"])
+    num_shares["num_shares"] = clear_number(num_shares["num_shares"])
+    sga["sga"] = clear_number(sga["sga"])
 
 
 if __name__ == '__main__':

@@ -1,4 +1,4 @@
-<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style=""><!--<![endif]--><script async="" type="text/javascript" src="https://static.kueezrtb.com/js/latest.js?_=1726278926561"></script><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202409130301/pubads_impl_page_level_ads.js?cb=31087120"></script><script async="" src="https://ml314.com/tag.aspx?138"></script><script src="https://HyHEfbQhu3t7h6NBC.ay.delivery/client-v2.js"></script><script src="https://HyHEfbQhu3t7h6NBC.ay.delivery/manager-script/yield-manager-script-v3.0.16-hotfix.4-prod"></script><script src="https://c.amazon-adsystem.com/aax2/apstag.js" async=""></script><script src="https://HyHEfbQhu3t7h6NBC.ay.delivery/manager-script/HyHEfbQhu3t7h6NBC.splitTest.0?v=Ginxx5MpxpHKruY5D"></script><script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script src="https://HyHEfbQhu3t7h6NBC.ay.delivery/floorPrice/HyHEfbQhu3t7h6NBC/js/floorPrice/linreg.min.js"></script><script async="" src="https://lovelydrum.com/v2jbbXk84-txhGwfJumfINrX_4g6RjDrlLrT3MAMX1mSdL5rsvR_BzvhI"></script><script id="IC_Admiral_Script_Id" src="https://u5.investingchannel.com/cmp_v2/admiral/macrotrends.js" type="text/javascript" defer=""></script><script defer="" id="sovrnScript" type="text/javascript" src="//get.s-onetag.com/5953ed02-1e0b-4cc7-bc8f-26d349047301/tag.min.js"></script><script defer="" id="IC_MarkitScript" type="text/javascript" src="https://ad.wsod.com/pub/37693cfc748049e45d87b8c7d8b9aacd/0.0.async/"></script><script id="IC_GTagScript" src="https://www.googletagmanager.com/gtag/js?id=G-5EST90M6PX" type="text/javascript" async=""></script><script id="IC_UAT_TAG_SCRIPT" src="https://u5.investingchannel.com/static/uat-tag.js" type="text/javascript" async=""></script><head><script type="text/javascript" async="" src="https://static.criteo.net/js/ld/publishertag.prebid.139.js"></script>
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style=""><!--<![endif]--><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202409130601/pubads_impl_page_level_ads.js?cb=31087123"></script><script async="" src="https://ml314.com/tag.aspx?148"></script><script src="https://HyHEfbQhu3t7h6NBC.ay.delivery/client-v2.js"></script><script src="https://HyHEfbQhu3t7h6NBC.ay.delivery/manager-script/yield-manager-script-v3.0.16-hotfix.4-prod"></script><script src="https://c.amazon-adsystem.com/aax2/apstag.js" async=""></script><script src="https://HyHEfbQhu3t7h6NBC.ay.delivery/manager-script/HyHEfbQhu3t7h6NBC.splitTest.4?v=2oByLs69bFAM8iL8q"></script><script src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script><script src="https://HyHEfbQhu3t7h6NBC.ay.delivery/floorPrice/HyHEfbQhu3t7h6NBC/js/floorPrice/linreg.min.js"></script><script async="" src="https://lovelydrum.com/v2jbbXk84-txhGwfJumfINrX_4g6RjDrlLrT3MAMX1mSdL5rsvR_BzvhI"></script><script id="IC_Admiral_Script_Id" src="https://u5.investingchannel.com/cmp_v2/admiral/macrotrends.js" type="text/javascript" defer=""></script><script defer="" id="sovrnScript" type="text/javascript" src="//get.s-onetag.com/5953ed02-1e0b-4cc7-bc8f-26d349047301/tag.min.js"></script><script defer="" id="IC_MarkitScript" type="text/javascript" src="https://ad.wsod.com/pub/37693cfc748049e45d87b8c7d8b9aacd/0.0.async/"></script><script id="IC_GTagScript" src="https://www.googletagmanager.com/gtag/js?id=G-5EST90M6PX" type="text/javascript" async=""></script><script id="IC_UAT_TAG_SCRIPT" src="https://u5.investingchannel.com/static/uat-tag.js" type="text/javascript" async=""></script><head><script type="text/javascript" async="" src="https://static.criteo.net/js/ld/publishertag.prebid.139.js"></script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<link rel="canonical" href="https://www.macrotrends.net/stocks/charts/AAPL/apple/total-assets">
@@ -652,7 +652,7 @@ select {
 </style>	
 
 
-<script type="text/javascript" defer="" src="//cdn.mouseflow.com/projects/de879dfd-36cc-4d5e-adcd-3e97d4a41e06.js"></script><link href="https://u5.investingchannel.com/prebid/7.28.0/v3/prebid.js" rel="preload" as="script"><link href="https://u5.investingchannel.com/static/uat-internal.js" rel="preload" as="script"><link href="https://u5.investingchannel.com/static/uat-tag.js" rel="preload" as="script"><script src="https://investingchannel.ay.delivery/manager/HyHEfbQhu3t7h6NBC" id="TagManager" referrerpolicy="no-referrer-when-downgrade"></script><script src="https://signal-beacon.s-onetag.com/beacon.min.js"></script><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9uiHDzQFAhqALUhTgTYJcz9XrGH2y0/9AORwCSapUO/f7Uh7ysIzyszNkuWDLqNYg8446Uj48XIstBW1qv/wAQAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9R+gkZL3TWq+Z7RJ2L0c7ZN7FZD5z4mHmVvjrPitg/EMz9P3j5d3W7Vw5ZR9jtJGmWKltM4BO3smNzpCgwYuwwAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202409130301/pubads_impl.js?cb=31087120" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/3310" type="text/javascript" async="async"></script><style>
+<script type="text/javascript" defer="" src="//cdn.mouseflow.com/projects/de879dfd-36cc-4d5e-adcd-3e97d4a41e06.js"></script><link href="https://u5.investingchannel.com/prebid/7.28.0/v3/prebid.js" rel="preload" as="script"><link href="https://u5.investingchannel.com/static/uat-internal.js" rel="preload" as="script"><link href="https://u5.investingchannel.com/static/uat-tag.js" rel="preload" as="script"><script src="https://investingchannel.ay.delivery/manager/HyHEfbQhu3t7h6NBC" id="TagManager" referrerpolicy="no-referrer-when-downgrade"></script><script src="https://signal-beacon.s-onetag.com/beacon.min.js"></script><meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A9uiHDzQFAhqALUhTgTYJcz9XrGH2y0/9AORwCSapUO/f7Uh7ysIzyszNkuWDLqNYg8446Uj48XIstBW1qv/wAQAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A9R+gkZL3TWq+Z7RJ2L0c7ZN7FZD5z4mHmVvjrPitg/EMz9P3j5d3W7Vw5ZR9jtJGmWKltM4BO3smNzpCgwYuwwAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3Mjc4MjcxOTksImlzU3ViZG9tYWluIjp0cnVlLCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202409130601/pubads_impl.js?cb=31087123" async=""></script><script src="https://config.aps.amazon-adsystem.com/configs/3310" type="text/javascript" async="async"></script><style>
             .ayManagerEnv_slug:before {
                 content: 'Ad';
                 display: block;
@@ -661,7 +661,7 @@ select {
                 font-size: 10px;
                 color: #6a737c;
             }
-        </style><script id="IC_HEAD__ayManagerEnv__1" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__2" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__3" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__4" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__5" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__6" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__7" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__8" type="yield-manager/html-unit-placeholder"></script><script src="https://z.moatads.com/investingchannelgamheader935674053006/moatheader.js" data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__1"></script><script data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__2" type="text/javascript">
+        </style><script id="IC_HEAD__ayManagerEnv__1" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__2" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__3" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__4" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__5" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__6" type="yield-manager/html-unit-placeholder"></script><script id="IC_HEAD__ayManagerEnv__7" type="yield-manager/html-unit-placeholder"></script><script src="https://z.moatads.com/investingchannelgamheader935674053006/moatheader.js" data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__1"></script><script data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__2" type="text/javascript">
   try {
     if (!window._ml) {
       (function (w,d,t) {
@@ -689,7 +689,7 @@ select {
     ayManagerEnv.__setSlotTargeting = function (adUnitInstanceCode, slot) {
         var adUnitCode = adUnitInstanceCode.replace(/__ayManagerEnv__.+$/, '');
         var adUnitPath = slot.getAdUnitPath(); 
-        var IC_AYTestingV = 'AY_TestCase5'
+        var IC_AYTestingV = 'AY_TestCase1'
         // console.log("IC_AYTestingV", IC_AYTestingV);
         if (IC_AYTestingV) {
             slot.setTargeting('AYTesting', IC_AYTestingV);
@@ -703,7 +703,7 @@ select {
         if (adUnitCode.indexOf("300x125") >= 0) {
             slot.setTargeting("pc", "pc");
         }
-        var device = false ? "m_" : "d_";
+        var device = (false) ? "m_" : "d_";
 
         var adUnitCodeMatch = adUnitCode.match(/_([0-9]+)$/);
         var adSlotId = adUnitCode.toLowerCase().replace('ic_', '').replace('div_', '').replace("d_", device);
@@ -854,7 +854,7 @@ select {
         oopSlot.setTargeting("isloggedin", window._isLoggedIn);
         ayManagerEnv.__setSlotTargeting(slotElementId, oopSlot); 
         if (oopSlot) { 
-            var IC_AYTestingV = 'AY_TestCase5'
+            var IC_AYTestingV = 'AY_TestCase1'
             // console.log("IC_AYTestingV", IC_AYTestingV);
             if (IC_AYTestingV) {
                 oopSlot.setTargeting('AYTesting', IC_AYTestingV);
@@ -941,7 +941,7 @@ select {
             var path = '/5206,22423423770/Macrotrends/WebInterstitial';
             var interstitialSlot = googletag.defineOutOfPageSlot(path, googletag.enums.OutOfPageFormat.INTERSTITIAL).addService(googletag.pubads());
             if (interstitialSlot) {
-                var IC_AYTestingV = 'AY_TestCase5'; 
+                var IC_AYTestingV = 'AY_TestCase1'; 
                 if (IC_AYTestingV) {
                     interstitialSlot.setTargeting('AYTesting', IC_AYTestingV);
                 };  
@@ -1012,121 +1012,6 @@ select {
     }
   });
 </script><script data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__7" type="text/javascript">
-(function() {
-    var config = {
-        accountId: 'HyHEfbQhu3t7h6NBC',
-        useBidderAlias: false,
-        includeBidders: [], // defaults to all supported bidders
-        excludeBidders: [],
-        serverOnlyBidders: [],
-        // reportRandomToCustomDimension: 'custom_9',
-    };
-
-    var pbjs = window[ayManagerEnv.settings.prebidSettings.prebidScript.windowName];
-    var supportedBidders = ['33across','aax','aceex','acuityads','adf','adgeneration','adhese','adkernel','adkernelAdn','adman','admixer','adnuntius','adocean','adoppler','adot','adpone','adprime','adquery','adrino','adsinteractive','adsyield','adtarget','adtelligent','adtrgtme','advangelists','AdView','adxcg','adyoulike','aidem','aja','algorix','alkimi','amx','beyondmedia','apacdex','applogy','appnexus','appstock','appush','audienceNetwork','automatad','avct','axonix','beachfront','beintoo','bematterfull','between','bidmachine','bidmyadz','bidscube','bidstack','bizzclick','bliink','blue','bmtm','boldwin','brave','cadent_aperture_mx','ccx','CodeFuel','coinzilla','colossus','compass','connectad','consumable','copper6','cpmstar','criteo','cwire','datablocks','deepintent','definemedia','dianomi','dmx','duration','e_volution','edge226','emtv','engagebdr','eplanning','epom','conversant','ergadx','evtech','flipp','freewheelssp','frvradn','futureads','gamma','gamoshi','globalsun','gothamads','greedygame','grid','gumgum','huaweiads','iionads','imds','impactify','improvedigital','infytv','inmobi','interactiveOffers','intertech','invibes','iqzone','ix','janet','jixie','kargo','kidoz','kiviads','krushmedia','kubient','lifestreet','liftoff','limelightDigital','lm_kiviads','lockerdome','logan','logicad','lunamedia','mabidder','madvertise','marsmedia','mediafuse','medianet','mgid','mgidX','mobfoxpb','mobilefuse','motorik','nextMillennium','ninthdecimal','nobid','onetag','openweb','openx','operaads','optout','orbidder','outbrain','outbrain','ownadx','pangle','pgamssp','preciso','pubmatic','pubnative','pulsepoint','pwbid','quantumdex','resetdigital','revcontent','rhythmone','richaudience','rise','roundel','rtbhouse','rubicon','sa_lunamedia','screencore','seedingAlliance','sharethrough','silvermob','silverpush','smaato','smartadserver','smarthub','smartx','smartyads','smilewanted','sonobi','sovrn','sspBC','streamkey','stroeerCore','suntContent','synacormedia','taboola','tappx','tpmn','trafficgate','triplelift','triplelift_native','trustedstack','trustx','ucfunnel','undertone','unicorn','unruly','valueimpression','videobyte','videoheroes','vidoomy','viewdeos','visiblemeasures','visx','vrtcal','xe','xtrmqb','yahooAds','yandex','yeahmobi','yieldlab','yieldmo','yieldone','zeroclickfraud','zeta_global_ssp','minutemedia'];
-    var forcedBidderAliases = { 'minutemedia': 918, 'rise': 1043 };
-    var availableBidders = [];
-    var endpoint = 'pbs-eu-central';
-    if (['NA', 'SA',].includes('SA')) {
-        endpoint = 'pbs-us-east';
-    }
-
-    pbjs.que.push(function() {
-        ayManagerEnv.settings.bidderSettings.bidders.forEach(function(bid) {
-            var bidder = bid.alias || bid.bidder;
-            if (
-                !availableBidders.includes(bidder) &&
-                supportedBidders.includes(bid.bidder) &&
-                !config.excludeBidders.includes(bidder) &&
-                (!config.includeBidders.length || config.includeBidders.includes(bid.bidder))
-            ) {
-                var forcedAlias = forcedBidderAliases[bid.bidder];
-                if (config.useBidderAlias || forcedAlias) {
-                    if (bid.alias && bid.alias.includes('_s2s')) {
-                        availableBidders.push(bidder);
-                        return;
-                    }
-                    var opts = {};
-                    if (forcedAlias) {
-                        opts.gvlid = forcedAlias;
-                    }
-                    pbjs.aliasBidder(bid.bidder, bidder + '_s2s', opts);
-                    availableBidders.push(bidder + '_s2s');
-                } else {
-                    availableBidders.push(bidder.replace('_s2s', ''));
-                }
-            }
-        });
-
-        var random = Math.floor(Math.random()*10);;
-        if (config.reportRandomToCustomDimension) {
-            window.assertiveQueue.push(function () {
-                assertive.setConfig('analytics.custom.' + config.reportRandomToCustomDimension, 's2s-' + random);
-            });
-        }
-        pbjs.setConfig({
-            s2sConfig: {
-                enabled: true,
-                testing: true,
-                accountId: config.accountId,
-                bidders: availableBidders,
-                timeout: Math.round(pbjs.getConfig('bidderTimeout') * 0.75),
-                endpoint: {
-                    p1Consent: 'https://' + endpoint + '.ay.delivery/openrtb2/auction',
-                    noP1Consent: 'https://' + endpoint + '.ay.delivery/openrtb2/auction'
-                },
-                syncEndpoint: {
-                    p1Consent: 'https://' + endpoint + '.ay.delivery/cookie_sync',
-                    noP1Consent: 'https://' + endpoint + '.ay.delivery/cookie_sync'
-                },
-                extPrebid: { rnd: random }
-            }
-        });
-    });
-
-    ayManagerEnv.onEvent('prebidBeforeFetchBids', function(bidConfig) {
-        if (!availableBidders.length) {
-            return;
-        }
-        bidConfig.adUnits.forEach(function(adUnit) {
-            var s2sBidders = adUnit.bids.reduce(function(acc, bid) {
-                if (bid.bidder.includes('_s2s')) {
-                    acc.push(bid.bidder.replace('_s2s', ''));
-                }
-                return acc;
-            }, []);
-            adUnit.bids.forEach(function(bid) {
-                var bidder = bid.bidder;
-                if (bidder.includes('_s2s') || config.serverOnlyBidders.includes(bidder)) {
-                    bid.bidSource = { server: 100 };
-                    bid.includeSourceKvp = true;
-
-                    var normalizedBidder = bidder.replace('_s2s', '');
-                    if (!config.useBidderAlias && !forcedBidderAliases[normalizedBidder]) {
-                        bid.bidder = normalizedBidder;
-                    }
-                    return;
-                }
-                if (config.useBidderAlias || forcedBidderAliases[bidder]) {
-                    bidder = bidder + '_s2s';
-                }
-                if (availableBidders.includes(bidder)) {
-                    bid.bidSource = { client: 100 };
-                    bid.includeSourceKvp = true;
-
-                    if (!s2sBidders.includes(bid.bidder)) {
-                        var s2sBid = JSON.parse(JSON.stringify(bid));
-                        s2sBid.bidSource = { server: 100 };
-                        s2sBid.includeSourceKvp = true;
-                        s2sBid.bidder = bidder;
-                        adUnit.bids.push(s2sBid);
-                    }
-                }
-            });
-        });
-    });
-})();
-</script><script type="text/javascript" data-cfasync="false" crossorigin="anonymous" src="https://static.kueezrtb.com/latest.js" id="kueezrtb_latest" data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__7"></script><script data-ay-manager-placement-id="IC_HEAD__ayManagerEnv__8" type="text/javascript">
     googletag.cmd.push(function() {
     try{googletag.pubads().addEventListener("slotRenderEnded", (event) => {
         const slot = event.slot;
@@ -1261,7 +1146,7 @@ var native_template_3x1 = ' \
     </h2>\
     </article>';
 </script><meta http-equiv="origin-trial" content="A15LsJSPgMV7w0Kc5TYHyc1UNzggyebBmE3sj4JP9UJSUVJgucSFQRyN470L3hnsTddsFRSgM695VmLGwBiFngwAAACAeyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5uZXQ6NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY5NTE2Nzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="AwnOWg2dzaxHPelVjqOT/Y02cSxnG2FkjXO7DlX9VZF0eyD0In8IIJ9fbDFZGXvxNvn6HaF51qFHycDGLOkj1AUAAACAeyJvcmlnaW4iOiJodHRwczovL2NyaXRlby5jb206NDQzIiwiZmVhdHVyZSI6IlByaXZhY3lTYW5kYm94QWRzQVBJcyIsImV4cGlyeSI6MTY5NTE2Nzk5OSwiaXNTdWJkb21haW4iOnRydWUsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="></head>
-	<body class="fuelux" aria-hidden="false"><div id="aymStickyFooter" class="" data-ay-manager-placement-id="IC_Body_Adhesion__ayManagerEnv__2"><div id="IC_D_Adhesion_1__ayManagerEnv__1_580c7453" data-google-query-id="CObY6JKqwYgDFR1s3QId12Av7Q" style=""><div id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_2__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_2" name="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_2" title="3rd party ad content" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-load-complete="true" style="border: 0px; vertical-align: bottom;" data-google-container-id="5"></iframe></div></div><div id="IC_M_Adhesion_1__ayManagerEnv__1"></div>
+	<body class="fuelux"><div id="aymStickyFooter" class="" data-ay-manager-placement-id="IC_Body_Adhesion__ayManagerEnv__2"><div id="IC_D_Adhesion_1__ayManagerEnv__1_580c7453" data-google-query-id="CPqZz4mgw4gDFXEIuQYdjRYISA" style=""><div id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_1__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_1" name="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_1" title="3rd party ad content" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-load-complete="true" data-google-container-id="3" style="border: 0px; vertical-align: bottom;"></iframe></div></div><div id="IC_M_Adhesion_1__ayManagerEnv__1"></div>
     <div id="aymStickyFooterClose">X</div>
 </div><script data-ay-manager-placement-id="IC_Body_Adhesion__ayManagerEnv__2" type="text/javascript"> 
     googletag.cmd.push(function() {
@@ -1638,7 +1523,7 @@ var native_template_3x1 = ' \
 			
 			
 
-				<div id="IC_d_728x90_1" style="min-height:100px; margin:10px;"><div id="IC_D_728x90_1__ayManagerEnv__1_8de1698f" data-google-query-id="CPfrvpKqwYgDFf5YuAQdo2w8Hw" style=""><div id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_1__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_1" name="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_1" title="3rd party ad content" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-load-complete="true" data-google-container-id="3" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
+				<div id="IC_d_728x90_1" style="min-height:100px; margin:10px;"><div id="IC_D_728x90_1__ayManagerEnv__1_8de1698f" data-google-query-id="CNKY0Imgw4gDFRdV3QIdLfAkuA" style=""><div id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_2__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_2" name="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_2" title="3rd party ad content" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-load-complete="true" data-google-container-id="4" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
 
 
 				</div>
@@ -2837,7 +2722,7 @@ var native_template_3x1 = ' \
 				  <tr>
 					<td style="text-align:center"><a href="https://www.macrotrends.net/stocks/sector/10/computer-and-technology">Computer and Technology</a></td>
 					<td style="text-align:center"><a href="https://www.macrotrends.net/stocks/industry/41/">Computer - Microcomputers</a></td>
-					<td style="text-align:center">$3387.026B</td>
+					<td style="text-align:center">$3382.921B</td>
 					<td style="text-align:center">$383.285B</td>
 				  </tr>
 				  <tr>
@@ -2869,8 +2754,8 @@ var native_template_3x1 = ' \
 				<tr>
 					<td style="text-align:left"><a href="/stocks/charts/DELL/dell/total-assets">Dell (DELL)</a></td>
 					<td style="text-align:center">United States</td>
-					<td style="text-align:center">$79.548B</td>
-					<td style="text-align:center">17.75</td>
+					<td style="text-align:center">$81.073B</td>
+					<td style="text-align:center">18.09</td>
 				 </tr>
 
 						
@@ -2878,8 +2763,8 @@ var native_template_3x1 = ' \
 				<tr>
 					<td style="text-align:left"><a href="/stocks/charts/HPQ/hp/total-assets">HP (HPQ)</a></td>
 					<td style="text-align:center">United States</td>
-					<td style="text-align:center">$31.899B</td>
-					<td style="text-align:center">9.85</td>
+					<td style="text-align:center">$32.111B</td>
+					<td style="text-align:center">9.92</td>
 				 </tr>
 
 						
@@ -2887,8 +2772,8 @@ var native_template_3x1 = ' \
 				<tr>
 					<td style="text-align:left"><a href="/stocks/charts/LNVGY/lenovo-group/total-assets">Lenovo Group (LNVGY)</a></td>
 					<td style="text-align:center">Hong Kong, SAR China</td>
-					<td style="text-align:center">$14.489B</td>
-					<td style="text-align:center">13.74</td>
+					<td style="text-align:center">$14.662B</td>
+					<td style="text-align:center">13.91</td>
 				 </tr>
 
 						
@@ -2937,7 +2822,7 @@ var native_template_3x1 = ' \
 				
 				<div style="margin-top:0px; min-height:270px;">
 
-					<div id="IC_d_300x250_1"><div id="IC_D_300x250_1__ayManagerEnv__1_d8df1964" data-google-query-id="COqXwJKqwYgDFf5YuAQdo2w8Hw" style=""><div id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets.bottom_0__container__" style="border: 0pt none; margin: auto; text-align: center; width: 300px; height: 250px;"><iframe frameborder="0" src="https://0f50c04067c596386b26582c5bf5cdd5.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets.bottom_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="250" data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting" aria-label="Advertisement" tabindex="0" data-google-container-id="4" style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div></div>
+					<div id="IC_d_300x250_1"><div id="IC_D_300x250_1__ayManagerEnv__1_d8df1964" data-google-query-id="CNOY0Imgw4gDFRdV3QIdLfAkuA" style=""><div id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets.bottom_0__container__" style="border: 0pt none; margin: auto; text-align: center;"><iframe id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets.bottom_0" name="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets.bottom_0" title="3rd party ad content" width="300" height="250" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" aria-label="Advertisement" tabindex="0" allow="private-state-token-redemption;attribution-reporting" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" data-load-complete="true" data-google-container-id="5" style="border: 0px; vertical-align: bottom;"></iframe></div></div>
 
 					
 					</div>
@@ -2965,7 +2850,7 @@ var native_template_3x1 = ' \
 
 
 					<script type="text/javascript" id="dianomi_context_script" src="https://www.dianomi.com/js/contextfeed.js"></script>
-					<div class="dianomi_context" data-dianomi-context-id="743" data-dianomi-complete="1"><iframe class="dianomi-parent-iframe" title="Dianomi ad container (743-376)" id="743-376" height="0px" style="width: 100%; overflow: hidden; border: none;"></iframe></div>
+					<div class="dianomi_context" data-dianomi-context-id="743" data-dianomi-complete="1"><iframe class="dianomi-parent-iframe" title="Dianomi ad container (743-187)" id="743-187" height="0px" style="width: 100%; overflow: hidden; border: none;"></iframe></div>
 
 
 					<!--Smartad # 2981: Macrotrends - 300x670 Right Rail-->
@@ -3274,7 +3159,7 @@ $( "#chartExport" ).click(function() {
 		chart.export.capture({},function() {
 			this.toPNG({},function(data) {
 				// Download the image to the browser
-				this.download( data, "image/png", "AAPL-total-assets-2024-09-13-macrotrends.png" );
+				this.download( data, "image/png", "AAPL-total-assets-2024-09-14-macrotrends.png" );
 				
 				});
 
@@ -3308,19 +3193,9 @@ $( ".frequency_select" ).change(function() {
 </script>
 
 
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8c2cc13189a7c196',t:'MTcyNjI3ODkyNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="G-3KL0LYERBH" data-load-time="1726278924529" height="0" width="0" src="https://td.doubleclick.net/td/ga/rul?tid=G-3KL0LYERBH&amp;gacid=272496572.1726278925&amp;gtm=45je4990v891196886za200&amp;dma=0&amp;gcd=13l3l3l3l1l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;tag_exp=0&amp;z=195041565" style="display: none; visibility: hidden;"></iframe>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'8c330cf0dc6da783',t:'MTcyNjM0NDk0Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe><iframe allow="join-ad-interest-group" data-tagging-id="G-3KL0LYERBH" data-load-time="1726344942354" height="0" width="0" src="https://td.doubleclick.net/td/ga/rul?tid=G-3KL0LYERBH&amp;gacid=1758318665.1726344942&amp;gtm=45je4990v891196886za200&amp;dma=0&amp;gcd=13l3l3l3l1l1&amp;npa=0&amp;pscdl=noapi&amp;aip=1&amp;fledge=1&amp;frm=0&amp;tag_exp=0&amp;z=1644335636" style="display: none; visibility: hidden;"></iframe>
 
 
 
 	
-<script type="text/javascript" async="" src="//in.getclicky.com/in.php?site_id=100827248&amp;href=%2Fstocks%2Fcharts%2FAAPL%2Fapple%2Ftotal-assets&amp;title=Apple%20Total%20Assets%202010-2024%20%7C%20AAPL%20%7C%20MacroTrends&amp;res=1536x864&amp;lang=es-419&amp;tz=America%2FBuenos_Aires&amp;tc=&amp;ck=1&amp;x=8v4703"></script><iframe id="ICUid_Iframe" src="https://uat5-b.investingchannel.com/start.html" style="display: none;"></iframe><iframe id="IC_PM_Uid_Iframe" width="1" height="1" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?p=52041&amp;&amp;predirect=https%3A%2F%2Fuat5-b.investingchannel.com%2Fuser%2Fsync%2Fpubmatic%3Fpubmaticuid%3DPM_UID%26ord%3D3b8db5f1-94e4-4180-a8dc-4106a8f9edb3%26gdprapplicable%3Dfalse%26uspstatus%3DNOT_APPLICABLE&amp;userIdMacro=PM_UID" style="display: none;"></iframe><iframe name="__tcfapiLocator" style="display: none;"></iframe><div id="ic_d_OOP_1" data-google-query-id="CKDfiJKqwYgDFZVRuAQd66wx7g"><div id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_0__container__" style="border: 0pt none; margin: auto; text-align: center;"></div></div><iframe src="https://s.amazon-adsystem.com/iu3?cm3ppd=1&amp;d=dtb-pub&amp;csif=t&amp;gdpr=0&amp;dl=n-index_bf_rx_n-MediaNet_ox-db5_smrt_n-sharethrough_n-onetag_pm-db5_ym_rbd_n-nativo_an-db5_sovrn_n-Rise_3lift" style="display: none;"></iframe><iframe name="google_ads_top_frame" id="google_ads_top_frame" style="display: none; position: fixed; left: -999px; top: -999px; width: 0px; height: 0px;"></iframe><iframe src="https://gum.criteo.com/syncframe?origin=publishertag&amp;topUrl=www.macrotrends.net&amp;gdpr=0&amp;gdpr_consent=&amp;us_privacy=1---#{&quot;uid&quot;:{&quot;origin&quot;:0},&quot;lwid&quot;:{&quot;origin&quot;:0},&quot;bundle&quot;:{&quot;origin&quot;:0},&quot;optout&quot;:{&quot;value&quot;:false,&quot;origin&quot;:0},&quot;sid&quot;:{&quot;origin&quot;:0},&quot;tld&quot;:&quot;macrotrends.net&quot;,&quot;topUrl&quot;:&quot;www.macrotrends.net&quot;,&quot;version&quot;:139,&quot;cw&quot;:true,&quot;lsw&quot;:true,&quot;origin&quot;:&quot;publishertag&quot;,&quot;requestId&quot;:&quot;0.528381410988948&quot;}" width="0" height="0" frameborder="0" title="Criteo GUM iframe" style="border-width: 0px; margin: 0px; display: none;"></iframe></body><iframe name="goog_topics_frame" src="https://securepubads.g.doubleclick.net/static/topics/topics_frame.html" style="display: none;"></iframe><ins id="gpt_unit_/5206,22423423770/Macrotrends/WebInterstitial_0" data-google-query-id="CK-oipKqwYgDFW5IuAQd8Egm1g" aria-hidden="true" data-vignette-loaded="true" style="display: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; clear: none !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: fixed !important; vertical-align: baseline !important; visibility: visible !important; z-index: 2147483647 !important; background: transparent !important;"><div id="google_ads_iframe_/5206,22423423770/Macrotrends/WebInterstitial_0__container__" style="border: 0pt none !important; margin: auto !important; text-align: center !important; width: 100vw !important; height: 100vh !important; inset: auto !important; clear: none !important; display: inline !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; position: static !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;"><iframe frameborder="0" src="https://0f50c04067c596386b26582c5bf5cdd5.safeframe.googlesyndication.com/safeframe/1-0-40/html/container.html" id="google_ads_iframe_/5206,22423423770/Macrotrends/WebInterstitial_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="" height="" data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" allow="private-state-token-redemption;attribution-reporting;autoplay" aria-label="Advertisement" tabindex="0" data-google-container-id="2" data-load-complete="true" style="border: 0px !important; vertical-align: bottom !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; visibility: visible !important; z-index: auto !important;"></iframe></div></ins><iframe sandbox="allow-scripts allow-same-origin" id="68e30aca4256b3a" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://ssp-sync.criteo.com/user-sync/iframe?gdprapplies=&amp;gdpr=&amp;ccpa=1---&amp;gpp=&amp;gpp_sid=&amp;redir=https%3A%2F%2Fpbs-us-east.ay.delivery%2Fsetuid%3Fbidder%3Dcriteo%26gdpr%3D%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D%24%7BCRITEO_USER_ID%7D&amp;profile=230">
-    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="69be3588e30d6a9" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://ssum.casalemedia.com/usermatch?s=205820&amp;gdpr=&amp;gdpr_consent=&amp;us_privacy=1---&amp;cb=https%3A%2F%2Fpbs-us-east.ay.delivery%2Fsetuid%3Fbidder%3Dix%26gdpr%3D%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D">
-    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="708f84a63c62f15" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?gdpr=&amp;gdpr_consent=&amp;us_privacy=1---&amp;predirect=https%3A%2F%2Fpbs-us-east.ay.delivery%2Fsetuid%3Fbidder%3Dpubmatic%26gdpr%3D%26gdpr_consent%3D%26gpp%3D%26gpp_sid%3D%26f%3Db%26uid%3D">
-    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="7110432c5672086" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://sync.cootlogix.com/api/sync/iframe/?cid=&amp;gdpr=0&amp;gdpr_consent=&amp;us_privacy=1---">
-    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="72abf048b0c388e" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://sync.kueezrtb.com/api/sync/iframe/?cid=&amp;gdpr=0&amp;gdpr_consent=&amp;us_privacy=1---">
-    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="732393b53041184" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://contextual.media.net/checksync.php?vsSync=1&amp;cs=8&amp;cv=31&amp;https=1&amp;cid=8CUUWGC8M&amp;prvid=2034%2C2031%2C2030%2C590%2C233%2C157%2C2028%2C2027%2C236%2C117%2C359%2C97%2C55%2C99%2C56%2C3012%2C3010%2C122%2C201%2C3007%2C246%2C4%2C203%2C446%2C404%2C9%2C173%2C294%2C251%2C175%2C450%2C178%2C3017%2C214%2C3015%2C337%2C338%2C459%2C77%2C261%2C141%2C262%2C461%2C222%2C10000%2C80%2C108%2C229%2C109%2C307%2C82&amp;itype=PREBID&amp;purpose1=1&amp;gdprconsent=1&amp;gdpr=0&amp;coppa=0&amp;usp_status=0&amp;usp_consent=1&amp;uspstring=1---">
-    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="741a36e924aaa13" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://acdn.adnxs.com/dmp/async_usersync.html">
-    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="758f00b16d4be35" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://js-sec.indexww.com/um/ixmatch.html">
-    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="76463a99a61916a" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://eus.rubiconproject.com/usync.html?us_privacy=1---">
-    </iframe><iframe sandbox="allow-scripts allow-same-origin" id="77f2b6b47719f06" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" width="0" hspace="0" vspace="0" height="0" style="height:0px;width:0px;display:none;" scrolling="no" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?kdntuid=1&amp;p=52041&amp;us_privacy=1---">
-    </iframe></html>
+<script type="text/javascript" async="" src="//in.getclicky.com/in.php?site_id=100827248&amp;href=%2Fstocks%2Fcharts%2FAAPL%2Fapple%2Ftotal-assets&amp;title=Apple%20Total%20Assets%202010-2024%20%7C%20AAPL%20%7C%20MacroTrends&amp;res=1536x864&amp;lang=es-419&amp;tz=America%2FBuenos_Aires&amp;tc=&amp;ck=1&amp;x=c58yjz"></script><iframe id="ICUid_Iframe" src="https://uat5-b.investingchannel.com/start.html" style="display: none;"></iframe><iframe id="IC_PM_Uid_Iframe" width="1" height="1" src="https://ads.pubmatic.com/AdServer/js/user_sync.html?p=52041&amp;&amp;predirect=https%3A%2F%2Fuat5-b.investingchannel.com%2Fuser%2Fsync%2Fpubmatic%3Fpubmaticuid%3DPM_UID%26ord%3D1c38d12e-4422-4dd5-a5ae-fa4292042c6d%26gdprapplicable%3Dfalse%26uspstatus%3DNOT_APPLICABLE&amp;userIdMacro=PM_UID" style="display: none;"></iframe><iframe name="__tcfapiLocator" style="display: none;"></iframe><div id="ic_d_OOP_1" data-google-query-id="COHnoImgw4gDFRlN3QIdHRQO_Q"><div id="google_ads_iframe_/5206,22423423770/Macrotrends/stocks_assets_0__container__" style="border: 0pt none; margin: auto; text-align: center;"></div></div><iframe src="https://s.amazon-adsystem.com/iu3?cm3ppd=1&amp;d=dtb-pub&amp;csif=t&amp;gdpr=0&amp;dl=n-index_bf_rx_n-MediaNet_ox-db5_smrt_n-sharethrough_n-onetag_pm-db5_ym_rbd_n-nativo_an-db5_sovrn_n-Rise_3lift" style="display: none;"></iframe><iframe src="https://gum.criteo.com/syncframe?origin=publishertag&amp;topUrl=www.macrotrends.net&amp;gdpr=0&amp;gdpr_consent=&amp;us_privacy=1---#{&quot;uid&quot;:{&quot;origin&quot;:0},&quot;lwid&quot;:{&quot;origin&quot;:0},&quot;bundle&quot;:{&quot;origin&quot;:0},&quot;optout&quot;:{&quot;value&quot;:false,&quot;origin&quot;:0},&quot;sid&quot;:{&quot;origin&quot;:0},&quot;tld&quot;:&quot;macrotrends.net&quot;,&quot;topUrl&quot;:&quot;www.macrotrends.net&quot;,&quot;version&quot;:139,&quot;cw&quot;:true,&quot;lsw&quot;:true,&quot;origin&quot;:&quot;publishertag&quot;,&quot;requestId&quot;:&quot;0.878250850734652&quot;}" width="0" height="0" frameborder="0" title="Criteo GUM iframe" style="border-width: 0px; margin: 0px; display: none;"></iframe></body><iframe name="goog_topics_frame" src="https://securepubads.g.doubleclick.net/static/topics/topics_frame.html" style="display: none;"></iframe></html>

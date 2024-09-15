@@ -1,13 +1,10 @@
-import time
-
-def mainRun():
-    """
-    Main function called when button is pressed on excel file to refresh the data
-    """
-
-    time.sleep(1)
-    print("its working")
-    time.sleep(1)
+import scraper
+import cProfile
 
 
-mainRun()
+def mi_funcion():
+    return sum([i for i in range(100000)])
+
+
+# Perfilando el rendimiento
+cProfile.run('scraper('','')', 'scraper.py')
