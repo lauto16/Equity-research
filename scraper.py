@@ -220,7 +220,6 @@ def scraper(symbol: str, stock_name: str):
                              "num_shares": num_shares,
                              "sga": sga
                              }
-        print(finance_variables)
         return finance_variables
 
     finally:
