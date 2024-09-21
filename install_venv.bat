@@ -1,5 +1,7 @@
 @echo off
-python -m venv venv
+pip install virtualenv
+
+virtualenv venv
 
 call venv\Scripts\activate
 
