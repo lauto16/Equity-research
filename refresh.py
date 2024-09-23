@@ -21,7 +21,7 @@ def style_tab(stock_tab) -> None:
 
 
 def getCompanyName(symbol, companies):
-    return companies.get(symbol, "Símbolo no encontrado")
+    return companies.get(symbol, "Symbol not found")
 
 
 def refresh(tab: str, workbook: Workbook, file_name: str, companies) -> None:

@@ -198,6 +198,7 @@ def scraper(symbol: str, stock_name: str):
 
         # Driver sesion initialization
         driver = Chrome(options=options)
+
         URL = str(
             f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q")
         driver.get(URL)
@@ -205,14 +206,13 @@ def scraper(symbol: str, stock_name: str):
 
         html = driver.page_source
 
+        driver.quit()
+
         revenue = filter_revenue_TTM(html)
         operating_expenses = filter_operating_expenses(html)
         net_income = filter_net_income(html)
         num_shares = filter_num_shares(html)
         sga = filter_selling_gen_admin(html)
-
-        # driver.__del__()
-        # driver.quit()
 
         finance_variables = {"revenue": revenue,
                              "operating_expenses": operating_expenses,
@@ -225,6 +225,7 @@ def scraper(symbol: str, stock_name: str):
 
     finally:
         driver.quit()
+
 
 # if __name__ == '__main__':
     # scraper('', '')
