@@ -229,9 +229,8 @@ def scraper(symbol: str, stock_name: str):
                          "sga": sga,
                          "total_assets": total_assets
                          }
-    print(finance_variables)
     return finance_variables
 
 
-if __name__ == '__main__':
-    scraper('AAPL', 'apple')
+# if __name__ == '__main__':
+#     scraper('AAPL', 'apple')
