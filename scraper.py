@@ -1,8 +1,8 @@
-from undetected_chromedriver import Chrome
-from undetected_chromedriver import ChromeOptions
-from bs4 import BeautifulSoup
-from formating_tools import clear_number
 from selenium.common.exceptions import TimeoutException
+from undetected_chromedriver import ChromeOptions
+from undetected_chromedriver import Chrome
+from formating_tools import clear_number
+from bs4 import BeautifulSoup
 
 
 def filter_revenue_TTM(html) -> dict:
@@ -182,7 +182,7 @@ def filter_total_assets(html) -> dict:
     return total_assets
 
 
-def scraper(symbol: str, stock_name: str):
+def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls = []
 
     # Webdriver Settings
@@ -192,23 +192,25 @@ def scraper(symbol: str, stock_name: str):
 
     # # Driver sesion initialization
     driver = Chrome()
-    driver.set_page_load_timeout(2.5)
+    driver.set_page_load_timeout(scrap_delay)
 
     # Revenue TTM; Expenses TTM; Net Income TTM; Num Shares; SG&A
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/income-statement?freq=Q"
     try:
         driver.get(URL)
-    except TimeoutException:
+    except:
         # this is an controlled situation due to macrotrends infinite loading
         pass
     html = driver.page_source
     htmls.append(html)
 
     # total assets
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/total-assets"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/total-assets"
     try:
         driver.get(URL)
-    except TimeoutException:
+    except:
         pass
     html = driver.page_source
     htmls.append(html)
@@ -232,5 +234,5 @@ def scraper(symbol: str, stock_name: str):
     return finance_variables
 
 
-# if __name__ == '__main__':
-#     scraper('AAPL', 'apple')
+if __name__ == '__main__':
+    pass
