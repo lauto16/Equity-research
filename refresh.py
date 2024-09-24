@@ -1,9 +1,9 @@
 from openpyxl import Workbook, load_workbook
 from openpyxl.styles import Font
-from time import sleep
-from sys import argv
 from scraper import scraper
+from time import sleep
 from json import load
+from sys import argv
 import os
 
 
@@ -17,14 +17,16 @@ def style_tab(stock_tab) -> None:
 
     stock_tab['H5'].font = bold
     stock_tab['H7'].font = bold
-    stock_tab['H18'].font = basic
+
+    for cell_num in range(11, 36, 1):
+        stock_tab[str(f'H{cell_num}')].font = basic
 
 
 def getCompanyName(symbol, companies):
     return companies.get(symbol, "Símbolo no encontrado")
 
 
-def refresh(tab: str, workbook: Workbook, file_name: str, companies) -> None:
+def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay: float) -> None:
     """
     Calls the scrapper and writtes the obtained data into the Workbook 
 
@@ -32,6 +34,7 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies) -> None:
         tab (str): The name of the tab (Symbol)
         workbook (Workbook): The excel workbook instanciated as Workbook
         companies (JsonDict): Contains SYMBOL:COMPANY_NAME
+        scrap_delay (float): Controls the number of seconds that the scraper waits
     """
 
     """
@@ -45,28 +48,48 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies) -> None:
 
     """
 
+    # THIS WORKS, BUT REMEMBER THAT WE NEED TTM Revenue, TTM Income and TTM Expenses, none of the three data that
+    # we've been gathering about these is correct :////
+
     print(f'REFRESHING {tab}')
     financial_values = scraper(
-        symbol=tab, stock_name=getCompanyName(symbol=tab, companies=companies))
+        symbol=tab, stock_name=getCompanyName(symbol=tab, companies=companies), scrap_delay=scrap_delay)
+
     stock_tab = workbook[tab]
 
-    stock_tab['H5'] = financial_values['revenue']['date']
+    date = financial_values['revenue']['date']
+    revenue = float(financial_values['revenue']['revenue'])
+    operating_expenses = float(
+        financial_values['operating_expenses']['operating_expenses'])
+    net_income = float(financial_values['net_income']['net_income'])
+    net_income_margin = net_income / revenue
+    num_shares = float(financial_values['num_shares']['num_shares'])
+    eps = net_income / num_shares
+    sga = float(financial_values['sga']['sga'])
+
+    stock_tab['H5'] = date
     stock_tab['H7'] = tab
 
     # revenue
-    stock_tab['H18'] = financial_values['revenue']['revenue']
+    stock_tab['H18'] = revenue
 
     # operating expenses
-    stock_tab['H19'] = financial_values['operating_expenses']['operating_expenses']
+    stock_tab['H19'] = operating_expenses
 
     # net income
-    stock_tab['H20'] = financial_values['net_income']['net_income']
+    stock_tab['H20'] = net_income
+
+    # net income margin
+    stock_tab['H21'] = net_income_margin
+
+    # eps
+    stock_tab['H22'] = eps
 
     # num shares
-    stock_tab['H32'] = financial_values['num_shares']['num_shares']
+    stock_tab['H32'] = num_shares
 
     # sga
-    stock_tab['H35'] = financial_values['sga']['sga']
+    stock_tab['H35'] = sga
 
     # give styles
     style_tab(stock_tab)
@@ -77,7 +100,7 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies) -> None:
     sleep(2)
 
 
-def mainRun(file_name: str, directory) -> None:
+def mainRun(file_name: str, directory, scrap_delay: float) -> None:
     """
     Main function called when button is pressed on excel file to refresh the data
     """
@@ -106,7 +129,7 @@ def mainRun(file_name: str, directory) -> None:
                 continue
 
             refresh(tab=tab, workbook=wb,
-                    companies=companies, file_name=file_name)
+                    companies=companies, file_name=file_name, scrap_delay=scrap_delay)
 
     except Exception as e:
         print(e)
@@ -118,6 +141,20 @@ def mainRun(file_name: str, directory) -> None:
 
 
 if __name__ == '__main__':
+
     file_name = argv[1]
     directory = argv[2]
-    mainRun(file_name, directory)
+    scrap_delay = argv[3]
+
+    try:
+        scrap_delay = float(scrap_delay)
+    except:
+        print(f'{scrap_delay} is not a number')
+        sleep(2)
+
+    print('Refreshing with the following options:\n')
+    print(f'- file_name: {file_name}')
+    print(f'- directory: {directory}')
+    print(f'- scrap_delay: {scrap_delay}\n')
+
+    mainRun(file_name, directory, scrap_delay)

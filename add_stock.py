@@ -1,7 +1,10 @@
 from openpyxl import load_workbook
 from openpyxl.styles import Font
+from refresh import refresh
 from time import sleep
 from sys import argv
+import json
+import os
 
 
 def set_text(new_tab):
@@ -98,7 +101,12 @@ def add_styles(new_tab) -> None:
         new_tab[key2].font = basic
 
 
-def main(new_symbol: str, file_name: str) -> None:
+def main(new_symbol: str, file_name: str, scrap_delay: float) -> None:
+
+    json_path = os.path.join(os.path.dirname(file_name), 'symbols.json')
+    with open(json_path, 'r') as file:
+        companies = json.load(file)
+
     try:
         print("To execute this action you need to close Excel, once you close it, type '1' and enter: ")
         value = input("> ")
@@ -126,12 +134,31 @@ def main(new_symbol: str, file_name: str) -> None:
         sleep(2)
         return
 
-    print(f"Symbol {new_symbol} added correctly!")
-    sleep(1.8)
+    print(f"Symbol {new_symbol} added correctly!\n")
+    # once it finished adding the symbol, refresh it
+    refresh(new_symbol, wb, file_name, companies, scrap_delay)
 
 
 if __name__ == '__main__':
     new_symbol = argv[1]
     file_name = argv[2]
+    scrap_delay = argv[3]
 
-    main(new_symbol, file_name)
+    try:
+        scrap_delay = float(scrap_delay)
+    except:
+        print(f'{scrap_delay} is not a number')
+        sleep(2)
+        raise Exception
+
+    print('Adding symbol with the following options:\n')
+    print(f'- symbol: {new_symbol}')
+    print(f'- file_name: {file_name}')
+    print(f'- scrap_delay: {scrap_delay}\n')
+
+    try:
+        main(new_symbol, file_name, scrap_delay)
+    except:
+        print('Error')
+        sleep(2)
+        raise Exception
