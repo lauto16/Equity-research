@@ -1,8 +1,8 @@
-from selenium.common.exceptions import TimeoutException
-from undetected_chromedriver import ChromeOptions
 from undetected_chromedriver import Chrome
-from formating_tools import clear_number
+from undetected_chromedriver import ChromeOptions
 from bs4 import BeautifulSoup
+from formating_tools import clear_number
+from selenium.common.exceptions import TimeoutException
 
 
 def filter_revenue_TTM(html) -> dict:
@@ -165,6 +165,54 @@ def filter_total_assets(html) -> dict:
     # Total Assets
     soup = BeautifulSoup(html, 'html.parser')
     tables = soup.find_all("table", class_="historical_data_table table")
+    # stands for the first table which contains date and total assets
+    total_assets_quarterly = tables[1]
+
+    fst_row = total_assets_quarterly.find_all("td")
+    rows = []
+    for row in fst_row:
+        rows.append(row.text)
+
+    # making the dictionary
+    total_assets = rows[1]
+
+    total_assets = clear_number(total_assets)
+    date = rows[0].replace('-', '/')
+    total_assets = {'total_assets': total_assets, 'date': date}
+    return total_assets
+
+
+def filter_revenueTTMandNetIncome(html: str) -> list[dict, dict]:
+
+    # Revenue and netIncome TTM
+
+    soup = BeautifulSoup(html, 'html.parser')
+
+    tables = soup.find("table", class_="table")
+    # stands for the first table and body
+    body = tables.tbody
+
+    cells = body.find_all("td")
+    rows = []
+    for cell in cells:
+        rows.append(cell.text)
+    date = rows[0].replace('-', '/')
+
+    revenueTTM = rows[1]
+    net_incomeTTM = rows[2]
+
+    revenueTTM = clear_number(revenueTTM)
+    net_incomeTTM = clear_number(net_incomeTTM)
+
+    revenueTTM = {'RevenueTTM': revenueTTM, 'date': date}
+    net_incomeTTM = {'net_incomeTTM': net_incomeTTM, 'date': date}
+    return revenueTTM, net_incomeTTM
+
+
+def filter_total_assets(html) -> dict:
+    # Total Assets
+    soup = BeautifulSoup(html, 'html.parser')
+    tables = soup.find_all("table", class_="historical_data_table table")
     # stands for the fist table which contains date and total assets
     total_assets_quarterly = tables[1]
 
@@ -188,33 +236,39 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     # Webdriver Settings
     options = ChromeOptions()
     # Sesion without UI
-    # options.add_argument("--headless")
 
     # # Driver sesion initialization
     driver = Chrome()
     driver.set_page_load_timeout(scrap_delay)
 
     # Revenue TTM; Expenses TTM; Net Income TTM; Num Shares; SG&A
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/income-statement?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q"
     try:
         driver.get(URL)
-    except:
+    except Exception:
         # this is an controlled situation due to macrotrends infinite loading
         pass
     html = driver.page_source
     htmls.append(html)
 
     # total assets
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/total-assets"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/total-assets"
     try:
         driver.get(URL)
-    except:
+    except Exception:
         pass
     html = driver.page_source
     htmls.append(html)
 
+    # net_income and revenue (TTM)
+    URL = f"https://www.macrotrends.net/stocks/charts/aapl/apple/net-profit-margin"
+
+    try:
+        driver.get(URL)
+    except Exception:
+        pass
+    html = driver.page_source
+    htmls.append(html)
     driver.quit()
 
     revenue = filter_revenue_TTM(htmls[0])
@@ -223,16 +277,21 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     num_shares = filter_num_shares(htmls[0])
     sga = filter_selling_gen_admin(htmls[0])
     total_assets = filter_total_assets(htmls[1])
+    revenueTTM, net_incomeTTM = filter_revenueTTMandNetIncome(htmls[2])
 
     finance_variables = {"revenue": revenue,
                          "operating_expenses": operating_expenses,
                          "net_income": net_income,
                          "num_shares": num_shares,
                          "sga": sga,
-                         "total_assets": total_assets
+                         "total_assets": total_assets,
+                         "RevenueTTM": revenueTTM,
+                         "net_incomeTTM": net_incomeTTM
                          }
+
+    print(finance_variables)
     return finance_variables
 
 
 if __name__ == '__main__':
-    pass
+    scraper('AAPL', 'aple', 2.5)
