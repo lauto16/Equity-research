@@ -77,8 +77,8 @@ def filter_selling_gen_admin(html) -> dict:
     cells_dates = []
 
     soup = BeautifulSoup(html, 'html.parser')
-    sga = soup.find("div", id="row4jqxgrid").children
-    for cell in sga:
+    sgaTTM = soup.find("div", id="row4jqxgrid").children
+    for cell in sgaTTM:
         cell = cell.text
         if cell:
             cells_S_G_A.append(cell)
@@ -97,12 +97,15 @@ def filter_selling_gen_admin(html) -> dict:
     # when loading the page, sga appears to be a float at macrotrends, but once it's fully loaded
     # it refreshes into an int value changing from, for example: 6.320 to 6320, by removing the call
     # to the clear function we prevent this conversion
-    sga = special_clear(cells_S_G_A[1])
-    # making the dictionary
-    sga = {
-        "sga":  sga, "date": date}
+    sgaTTM = 0
+    for i in range(1, 5):
+        sgaTTM += clear_number(cells_S_G_A[i])
 
-    return sga
+    # making the dictionary
+    sgaTTM = {
+        "sgaTTM":  sgaTTM, "date": date}
+
+    return sgaTTM
 
 
 def filter_total_assets(html) -> dict:
@@ -154,24 +157,27 @@ def filter_revenueTTMandNetIncome(html: str) -> list[dict, dict]:
 
 
 def filter_total_assets(html) -> dict:
-    # Total Assets
-    soup = BeautifulSoup(html, 'html.parser')
-    tables = soup.find_all("table", class_="historical_data_table table")
-    # stands for the fist table which contains date and total assets
-    total_assets_quarterly = tables[1]
+    # Total Assets TTM
+    # Total Liabilities TTM
+    cells_liabilities = []
 
-    fst_row = total_assets_quarterly.find_all("td")
-    rows = []
-    for row in fst_row:
-        rows.append(row.text)
+    soup = BeautifulSoup(html, 'html.parser')
+    liabilitiesTTM = soup.find("div", id="row11jqxgrid").children
+
+    for cell in liabilitiesTTM:
+        cell = cell.get_text().replace('.', '')
+        if cell:
+            cells_liabilities.append(cell)
 
     # making the dictionary
-    total_assets = rows[1]
+    liabilitiesTTM = 0
+    for i in range(1, 5):
+        liabilitiesTTM += clear_number(cells_liabilities[i])
 
-    total_assets = clear_number(total_assets)
-    date = rows[0].replace('-', '/')
-    total_assets = {'total_assets': total_assets, 'date': date}
-    return total_assets
+    liabilitiesTTM = {
+        "liabilitiesTTM":  liabilitiesTTM}
+
+    return liabilitiesTTM
 
 
 def filter_margin(html) -> dict:
@@ -219,6 +225,29 @@ def filter_dividend(html) -> dict:
     return dividend_percentile
 
 
+def filter_total_liabilities(html) -> dict:
+    # Total Liabilities TTM
+    cells_liabilities = []
+
+    soup = BeautifulSoup(html, 'html.parser')
+    liabilitiesTTM = soup.find("div", id="row16jqxgrid").children
+
+    for cell in liabilitiesTTM:
+        cell = cell.get_text().replace('.', '')
+        if cell:
+            cells_liabilities.append(cell)
+
+    # making the dictionary
+    liabilitiesTTM = 0
+    for i in range(1, 5):
+        liabilitiesTTM += clear_number(cells_liabilities[i])
+
+    liabilitiesTTM = {
+        "liabilitiesTTM":  liabilitiesTTM}
+
+    return liabilitiesTTM
+
+
 def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls = []
 
@@ -240,8 +269,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     html = driver.page_source
     htmls.append(html)
 
-    # total assets
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/total-assets"
+    # total assets and liabilities
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -283,24 +312,27 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
 
     operating_expenses = filter_operating_expenses(htmls[0])
     num_shares = filter_num_shares(htmls[0])
-    sga = filter_selling_gen_admin(htmls[0])
+    sgaTTM = filter_selling_gen_admin(htmls[0])
     total_assets = filter_total_assets(htmls[1])
+    total_liabilities = filter_total_liabilities(htmls[1])
     revenueTTM, net_incomeTTM = filter_revenueTTMandNetIncome(htmls[2])
     grossprofitTTM, gross_margin = filter_margin(htmls[3])
     dividend_percentage = filter_dividend(htmls[4])
 
     finance_variables = {"operating_expenses": operating_expenses,
                          "num_shares": num_shares,
-                         "sga": sga,
+                         "sgaTTM": sgaTTM,
                          "total_assets": total_assets,
+                         "total_liabilities": total_liabilities,
                          "revenueTTM": revenueTTM,
                          "net_incomeTTM": net_incomeTTM,
                          "grossprofitTTM": grossprofitTTM,
                          "gross_margin": gross_margin,
                          "dividend_percentage": dividend_percentage
                          }
+    print(finance_variables)
     return finance_variables
 
 
-# if __name__ == '__main__':
-#     scraper('AAPL', 'aple', 2.5)
+if __name__ == '__main__':
+    scraper('AAPL', 'aple', 2.5)
