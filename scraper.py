@@ -2,7 +2,62 @@ from undetected_chromedriver import Chrome
 from undetected_chromedriver import ChromeOptions
 from bs4 import BeautifulSoup
 from formating_tools import clear_number
-from formating_tools import special_clear
+
+
+def filter_revenue(html) -> dict:
+    # Revenue TTM
+    soup = BeautifulSoup(html, 'html.parser')
+
+    cells_revenue = []
+    cells_dates = []
+
+    soup = BeautifulSoup(html, 'html.parser')
+    revenue_row = soup.find("div", id="row0jqxgrid")
+
+    for cell in revenue_row:
+        cell = cell.text
+        if cell:
+            cells_revenue.append(cell)
+
+    # DATES
+    dates_row = soup.find("div", id="columntablejqxgrid").children
+    for cell in dates_row:
+        cell = cell.text
+        if cell:
+            cells_dates.append(cell)
+    # deletes the first column, which doesn't have dates
+    cells_dates.pop(0)
+    # making the dictionary
+    revenueTTM = 0
+    for i in range(1, 5):
+        revenueTTM += clear_number(cells_revenue[i])
+
+    date = cells_dates[0].replace('-', '/')
+    revenueTTM = {"revenue": revenueTTM, "date": date}
+    return revenueTTM
+
+
+def filter_NetIncome(html) -> dict:
+    # net TTM
+    soup = BeautifulSoup(html, 'html.parser')
+
+    cells_net_income = []
+
+    soup = BeautifulSoup(html, 'html.parser')
+    net_income_row = soup.find("div", id="row15jqxgrid")
+
+    for cell in net_income_row:
+        cell = cell.text
+        if cell:
+            cells_net_income.append(cell)
+
+    # making the dictionary
+    net_incomeTTM = 0
+    for i in range(1, 5):
+        net_incomeTTM += clear_number(cells_net_income[i])
+
+    net_incomeTTM = {"net income TTM": net_incomeTTM}
+    return net_incomeTTM
 
 
 def filter_operating_expenses(html) -> dict:
@@ -278,16 +333,6 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     html = driver.page_source
     htmls.append(html)
 
-    # net_income and revenue (TTM)
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/net-profit-margin"
-
-    try:
-        driver.get(URL)
-    except Exception:
-        pass
-    html = driver.page_source
-    htmls.append(html)
-
     # Gross margin percentage and TTM Gross profit
     URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/gross-margin"
 
@@ -315,7 +360,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     sgaTTM = filter_selling_gen_admin(htmls[0])
     total_assets = filter_total_assets(htmls[1])
     total_liabilities = filter_total_liabilities(htmls[1])
-    revenueTTM, net_incomeTTM = filter_revenueTTMandNetIncome(htmls[2])
+    revenueTTM = filter_revenue(htmls[0])
+    net_incomeTTM = filter_NetIncome(htmls[0])
     grossprofitTTM, gross_margin = filter_margin(htmls[3])
     dividend_percentage = filter_dividend(htmls[4])
 
