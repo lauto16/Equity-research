@@ -3,7 +3,6 @@ from undetected_chromedriver import ChromeOptions
 from bs4 import BeautifulSoup
 from formating_tools import clear_number
 from formating_tools import special_clear
-from selenium.common.exceptions import TimeoutException
 
 
 def filter_operating_expenses(html) -> dict:
@@ -175,6 +174,51 @@ def filter_total_assets(html) -> dict:
     return total_assets
 
 
+def filter_margin(html) -> dict:
+    # Gross margin and TTM Gross profit
+    soup = BeautifulSoup(html, 'html.parser')
+
+    table = soup.find("table")
+    # stands for the fist table which contains date and total assets
+    # total_liabilities = tables[1]
+
+    fst_row = table.find_all("td")
+    rows = []
+    for row in fst_row:
+        rows.append(row.text)
+
+    date = rows[0].replace('-', '/')
+    grossprofitTTM = rows[2]
+    gross_margin = rows[3]
+
+    grossprofitTTM = clear_number(grossprofitTTM)
+    gross_margin = clear_number(gross_margin)
+
+    grossprofitTTM = {
+        'TTM gross profit': grossprofitTTM, 'date': date}
+    gross_margin = {
+        'gross margin': gross_margin, 'date': date}
+    return grossprofitTTM, gross_margin
+
+
+def filter_dividend(html) -> dict:
+    # dividend Yield
+    soup = BeautifulSoup(html, 'html.parser')
+
+    paragraph = soup.find("div", id="main_content").findChildren("div")
+
+    i = 0
+    for div in paragraph:
+        if i == 1:
+            dividend = div.find_all("strong")
+            dividend_percentile = dividend[1].text
+            break
+        i += 1
+    dividend_percentile = dividend_percentile.replace('%', '')
+    dividend_percentile = {'dividend_percentile': dividend_percentile}
+    return dividend_percentile
+
+
 def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls = []
 
@@ -214,6 +258,27 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
         pass
     html = driver.page_source
     htmls.append(html)
+
+    # Gross margin percentage and TTM Gross profit
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/gross-margin"
+
+    try:
+        driver.get(URL)
+    except Exception:
+        pass
+    html = driver.page_source
+    htmls.append(html)
+
+    # dividend percentage
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history"
+
+    try:
+        driver.get(URL)
+    except Exception:
+        pass
+    html = driver.page_source
+    htmls.append(html)
+
     driver.quit()
 
     operating_expenses = filter_operating_expenses(htmls[0])
@@ -221,6 +286,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     sga = filter_selling_gen_admin(htmls[0])
     total_assets = filter_total_assets(htmls[1])
     revenueTTM, net_incomeTTM = filter_revenueTTMandNetIncome(htmls[2])
+    grossprofitTTM, gross_margin = filter_margin(htmls[3])
+    dividend_percentage = filter_dividend(htmls[4])
 
     finance_variables = {"operating_expenses": operating_expenses,
                          "num_shares": num_shares,
@@ -228,12 +295,12 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
                          "total_assets": total_assets,
                          "revenueTTM": revenueTTM,
                          "net_incomeTTM": net_incomeTTM,
-
+                         "grossprofitTTM": grossprofitTTM,
+                         "gross_margin": gross_margin,
+                         "dividend_percentage": dividend_percentage
                          }
-
-    print(finance_variables)
     return finance_variables
 
 
-if __name__ == '__main__':
-    scraper('AAPL', 'aple', 2.5)
+# if __name__ == '__main__':
+#     scraper('AAPL', 'aple', 2.5)
