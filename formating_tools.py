@@ -1,20 +1,41 @@
-import re
-
-
 def clear_number(value: str) -> float:
-    """_summary_
-    Delete simbol '$' and 'B' for formatting
-    if the value does not have a simbol, it will return the same value
+    """
+    Uses: general parsing
 
     Args:
-        value (str): a financial value scraped
+        value (str): str number with $,B and .
 
     Returns:
-        float: a financial value filtered
+        float: parsed value without unnecesary symbols
     """
+
+    value = value.replace(',', '')
+    value = value.replace('$', '')
+    value = value.replace('B', '')
+
     try:
-        match = re.match(r'\$([0-9\.]+)', value)
-        numero = match.group(1)
-        return float(numero)
-    except AttributeError:
+        return float(value)
+    except Exception as e:
+        print(f'error trying to convert {value} into a float')
+        return value
+
+
+def special_clear(value: str) -> float:
+    """
+    Uses: sga parsing
+
+    Args:
+        value (str): str number with $,B and .
+
+    Returns:
+        float: parsed value
+    """
+    value = value.replace('$', '')
+    value = value.replace('B', '')
+    value = value.replace('.', '')
+
+    try:
+        return float(value)
+    except Exception as e:
+        print(f'error trying to convert {value} into a float')
         return value

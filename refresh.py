@@ -21,6 +21,9 @@ def style_tab(stock_tab) -> None:
     for cell_num in range(11, 36, 1):
         stock_tab[str(f'H{cell_num}')].font = basic
 
+    for cell_num in range(5, 36, 1):
+        stock_tab[str(f'G{cell_num}')].font = basic
+
 
 def getCompanyName(symbol, companies):
     return companies.get(symbol, "Símbolo no encontrado")
@@ -57,15 +60,18 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
 
     stock_tab = workbook[tab]
 
+    print(financial_values)
+    sleep(10)
+
     date = financial_values['revenue']['date']
-    revenue = float(financial_values['revenue']['revenue'])
-    operating_expenses = float(
-        financial_values['operating_expenses']['operating_expenses'])
-    net_income = float(financial_values['net_income']['net_income'])
+    revenue = financial_values['revenue']['revenue']
+    operating_expenses = financial_values['operating_expenses']['operating_expenses']
+    net_income = financial_values['net_income']['net_income']
     net_income_margin = net_income / revenue
-    num_shares = float(financial_values['num_shares']['num_shares'])
+    num_shares = financial_values['num_shares']['num_shares']
     eps = net_income / num_shares
-    sga = float(financial_values['sga']['sga'])
+    sga = financial_values['sga']['sga']
+    total_assets = financial_values['total_assets']['total_assets']
 
     stock_tab['H5'] = date
     stock_tab['H7'] = tab
@@ -84,6 +90,9 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
 
     # eps
     stock_tab['H22'] = eps
+
+    # total assets
+    stock_tab['H25'] = total_assets
 
     # num shares
     stock_tab['H32'] = num_shares
@@ -150,7 +159,7 @@ if __name__ == '__main__':
         scrap_delay = float(scrap_delay)
     except:
         print(f'{scrap_delay} is not a number')
-        sleep(2)
+        sleep(20)
 
     print('Refreshing with the following options:\n')
     print(f'- file_name: {file_name}')
