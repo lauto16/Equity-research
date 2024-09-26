@@ -2,42 +2,12 @@ from undetected_chromedriver import Chrome
 from undetected_chromedriver import ChromeOptions
 from bs4 import BeautifulSoup
 from formating_tools import clear_number
+from formating_tools import special_clear
 from selenium.common.exceptions import TimeoutException
 
 
-def filter_revenue_TTM(html) -> dict:
-    # Revenue TTM
-    soup = BeautifulSoup(html, 'html.parser')
-
-    cells_revenue = []
-    cells_dates = []
-
-    soup = BeautifulSoup(html, 'html.parser')
-    revenue_row = soup.find("div", id="row0jqxgrid")
-
-    for cell in revenue_row:
-        cell = cell.text
-        if cell:
-            cells_revenue.append(cell)
-
-    # DATES
-    dates_row = soup.find("div", id="columntablejqxgrid").children
-    for cell in dates_row:
-        cell = cell.text
-        if cell:
-            cells_dates.append(cell)
-    # deletes the first column, which doesn't have dates
-    cells_dates.pop(0)
-
-    # making the dictionary
-    revenue = clear_number(cells_revenue[1])
-    date = cells_dates[0].replace('-', '/')
-    revenue = {"revenue": revenue, "date": date}
-    return revenue
-
-
 def filter_operating_expenses(html) -> dict:
-    # Expenses TTM;
+    # Expenses;
 
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -61,41 +31,13 @@ def filter_operating_expenses(html) -> dict:
 
     # making the dictionary
     date = cells_dates[0].replace('-', '/')
-    operating_expenses = clear_number(cells_operating_expenses[1])
-    operating_expenses = {
-        "operating_expenses": operating_expenses, "date": date}
-    return operating_expenses
+    operating_expensesTTM = 0
+    for i in range(1, 5):
+        operating_expensesTTM += clear_number(cells_operating_expenses[i])
 
-
-def filter_net_income(html) -> dict:
-    # Net Income TTM
-
-    soup = BeautifulSoup(html, 'html.parser')
-
-    cells_netIncome = []
-    cells_dates = []
-
-    Net_income = soup.find("div", id="row15jqxgrid").children
-    for cell in Net_income:
-        cell = cell.text
-        if cell:
-            cells_netIncome.append(cell)
-
-    # DATES
-    dates_row = soup.find("div", id="columntablejqxgrid").children
-    for cell in dates_row:
-        cell = cell.text
-        if cell:
-            cells_dates.append(cell)
-    # deletes the first column, which doesn't have dates
-    cells_dates.pop(0)
-
-    # making the dictionary
-    date = cells_dates[0].replace('-', '/')
-    net_income = clear_number(cells_netIncome[1])
-    net_income = {
-        "net_income": net_income, "date": date}
-    return net_income
+    operating_expensesTTM = {
+        "operating_expensesTTM": operating_expensesTTM, "date": date}
+    return operating_expensesTTM
 
 
 def filter_num_shares(html) -> dict:
@@ -153,7 +95,10 @@ def filter_selling_gen_admin(html) -> dict:
     cells_dates.pop(0)
     # making the dictionary
     date = cells_dates[0].replace('-', '/')
-    sga = clear_number(cells_S_G_A[1])
+    # when loading the page, sga appears to be a float at macrotrends, but once it's fully loaded
+    # it refreshes into an int value changing from, for example: 6.320 to 6320, by removing the call
+    # to the clear function we prevent this conversion
+    sga = special_clear(cells_S_G_A[1])
     # making the dictionary
     sga = {
         "sga":  sga, "date": date}
@@ -204,7 +149,7 @@ def filter_revenueTTMandNetIncome(html: str) -> list[dict, dict]:
     revenueTTM = clear_number(revenueTTM)
     net_incomeTTM = clear_number(net_incomeTTM)
 
-    revenueTTM = {'RevenueTTM': revenueTTM, 'date': date}
+    revenueTTM = {'revenueTTM': revenueTTM, 'date': date}
     net_incomeTTM = {'net_incomeTTM': net_incomeTTM, 'date': date}
     return revenueTTM, net_incomeTTM
 
@@ -261,7 +206,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls.append(html)
 
     # net_income and revenue (TTM)
-    URL = f"https://www.macrotrends.net/stocks/charts/aapl/apple/net-profit-margin"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/net-profit-margin"
 
     try:
         driver.get(URL)
@@ -271,22 +216,19 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls.append(html)
     driver.quit()
 
-    revenue = filter_revenue_TTM(htmls[0])
     operating_expenses = filter_operating_expenses(htmls[0])
-    net_income = filter_net_income(htmls[0])
     num_shares = filter_num_shares(htmls[0])
     sga = filter_selling_gen_admin(htmls[0])
     total_assets = filter_total_assets(htmls[1])
     revenueTTM, net_incomeTTM = filter_revenueTTMandNetIncome(htmls[2])
 
-    finance_variables = {"revenue": revenue,
-                         "operating_expenses": operating_expenses,
-                         "net_income": net_income,
+    finance_variables = {"operating_expenses": operating_expenses,
                          "num_shares": num_shares,
                          "sga": sga,
                          "total_assets": total_assets,
-                         "RevenueTTM": revenueTTM,
-                         "net_incomeTTM": net_incomeTTM
+                         "revenueTTM": revenueTTM,
+                         "net_incomeTTM": net_incomeTTM,
+
                          }
 
     print(finance_variables)
