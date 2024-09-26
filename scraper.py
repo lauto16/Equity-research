@@ -30,7 +30,7 @@ def filter_revenue(html) -> dict:
     # making the dictionary
     revenueTTM = 0
     for i in range(1, 5):
-        revenueTTM += clear_number(cells_revenue[i])
+        revenueTTM += clear_number(cells_revenue[i].replace('.', ''))
 
     date = cells_dates[0].replace('-', '/')
     revenueTTM = {"revenue": revenueTTM, "date": date}
@@ -163,27 +163,6 @@ def filter_selling_gen_admin(html) -> dict:
     return sgaTTM
 
 
-def filter_total_assets(html) -> dict:
-    # Total Assets
-    soup = BeautifulSoup(html, 'html.parser')
-    tables = soup.find_all("table", class_="historical_data_table table")
-    # stands for the first table which contains date and total assets
-    total_assets_quarterly = tables[1]
-
-    fst_row = total_assets_quarterly.find_all("td")
-    rows = []
-    for row in fst_row:
-        rows.append(row.text)
-
-    # making the dictionary
-    total_assets = rows[1]
-
-    total_assets = clear_number(total_assets)
-    date = rows[0].replace('-', '/')
-    total_assets = {'total_assets': total_assets, 'date': date}
-    return total_assets
-
-
 def filter_revenueTTMandNetIncome(html: str) -> list[dict, dict]:
 
     # Revenue and netIncome TTM
@@ -213,26 +192,26 @@ def filter_revenueTTMandNetIncome(html: str) -> list[dict, dict]:
 
 def filter_total_assets(html) -> dict:
     # Total Assets TTM
-    # Total Liabilities TTM
-    cells_liabilities = []
+    # Total assets TTM
+    cells_assets = []
 
     soup = BeautifulSoup(html, 'html.parser')
-    liabilitiesTTM = soup.find("div", id="row11jqxgrid").children
+    assetsTTM = soup.find("div", id="row11jqxgrid").children
 
-    for cell in liabilitiesTTM:
+    for cell in assetsTTM:
         cell = cell.get_text().replace('.', '')
         if cell:
-            cells_liabilities.append(cell)
+            cells_assets.append(cell)
 
     # making the dictionary
-    liabilitiesTTM = 0
+    assetsTTM = 0
     for i in range(1, 5):
-        liabilitiesTTM += clear_number(cells_liabilities[i])
+        assetsTTM += clear_number(cells_assets[i])
 
-    liabilitiesTTM = {
-        "liabilitiesTTM":  liabilitiesTTM}
+    assetsTTM = {
+        "assetsTTM":  assetsTTM}
 
-    return liabilitiesTTM
+    return assetsTTM
 
 
 def filter_margin(html) -> dict:
@@ -253,7 +232,6 @@ def filter_margin(html) -> dict:
     gross_margin = rows[3]
 
     grossprofitTTM = clear_number(grossprofitTTM)
-    gross_margin = clear_number(gross_margin)
 
     grossprofitTTM = {
         'TTM gross profit': grossprofitTTM, 'date': date}
@@ -315,7 +293,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     driver.set_page_load_timeout(scrap_delay)
 
     # Revenue TTM; Expenses TTM; Net Income TTM; Num Shares; SG&A
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/income-statement?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -325,7 +304,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls.append(html)
 
     # total assets and liabilities
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/balance-sheet?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -334,7 +314,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls.append(html)
 
     # Gross margin percentage and TTM Gross profit
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/gross-margin"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/gross-margin"
 
     try:
         driver.get(URL)
@@ -344,7 +325,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls.append(html)
 
     # dividend percentage
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/dividend-yield-history"
 
     try:
         driver.get(URL)
@@ -381,4 +363,4 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
 
 
 if __name__ == '__main__':
-    scraper('AAPL', 'apple', 2.5)
+    scraper('rop', 'roper-technologies', 5)

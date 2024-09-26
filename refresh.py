@@ -60,7 +60,6 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
 
     stock_tab = workbook[tab]
 
-    print(financial_values)
     sleep(10)
 
     date = financial_values['revenueTTM']['date']
