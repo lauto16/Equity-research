@@ -358,12 +358,12 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     operating_expenses = filter_operating_expenses(htmls[0])
     num_shares = filter_num_shares(htmls[0])
     sgaTTM = filter_selling_gen_admin(htmls[0])
-    total_assets = filter_total_assets(htmls[1])
+    total_assets = filter_total_assets(htmls[1])  # recordar hacerlas TTM
     total_liabilities = filter_total_liabilities(htmls[1])
     revenueTTM = filter_revenue(htmls[0])
     net_incomeTTM = filter_NetIncome(htmls[0])
-    grossprofitTTM, gross_margin = filter_margin(htmls[3])
-    dividend_percentage = filter_dividend(htmls[4])
+    grossprofitTTM, gross_margin = filter_margin(htmls[2])
+    dividend_percentage = filter_dividend(htmls[3])
 
     finance_variables = {"operating_expenses": operating_expenses,
                          "num_shares": num_shares,
@@ -381,4 +381,4 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
 
 
 if __name__ == '__main__':
-    scraper('AAPL', 'aple', 2.5)
+    scraper('AAPL', 'apple', 2.5)
