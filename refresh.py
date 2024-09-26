@@ -63,13 +63,13 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     print(financial_values)
     sleep(10)
 
-    date = financial_values['revenue']['date']
-    revenue = financial_values['revenue']['revenue']
-    operating_expenses = financial_values['operating_expenses']['operating_expenses']
-    net_income = financial_values['net_income']['net_income']
-    net_income_margin = net_income / revenue
+    date = financial_values['revenueTTM']['date']
+    revenueTTM = financial_values['revenueTTM']['revenueTTM']
+    operating_expensesTTM = financial_values['operating_expensesTTM']['operating_expensesTTM']
+    net_incomeTTM = financial_values['net_incomeTTM']['net_incomeTTM']
+    net_income_margin = net_incomeTTM / revenueTTM
     num_shares = financial_values['num_shares']['num_shares']
-    eps = net_income / num_shares
+    eps = net_incomeTTM / num_shares
     sga = financial_values['sga']['sga']
     total_assets = financial_values['total_assets']['total_assets']
 
@@ -77,19 +77,22 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     stock_tab['H7'] = tab
 
     # revenue
-    stock_tab['H18'] = revenue
+    stock_tab['H18'] = revenueTTM
 
     # operating expenses
-    stock_tab['H19'] = operating_expenses
+    stock_tab['H19'] = operating_expensesTTM
 
     # net income
-    stock_tab['H20'] = net_income
+    stock_tab['H20'] = net_incomeTTM
 
     # net income margin
     stock_tab['H21'] = net_income_margin
 
     # eps
     stock_tab['H22'] = eps
+
+    # PE Ratio
+    # stock_tab['H23'] = pe_ratio
 
     # total assets
     stock_tab['H25'] = total_assets
@@ -166,4 +169,9 @@ if __name__ == '__main__':
     print(f'- directory: {directory}')
     print(f'- scrap_delay: {scrap_delay}\n')
 
-    mainRun(file_name, directory, scrap_delay)
+    try:
+
+        mainRun(file_name, directory, scrap_delay)
+    except Exception as e:
+        print(e)
+        sleep(20)

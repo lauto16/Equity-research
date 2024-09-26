@@ -40,6 +40,7 @@ def set_text(new_tab):
     new_tab['G20'] = 'Net Income'
     new_tab['G21'] = 'Net Income Margin'
     new_tab['G22'] = 'EPS'
+    new_tab['G23'] = 'PE Ratio'
 
     new_tab['G25'] = 'Assets'
     new_tab['G26'] = 'Liabilities'
@@ -52,6 +53,13 @@ def set_text(new_tab):
     new_tab['G33'] = 'Dividend'
     new_tab['G34'] = 'Free cash Flow'
     new_tab['G35'] = 'SGA'
+
+    new_tab['I18'] = 'Billion TTM'
+    new_tab['I19'] = 'Billion TTM'
+    new_tab['I20'] = 'Billion TTM'
+    new_tab['I25'] = 'Billion TTM'
+    new_tab['I32'] = 'Billion'
+    new_tab['I35'] = 'Billion TTM'
 
     # RIGHT SIDE (NOTES)
     new_tab['N5'] = 'CHECKLIST - Why should I NOT buy ?'
