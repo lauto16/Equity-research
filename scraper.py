@@ -292,7 +292,7 @@ def filter_total_liabilities(html: str) -> dict:
 
 
 def filter_roi(html: str) -> dict:
-    # Filter ROI TTM
+    # Filter ROI
     cells_roi = []
     cells_dates = []
     soup = BeautifulSoup(html, 'html.parser')
@@ -319,10 +319,6 @@ def filter_roi(html: str) -> dict:
     roi = {"roi":  roi, 'date': date}
 
     return roi
-
-
-def filter_book_value(html: str) -> dict:
-    pass
 
 
 def filter_long_term_debt(html: str) -> dict:
@@ -389,11 +385,55 @@ def filter_cash_on_hand(html: str) -> dict:
     return cash_on_handTTM
 
 
+def filter_book_value(html: str) -> dict:
+    # Filter Book Value
+    cells_book_value = []
+    soup = BeautifulSoup(html, 'html.parser')
+    book_value = soup.find("div", id="row17jqxgrid").children
+
+    for cell in book_value:
+        cell = cell.get_text()
+        if cell:
+            cells_book_value.append(cell)
+
+    # making the dictionary
+    boock_valueTTM = 0
+    for i in range(1, 5):
+        boock_valueTTM += float(cells_book_value[i])
+    book_value = float(cells_book_value[1])
+
+    boock_valueTTM = {"boock_valueTTM":  boock_valueTTM,
+                      "book_value": book_value}
+
+    return boock_valueTTM
+
+
+def filter_debt_to_equity(html: str) -> dict:
+    # Filter Debt to Equity
+    cells_debt_to_equity = []
+    soup = BeautifulSoup(html, 'html.parser')
+    debt_to_equity = soup.find("div", id="row2jqxgrid").children
+
+    for cell in debt_to_equity:
+        cell = cell.get_text()
+        if cell:
+            cells_debt_to_equity.append(cell)
+
+    # making the dictionary
+    debt_to_equity = float(cells_debt_to_equity[1])
+
+    debt_to_equity = {"debt_to_equity":  debt_to_equity}
+
+    return debt_to_equity
+
+
 def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls = []
     options = ChromeOptions()
     # # Driver sesion initialization
-    prefs = {"profile.managed_default_content_settings.images": 2}
+    prefs = {"profile.managed_default_content_settings.images": 2,
+             "profile.default_content_setting_values.media_stream": 2,
+             "profile.default_content_setting_values.plugins": 2}
     options.add_experimental_option("prefs", prefs)
     driver = Chrome(options=options)
     driver.set_page_load_timeout(scrap_delay)
@@ -418,7 +458,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     html = driver.page_source
     htmls.append(html)
 
-    # Key financial-ratios: roi; book value; IRR; CURRENT RATIO;
+    # Key financial-ratios: roi; book value; CURRENT RATIO;
     URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q"
 
     try:
@@ -457,9 +497,10 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     # RETORNA UN DICCIONARIO CON DOS: long_term_debtTTM Y long_term_debt quarterly
     long_term_debt = filter_long_term_debt(htmls[1])
 
-    # DEBE SER EN OTRA URL
+    # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q
     roi = filter_roi(htmls[2])
     book_value = filter_book_value(htmls[2])
+    debt_to_equity = filter_debt_to_equity(htmls[2])
 
     # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history
     dividend_percentage = filter_dividend(htmls[3])
@@ -475,8 +516,11 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
                          "dividend_percentage": dividend_percentage,
                          "cash_on_hand": cash_on_hand,
                          "long_term_debt": long_term_debt,
-                         "roi": roi
+                         "roi": roi,
+                         "book_value": book_value,
+                         "debt_to_equity": debt_to_equity
                          }
+
     print(finance_variables)
     return finance_variables
 
