@@ -12,6 +12,7 @@ def clear_number(value: str) -> float:
     value = value.replace(',', '.')
     value = value.replace('$', '')
     value = value.replace('B', '')
+    value = value.replace('%', '')
 
     try:
         if not ('B' in original):
