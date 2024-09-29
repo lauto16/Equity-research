@@ -2,6 +2,7 @@ from undetected_chromedriver import Chrome
 from undetected_chromedriver import ChromeOptions
 from bs4 import BeautifulSoup
 from formating_tools import clear_number
+from time import sleep
 
 
 def filter_revenue(html) -> dict:
@@ -33,7 +34,7 @@ def filter_revenue(html) -> dict:
         revenueTTM += clear_number(cells_revenue[i].replace('.', ''))
 
     date = cells_dates[0].replace('-', '/')
-    revenueTTM = {"revenue": revenueTTM, "date": date}
+    revenueTTM = {"revenueTTM": revenueTTM, "date": date}
     return revenueTTM
 
 
@@ -56,7 +57,7 @@ def filter_NetIncome(html) -> dict:
     for i in range(1, 5):
         net_incomeTTM += clear_number(cells_net_income[i])
 
-    net_incomeTTM = {"net income TTM": net_incomeTTM}
+    net_incomeTTM = {"net_incomeTTM": net_incomeTTM}
     return net_incomeTTM
 
 
@@ -340,17 +341,17 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     operating_expenses = filter_operating_expenses(htmls[0])
     num_shares = filter_num_shares(htmls[0])
     sgaTTM = filter_selling_gen_admin(htmls[0])
-    total_assets = filter_total_assets(htmls[1])  # recordar hacerlas TTM
+    assetsTTM = filter_total_assets(htmls[1])  # recordar hacerlas TTM
     total_liabilities = filter_total_liabilities(htmls[1])
     revenueTTM = filter_revenue(htmls[0])
     net_incomeTTM = filter_NetIncome(htmls[0])
     grossprofitTTM, gross_margin = filter_margin(htmls[2])
     dividend_percentage = filter_dividend(htmls[3])
 
-    finance_variables = {"operating_expenses": operating_expenses,
+    finance_variables = {"operating_expensesTTM": operating_expenses,
                          "num_shares": num_shares,
                          "sgaTTM": sgaTTM,
-                         "total_assets": total_assets,
+                         "assetsTTM": assetsTTM,
                          "total_liabilities": total_liabilities,
                          "revenueTTM": revenueTTM,
                          "net_incomeTTM": net_incomeTTM,
