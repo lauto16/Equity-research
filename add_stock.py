@@ -23,6 +23,12 @@ def set_text(new_tab):
     new_tab['C1'] = 'Cost per share'
     new_tab['D1'] = 'Total Cost'
 
+    # TITLES
+
+    new_tab['G17'] = 'Data'
+    new_tab['H17'] = 'Value'
+    new_tab['I17'] = 'Type'
+
     # MIDDLE (DATA)
     new_tab['G5'] = 'Last Reviewed'
     new_tab['G6'] = 'Company'
@@ -37,29 +43,49 @@ def set_text(new_tab):
 
     new_tab['G18'] = 'Revenue'
     new_tab['G19'] = 'Expenses'
-    new_tab['G20'] = 'Net Income'
-    new_tab['G21'] = 'Net Income Margin'
+    new_tab['G20'] = 'Net income'
+    new_tab['G21'] = 'Net income margin'
     new_tab['G22'] = 'EPS'
-    new_tab['G23'] = 'PE Ratio'
+    new_tab['G23'] = 'PE ratio'
 
     new_tab['G25'] = 'Assets'
     new_tab['G26'] = 'Liabilities'
-    new_tab['G27'] = 'Book Value (Share equity)'
+    new_tab['G27'] = 'Book value (Share equity)'
     new_tab['G28'] = 'Current ratio'
-    new_tab['G29'] = 'Debt to equity ratio'
+    new_tab['G29'] = 'Debt to equity'
 
     new_tab['G31'] = 'Market cap'
     new_tab['G32'] = 'Num shares'
     new_tab['G33'] = 'Dividend'
-    new_tab['G34'] = 'Free cash Flow'
+    new_tab['G34'] = 'Free cash flow'
     new_tab['G35'] = 'SGA'
+    new_tab['G36'] = 'SGA margin'
+    new_tab['G37'] = 'Gross profit'
+    new_tab['G38'] = 'Gross margin'
+    new_tab['G39'] = 'Cash on hand'
+    new_tab['G40'] = 'Cash on hand TTM'
+    new_tab['G41'] = 'Long term debt'
+    new_tab['G42'] = 'Long term debt TTM'
+    new_tab['G43'] = 'Roi'
+    new_tab['G44'] = 'Book value TTM'
 
     new_tab['I18'] = 'Billion TTM'
+    new_tab['I21'] = '%'
     new_tab['I19'] = 'Billion TTM'
     new_tab['I20'] = 'Billion TTM'
     new_tab['I25'] = 'Billion TTM'
+    new_tab['I26'] = 'Billion TTM'
+    new_tab['I28'] = 'TTM (Assets TTM / Liabilities TTM)'
     new_tab['I32'] = 'Billion'
+    new_tab['I33'] = '%'
     new_tab['I35'] = 'Billion TTM'
+    new_tab['I36'] = '%'
+    new_tab['I37'] = 'Billion TTM'
+    new_tab['I38'] = '%'
+    new_tab['I39'] = 'Billion'
+    new_tab['I40'] = 'Billion TTM'
+    new_tab['I41'] = 'Billion'
+    new_tab['I42'] = 'Billion TTM'
 
     # RIGHT SIDE (NOTES)
     new_tab['N5'] = 'CHECKLIST - Why should I NOT buy ?'
@@ -94,10 +120,30 @@ def add_styles(new_tab) -> None:
     bold = Font(
         name='Arial Nova Cond', size=11, bold=True, italic=False, color="000000")
 
+    new_tab.column_dimensions['G'].width = 22.43
+
+    new_tab['H5'].font = bold
+    new_tab['H7'].font = bold
+
+    for cell_num in range(11, 45, 1):
+        if cell_num == 17:
+            continue
+        new_tab[str(f'H{cell_num}')].font = basic
+        new_tab[str(f'I{cell_num}')].font = basic
+
+    for cell_num in range(5, 45, 1):
+        if cell_num == 17:
+            continue
+        new_tab[str(f'G{cell_num}')].font = basic
+
     new_tab['A1'].font = bold
     new_tab['B1'].font = bold
     new_tab['C1'].font = bold
     new_tab['D1'].font = bold
+
+    new_tab['G17'].font = bold
+    new_tab['H17'].font = bold
+    new_tab['I17'].font = bold
 
     new_tab['N5'].font = bold
     new_tab['N17'].font = bold
@@ -131,8 +177,8 @@ def main(new_symbol: str, file_name: str, scrap_delay: float) -> None:
             add_styles(new_tab)
 
         else:
-            print("This symbol already exists.")
-            sleep(2)
+            print(f'{new_symbol} already exists, refreshing it...')
+            refresh(new_symbol, wb, file_name, companies, scrap_delay)
             return
 
         wb.save(file_name)
@@ -148,25 +194,29 @@ def main(new_symbol: str, file_name: str, scrap_delay: float) -> None:
 
 
 if __name__ == '__main__':
-    new_symbol = argv[1]
-    file_name = argv[2]
-    scrap_delay = argv[3]
-
     try:
-        scrap_delay = float(scrap_delay)
-    except:
-        print(f'{scrap_delay} is not a number')
-        sleep(2)
-        raise Exception
+        new_symbol = argv[1]
+        file_name = argv[2]
+        scrap_delay = argv[3]
 
-    print('Adding symbol with the following options:\n')
-    print(f'- symbol: {new_symbol}')
-    print(f'- file_name: {file_name}')
-    print(f'- scrap_delay: {scrap_delay}\n')
+        try:
+            scrap_delay = float(scrap_delay)
+        except:
+            print(f'{scrap_delay} is not a number')
+            sleep(2)
+            raise Exception
 
-    try:
-        main(new_symbol, file_name, scrap_delay)
-    except:
-        print('Error')
-        sleep(2)
-        raise Exception
+        print('Adding/Refreshing symbol with the following options:\n')
+        print(f'- symbol: {new_symbol}')
+        print(f'- file_name: {file_name}')
+        print(f'- scrap_delay: {scrap_delay}\n')
+
+        try:
+            main(new_symbol, file_name, scrap_delay)
+        except:
+            print('Error')
+            sleep(2)
+            raise Exception
+    except Exception as e:
+        print(e)
+        sleep(10)

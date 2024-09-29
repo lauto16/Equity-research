@@ -7,24 +7,6 @@ from sys import argv
 import os
 
 
-def style_tab(stock_tab) -> None:
-
-    basic = Font(
-        name='Arial Nova Cond', size=11, italic=False, color="000000")
-
-    bold = Font(
-        name='Arial Nova Cond', size=11, bold=True, italic=False, color="000000")
-
-    stock_tab['H5'].font = bold
-    stock_tab['H7'].font = bold
-
-    for cell_num in range(11, 36, 1):
-        stock_tab[str(f'H{cell_num}')].font = basic
-
-    for cell_num in range(5, 36, 1):
-        stock_tab[str(f'G{cell_num}')].font = basic
-
-
 def getCompanyName(symbol, companies):
     return companies.get(symbol, "Símbolo no encontrado")
 
@@ -60,17 +42,31 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
 
     stock_tab = workbook[tab]
 
-    sleep(10)
-
     date = financial_values['revenueTTM']['date']
     revenueTTM = financial_values['revenueTTM']['revenueTTM']
     operating_expensesTTM = financial_values['operating_expensesTTM']['operating_expensesTTM']
     net_incomeTTM = financial_values['net_incomeTTM']['net_incomeTTM']
-    net_income_margin = net_incomeTTM / revenueTTM
     num_shares = financial_values['num_shares']['num_shares']
+    sgaTTM = financial_values['sgaTTM']['sgaTTM']
+    assetsTTM = financial_values['assetsTTM']['assetsTTM']
+    liabilitiesTTM = financial_values['liabilitiesTTM']['liabilitiesTTM']
+    grossprofitTTM = financial_values['grossprofitTTM']['grossprofitTTM']
+    dividend_percentage = float(
+        financial_values['dividend_percentage']['dividend_percentage'])
+    cash_on_hand = financial_values['cash_on_hand']['cash_on_hand']
+    cash_on_handTTM = financial_values['cash_on_hand']['cash_on_handTTM']
+    long_term_debt = financial_values['long_term_debt']['long_term_debt']
+    long_term_debtTTM = financial_values['long_term_debt']['long_term_debtTTM']
+    roi = financial_values['roi']['roi']
+    book_value = financial_values['book_value']['book_value']
+    book_valueTTM = financial_values['book_value']['book_valueTTM']
+    debt_to_equity = financial_values['debt_to_equity']['debt_to_equity']
+
+    net_income_margin = round(((net_incomeTTM * 100) / revenueTTM), 3)
     eps = net_incomeTTM / num_shares
-    sga = financial_values['sga']['sga']
-    total_assets = financial_values['total_assets']['total_assets']
+    sga_margin = round(((sgaTTM * 100) / grossprofitTTM), 3)
+    current_ratio = assetsTTM / liabilitiesTTM
+    grossmarginTTM = round(((grossprofitTTM * 100) / revenueTTM), 3)
 
     stock_tab['H5'] = date
     stock_tab['H7'] = tab
@@ -94,16 +90,55 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     # stock_tab['H23'] = pe_ratio
 
     # total assets
-    stock_tab['H25'] = total_assets
+    stock_tab['H25'] = assetsTTM
+
+    # liabilities
+    stock_tab['H26'] = liabilitiesTTM
+
+    # current ratio
+    stock_tab['H28'] = current_ratio
 
     # num shares
     stock_tab['H32'] = num_shares
 
-    # sga
-    stock_tab['H35'] = sga
+    # dividend
+    stock_tab['H33'] = dividend_percentage
 
-    # give styles
-    style_tab(stock_tab)
+    # sga
+    stock_tab['H35'] = sgaTTM
+
+    # sga margin
+    stock_tab['H36'] = sga_margin
+
+    # gross profit
+    stock_tab['H37'] = grossprofitTTM
+
+    # gross margin
+    stock_tab['H38'] = grossmarginTTM
+
+    # cash on hand
+    stock_tab['H39'] = cash_on_hand
+
+    # cash on hand TTM
+    stock_tab['H40'] = cash_on_handTTM
+
+    # long term debt
+    stock_tab['H41'] = long_term_debt
+
+    # long term debt TTM
+    stock_tab['H42'] = long_term_debtTTM
+
+    # roi
+    stock_tab['H43'] = roi
+
+    # book_value
+    stock_tab['H27'] = book_value
+
+    # book_value TTM
+    stock_tab['H44'] = book_valueTTM
+
+    # debt to equity
+    stock_tab['H29'] = debt_to_equity
 
     workbook.save(file_name)
 
@@ -169,7 +204,6 @@ if __name__ == '__main__':
     print(f'- scrap_delay: {scrap_delay}\n')
 
     try:
-
         mainRun(file_name, directory, scrap_delay)
     except Exception as e:
         print(e)

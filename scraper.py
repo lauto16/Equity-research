@@ -397,15 +397,15 @@ def filter_book_value(html: str) -> dict:
             cells_book_value.append(cell)
 
     # making the dictionary
-    boock_valueTTM = 0
+    book_valueTTM = 0
     for i in range(1, 5):
-        boock_valueTTM += float(cells_book_value[i])
+        book_valueTTM += float(cells_book_value[i])
     book_value = float(cells_book_value[1])
 
-    boock_valueTTM = {"boock_valueTTM":  boock_valueTTM,
-                      "book_value": book_value}
+    book_valueTTM = {"book_valueTTM":  book_valueTTM,
+                     "book_value": book_value}
 
-    return boock_valueTTM
+    return book_valueTTM
 
 
 def filter_debt_to_equity(html: str) -> dict:
@@ -440,7 +440,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     driver.implicitly_wait(0)
 
     # Revenue TTM; Expenses TTM; Net Income TTM; Num Shares; SG&A
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/income-statement?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -450,7 +451,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls.append(html)
 
     # total assets and liabilities
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/balance-sheet?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -459,7 +461,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls.append(html)
 
     # Key financial-ratios: roi; book value; CURRENT RATIO;
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/financial-ratios?freq=Q"
 
     try:
         driver.get(URL)
@@ -469,7 +472,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls.append(html)
 
     # dividend percentage [3]
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/dividend-yield-history"
 
     try:
         driver.get(URL)
@@ -526,4 +530,4 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
 
 
 if __name__ == '__main__':
-    scraper('rop', 'roper-technologies', 5)
+    pass
