@@ -190,7 +190,7 @@ def filter_revenueTTMandNetIncome(html: str) -> list[dict, dict]:
     return revenueTTM, net_incomeTTM
 
 
-def filter_total_assets(html) -> dict:
+def filter_total_assets(html: str) -> dict:
     # Total Assets TTM
     # Total assets TTM
     cells_assets = []
@@ -214,33 +214,43 @@ def filter_total_assets(html) -> dict:
     return assetsTTM
 
 
-def filter_margin(html) -> dict:
-    # Gross margin and TTM Gross profit
+def filter_gross_profit(html: str) -> dict:
+    # Gross profit
     soup = BeautifulSoup(html, 'html.parser')
 
-    table = soup.find("table")
-    # stands for the fist table which contains date and total assets
-    # total_liabilities = tables[1]
+    cells_gross_profit = []
+    cells_dates = []
 
-    fst_row = table.find_all("td")
-    rows = []
-    for row in fst_row:
-        rows.append(row.text)
+    soup = BeautifulSoup(html, 'html.parser')
+    gross_profit_row = soup.find("div", id="row2jqxgrid")
 
-    date = rows[0].replace('-', '/')
-    grossprofitTTM = rows[2]
-    gross_margin = rows[3]
+    for cell in gross_profit_row:
+        cell = cell.text
+        if cell:
+            cells_gross_profit.append(cell)
 
-    grossprofitTTM = clear_number(grossprofitTTM)
+    # DATES
+    dates_row = soup.find("div", id="columntablejqxgrid").children
+    for cell in dates_row:
+        cell = cell.text
+        if cell:
+            cells_dates.append(cell)
+    # deletes the first column, which doesn't have dates
+    cells_dates.pop(0)
 
-    grossprofitTTM = {
-        'grossprofitTTM': grossprofitTTM, 'date': date}
-    gross_margin = {
-        'gross_margin': gross_margin, 'date': date}
-    return grossprofitTTM, gross_margin
+    # making the dictionary
+    gross_profitTTM = 0
+    for i in range(1, 5):
+        gross_profitTTM += clear_number(cells_gross_profit[i].replace('.', ''))
+
+    date = cells_dates[0].replace('-', '/')
+
+    gross_profitTTM = {
+        'grossprofitTTM': gross_profitTTM, 'date': date}
+    return gross_profitTTM
 
 
-def filter_dividend(html) -> dict:
+def filter_dividend(html: str) -> dict:
     # dividend Yield
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -258,7 +268,7 @@ def filter_dividend(html) -> dict:
     return dividend_percentage
 
 
-def filter_total_liabilities(html) -> dict:
+def filter_total_liabilities(html: str) -> dict:
     # Total Liabilities TTM
     cells_liabilities = []
 
@@ -281,20 +291,116 @@ def filter_total_liabilities(html) -> dict:
     return liabilitiesTTM
 
 
+def filter_roi(html: str) -> dict:
+    # Filter ROI TTM
+    cells_roi = []
+    cells_dates = []
+    soup = BeautifulSoup(html, 'html.parser')
+    roi = soup.find("div", id="row16jqxgrid").children
+
+    for cell in roi:
+        cell = cell.get_text()
+        if cell:
+            cells_roi.append(cell)
+
+    # DATES
+    dates_row = soup.find("div", id="columntablejqxgrid").children
+    for cell in dates_row:
+        cell = cell.text
+        if cell:
+            cells_dates.append(cell)
+    # deletes the first column, which doesn't have dates
+    cells_dates.pop(0)
+    date = cells_dates[0].replace('-', '/')
+
+    # making the dictionary
+    roi = float(cells_roi[1])
+
+    roi = {"roi":  roi, 'date': date}
+
+    return roi
+
+
+def filter_book_value(html: str) -> dict:
+    pass
+
+
+def filter_long_term_debt(html: str) -> dict:
+    # LONG TERM DEBT
+    cells_debt = []
+    cells_dates = []
+    soup = BeautifulSoup(html, 'html.parser')
+    long_term_debtTTM = soup.find("div", id="row13jqxgrid").children
+
+    for cell in long_term_debtTTM:
+        cell = cell.get_text().replace('.', '')
+        if cell:
+            cells_debt.append(cell)
+
+    # DATES
+    dates_row = soup.find("div", id="columntablejqxgrid").children
+    for cell in dates_row:
+        cell = cell.text
+        if cell:
+            cells_dates.append(cell)
+    # deletes the first column, which doesn't have dates
+    cells_dates.pop(0)
+
+    # making the dictionary
+    long_term_debtTTM = 0
+    for i in range(1, 5):
+        long_term_debtTTM += clear_number(cells_debt[i])
+    long_term_debt = clear_number(cells_debt[1])
+
+    long_term_debtTTM = {"long_term_debtTTM":  long_term_debtTTM,
+                         "long_term_debt": long_term_debt}
+    return long_term_debtTTM
+
+
+def filter_cash_on_hand(html: str) -> dict:
+    cells_cash = []
+    cells_dates = []
+    soup = BeautifulSoup(html, 'html.parser')
+    cash_on_handTTM = soup.find("div", id="row0jqxgrid").children
+
+    for cell in cash_on_handTTM:
+        cell = cell.get_text().replace('.', '')
+        if cell:
+            cells_cash.append(cell)
+
+    # DATES
+    dates_row = soup.find("div", id="columntablejqxgrid").children
+    for cell in dates_row:
+        cell = cell.text
+        if cell:
+            cells_dates.append(cell)
+    # deletes the first column, which doesn't have dates
+    cells_dates.pop(0)
+
+    # making the dictionary
+    cash_on_handTTM = 0
+    for i in range(1, 5):
+        cash_on_handTTM += clear_number(cells_cash[i])
+    cash_on_hand = clear_number(cells_cash[1])
+
+    cash_on_handTTM = {"cash_on_handTTM":  cash_on_handTTM,
+                       "cash_on_hand": cash_on_hand}
+
+    return cash_on_handTTM
+
+
 def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls = []
-
-    # Webdriver Settings
     options = ChromeOptions()
-    # Sesion without UI
-
     # # Driver sesion initialization
-    driver = Chrome()
+    prefs = {"profile.managed_default_content_settings.images": 2}
+    options.add_experimental_option("prefs", prefs)
+    driver = Chrome(options=options)
     driver.set_page_load_timeout(scrap_delay)
+    driver.implicitly_wait(0)
 
     # Revenue TTM; Expenses TTM; Net Income TTM; Num Shares; SG&A
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/income-statement?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -304,8 +410,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls.append(html)
 
     # total assets and liabilities
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/balance-sheet?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -313,9 +418,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     html = driver.page_source
     htmls.append(html)
 
-    # Gross margin percentage and TTM Gross profit
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/gross-margin"
+    # Key financial-ratios: roi; book value; IRR; CURRENT RATIO;
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q"
 
     try:
         driver.get(URL)
@@ -324,9 +428,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     html = driver.page_source
     htmls.append(html)
 
-    # dividend percentage
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/dividend-yield-history"
+    # dividend percentage [3]
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history"
 
     try:
         driver.get(URL)
@@ -337,14 +440,28 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
 
     driver.quit()
 
+    # URL: https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q
     operating_expensesTTM = filter_operating_expenses(htmls[0])
     num_shares = filter_num_shares(htmls[0])
     sgaTTM = filter_selling_gen_admin(htmls[0])
-    assetsTTM = filter_total_assets(htmls[1])  # recordar hacerlas TTM
-    liabilitiesTTM = filter_total_liabilities(htmls[1])
     revenueTTM = filter_revenue(htmls[0])
     net_incomeTTM = filter_NetIncome(htmls[0])
-    grossprofitTTM, gross_margin = filter_margin(htmls[2])
+    grossprofitTTM = filter_gross_profit(htmls[0])
+
+    # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q
+    assetsTTM = filter_total_assets(htmls[1])
+    liabilitiesTTM = filter_total_liabilities(htmls[1])
+
+    # RETORNA UN DICCIONARIO CON DOS: CASH ON HAND Y CASH ON HAND TTM
+    cash_on_hand = filter_cash_on_hand(htmls[1])
+    # RETORNA UN DICCIONARIO CON DOS: long_term_debtTTM Y long_term_debt quarterly
+    long_term_debt = filter_long_term_debt(htmls[1])
+
+    # DEBE SER EN OTRA URL
+    roi = filter_roi(htmls[2])
+    book_value = filter_book_value(htmls[2])
+
+    # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history
     dividend_percentage = filter_dividend(htmls[3])
 
     finance_variables = {"operating_expensesTTM": operating_expensesTTM,
@@ -355,8 +472,10 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
                          "revenueTTM": revenueTTM,
                          "net_incomeTTM": net_incomeTTM,
                          "grossprofitTTM": grossprofitTTM,
-                         "gross_margin": gross_margin,
-                         "dividend_percentage": dividend_percentage
+                         "dividend_percentage": dividend_percentage,
+                         "cash_on_hand": cash_on_hand,
+                         "long_term_debt": long_term_debt,
+                         "roi": roi
                          }
     print(finance_variables)
     return finance_variables
