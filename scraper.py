@@ -2,7 +2,6 @@ from undetected_chromedriver import Chrome
 from undetected_chromedriver import ChromeOptions
 from bs4 import BeautifulSoup
 from formating_tools import clear_number
-from time import sleep
 
 
 def filter_revenue(html) -> dict:
@@ -251,12 +250,12 @@ def filter_dividend(html) -> dict:
     for div in paragraph:
         if i == 1:
             dividend = div.find_all("strong")
-            dividend_percentile = dividend[1].text
+            dividend_percentage = dividend[1].text
             break
         i += 1
-    dividend_percentile = dividend_percentile.replace('%', '')
-    dividend_percentile = {'dividend_percentile': dividend_percentile}
-    return dividend_percentile
+    dividend_percentage = dividend_percentage.replace('%', '')
+    dividend_percentage = {'dividend_percentage': dividend_percentage}
+    return dividend_percentage
 
 
 def filter_total_liabilities(html) -> dict:
