@@ -235,9 +235,9 @@ def filter_margin(html) -> dict:
     grossprofitTTM = clear_number(grossprofitTTM)
 
     grossprofitTTM = {
-        'TTM gross profit': grossprofitTTM, 'date': date}
+        'grossprofitTTM': grossprofitTTM, 'date': date}
     gross_margin = {
-        'gross margin': gross_margin, 'date': date}
+        'gross_margin': gross_margin, 'date': date}
     return grossprofitTTM, gross_margin
 
 
