@@ -338,21 +338,21 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
 
     driver.quit()
 
-    operating_expenses = filter_operating_expenses(htmls[0])
+    operating_expensesTTM = filter_operating_expenses(htmls[0])
     num_shares = filter_num_shares(htmls[0])
     sgaTTM = filter_selling_gen_admin(htmls[0])
     assetsTTM = filter_total_assets(htmls[1])  # recordar hacerlas TTM
-    total_liabilities = filter_total_liabilities(htmls[1])
+    liabilitiesTTM = filter_total_liabilities(htmls[1])
     revenueTTM = filter_revenue(htmls[0])
     net_incomeTTM = filter_NetIncome(htmls[0])
     grossprofitTTM, gross_margin = filter_margin(htmls[2])
     dividend_percentage = filter_dividend(htmls[3])
 
-    finance_variables = {"operating_expensesTTM": operating_expenses,
+    finance_variables = {"operating_expensesTTM": operating_expensesTTM,
                          "num_shares": num_shares,
                          "sgaTTM": sgaTTM,
                          "assetsTTM": assetsTTM,
-                         "total_liabilities": total_liabilities,
+                         "liabilitiesTTM": liabilitiesTTM,
                          "revenueTTM": revenueTTM,
                          "net_incomeTTM": net_incomeTTM,
                          "grossprofitTTM": grossprofitTTM,
