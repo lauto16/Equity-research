@@ -429,6 +429,24 @@ def filter_debt_to_equity(html: str) -> dict:
     return debt_to_equity
 
 
+def filter_stock_price(symbol: str) -> dict:
+    # Using polygon api
+    # getting yesterday date (because it doesn't have today data)
+    today = datetime.now()
+
+    yesterday = today - timedelta(days=1)
+    yesterday = str(yesterday.date())
+    symbol = symbol.upper()
+    KEY = 'ARhsHARGe4RbLut7GtYq7KDmbWChiuQC'
+    r = get(
+        f'https://api.polygon.io/v1/open-close/{symbol}/{yesterday}?adjusted=true&apiKey={KEY}')
+    stock = r.json()
+    stock_price = float(stock['close'])
+    date = stock['from'].replace('-', '/')
+    stock_price = {'stock_price': stock_price, 'date': date}
+    return stock_price
+
+
 def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls = []
     options = ChromeOptions()
@@ -506,18 +524,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history
     dividend_percentage = filter_dividend(htmls[3])
 
-    # Using polygon api
-    # getting yesterday date (because it doesn't)
-    today = datetime.now()
-
-    yesterday = today - timedelta(days=1)
-    yesterday = str(yesterday.date())
-    symbol = symbol.upper()
-    KEY = 'ARhsHARGe4RbLut7GtYq7KDmbWChiuQC'
-    r = get(
-        f'https://api.polygon.io/v1/open-close/{symbol}/{yesterday}?adjusted=true&apiKey={KEY}')
-    stock = r.json()
-    stock_price = float(stock['close'])
+    # Polygon API
+    stock_price = filter_stock_price(symbol)
 
     finance_variables = {"operating_expensesTTM": operating_expensesTTM,
                          "num_shares": num_shares,
@@ -535,10 +543,9 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
                          "debt_to_equity": debt_to_equity,
                          "Stock_Price": stock_price
                          }
-
     print(finance_variables)
     return finance_variables
 
 
-# if __name__ == '__main__':
-#     scraper('rop', 'roper-technologies', 3)
+if __name__ == '__main__':
+    scraper('rop', 'roper-technologies', 3)
