@@ -200,7 +200,7 @@ if __name__ == '__main__':
         scrap_delay = argv[3]
 
         try:
-            scrap_delay = float(scrap_delay)
+            scrap_delay = float(scrap_delay.replace(',', '.'))
         except:
             print(f'{scrap_delay} is not a number')
             sleep(2)
@@ -211,12 +211,8 @@ if __name__ == '__main__':
         print(f'- file_name: {file_name}')
         print(f'- scrap_delay: {scrap_delay}\n')
 
-        try:
-            main(new_symbol, file_name, scrap_delay)
-        except:
-            print('Error')
-            sleep(2)
-            raise Exception
+        main(new_symbol, file_name, scrap_delay)
+
     except Exception as e:
         print(e)
         sleep(10)

@@ -61,15 +61,26 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     book_value = financial_values['book_value']['book_value']
     book_valueTTM = financial_values['book_value']['book_valueTTM']
     debt_to_equity = financial_values['debt_to_equity']['debt_to_equity']
+    stock_price = financial_values['stock_price']['stock_price']
+    basic_num_shares = financial_values['basic_num_shares']['basic_num_shares']
 
     net_income_margin = round(((net_incomeTTM * 100) / revenueTTM), 3)
     eps = net_incomeTTM / num_shares
     sga_margin = round(((sgaTTM * 100) / grossprofitTTM), 3)
     current_ratio = assetsTTM / liabilitiesTTM
     grossmarginTTM = round(((grossprofitTTM * 100) / revenueTTM), 3)
+    market_cap = basic_num_shares * stock_price
+    fair_value = stock_price * book_value
+    pe_ratio = stock_price / eps
 
     stock_tab['H5'] = date
     stock_tab['H7'] = tab
+
+    # stock price
+    stock_tab['H11'] = stock_price
+
+    # fair value
+    stock_tab['H13'] = fair_value
 
     # revenue
     stock_tab['H18'] = revenueTTM
@@ -87,7 +98,7 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     stock_tab['H22'] = eps
 
     # PE Ratio
-    # stock_tab['H23'] = pe_ratio
+    stock_tab['H23'] = pe_ratio
 
     # total assets
     stock_tab['H25'] = assetsTTM
@@ -98,11 +109,17 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     # current ratio
     stock_tab['H28'] = current_ratio
 
+    # market cap
+    stock_tab['H31'] = market_cap
+
     # num shares
     stock_tab['H32'] = num_shares
 
     # dividend
     stock_tab['H33'] = dividend_percentage
+
+    # free cash flow
+    # stock_tab['H34'] = free_cash_flow
 
     # sga
     stock_tab['H35'] = sgaTTM
@@ -179,7 +196,7 @@ def mainRun(file_name: str, directory, scrap_delay: float) -> None:
 
     except Exception as e:
         print(e)
-        sleep(2)
+        sleep(10)
         return
 
     print('All stocks refreshed correctly')
@@ -193,7 +210,7 @@ if __name__ == '__main__':
     scrap_delay = argv[3]
 
     try:
-        scrap_delay = float(scrap_delay)
+        scrap_delay = float(scrap_delay.replace(',', '.'))
     except:
         print(f'{scrap_delay} is not a number')
         sleep(20)
