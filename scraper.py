@@ -480,105 +480,98 @@ def filter_stock_price(symbol: str) -> dict:
 
 def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls = []
-    options = ChromeOptions()
+
     # # Driver sesion initialization
-    prefs = {"profile.managed_default_content_settings.images": 2,
-             "profile.default_content_setting_values.media_stream": 2,
-             "profile.default_content_setting_values.plugins": 2}
-    options.add_experimental_option("prefs", prefs)
-    driver = Chrome(options=options)
+    driver = Chrome()
     driver.set_page_load_timeout(scrap_delay)
     driver.implicitly_wait(0)
-
-    # Revenue TTM; Expenses TTM; Net Income TTM; Num Shares; SG&A
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/income-statement?freq=Q"
     try:
-        driver.get(URL)
-    except Exception:
-        # this is an controlled situation due to macrotrends infinite loading
-        pass
-    html = driver.page_source
-    htmls.append(html)
 
-    # total assets and liabilities
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/balance-sheet?freq=Q"
-    try:
-        driver.get(URL)
-    except Exception:
-        pass
-    html = driver.page_source
-    htmls.append(html)
+        # Revenue TTM; Expenses TTM; Net Income TTM; Num Shares; SG&A
+        URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q"
+        try:
+            driver.get(URL)
+        except Exception:
+            # this is an controlled situation due to macrotrends infinite loading
+            pass
+        html = driver.page_source
+        htmls.append(html)
 
-    # Key financial-ratios: roi; book value; CURRENT RATIO;
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/financial-ratios?freq=Q"
+        # total assets and liabilities
+        URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q"
+        try:
+            driver.get(URL)
+        except Exception:
+            pass
+        html = driver.page_source
+        htmls.append(html)
 
-    try:
-        driver.get(URL)
-    except Exception:
-        pass
-    html = driver.page_source
-    htmls.append(html)
+        # Key financial-ratios: roi; book value; CURRENT RATIO;
+        URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q"
 
-    # dividend percentage [3]
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/dividend-yield-history"
+        try:
+            driver.get(URL)
+        except Exception:
+            pass
+        html = driver.page_source
+        htmls.append(html)
 
-    try:
-        driver.get(URL)
-    except Exception:
-        pass
-    html = driver.page_source
-    htmls.append(html)
+        # dividend percentage [3]
+        URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history"
 
-    driver.quit()
+        try:
+            driver.get(URL)
+        except Exception:
+            pass
+        html = driver.page_source
+        htmls.append(html)
+    finally:
+        driver.quit()
 
-    # URL: https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q
-    operating_expensesTTM = filter_operating_expenses(htmls[0])
-    num_shares = filter_num_shares(htmls[0])
-    basic_shares = filter_basic_shares(htmls[0])
-    sgaTTM = filter_selling_gen_admin(htmls[0])
-    revenueTTM = filter_revenue(htmls[0])
-    net_incomeTTM = filter_NetIncome(htmls[0])
-    grossprofitTTM = filter_gross_profit(htmls[0])
+        # URL: https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q
+        operating_expensesTTM = filter_operating_expenses(htmls[0])
+        num_shares = filter_num_shares(htmls[0])
+        basic_shares = filter_basic_shares(htmls[0])
+        sgaTTM = filter_selling_gen_admin(htmls[0])
+        revenueTTM = filter_revenue(htmls[0])
+        net_incomeTTM = filter_NetIncome(htmls[0])
+        grossprofitTTM = filter_gross_profit(htmls[0])
 
-    # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q
-    assetsTTM = filter_total_assets(htmls[1])
-    liabilitiesTTM = filter_total_liabilities(htmls[1])
-    # RETORNA UN DICCIONARIO CON DOS: CASH ON HAND Y CASH ON HAND TTM
-    cash_on_hand = filter_cash_on_hand(htmls[1])
-    # RETORNA UN DICCIONARIO CON DOS: long_term_debtTTM Y long_term_debt quarterly
-    long_term_debt = filter_long_term_debt(htmls[1])
+        # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q
+        assetsTTM = filter_total_assets(htmls[1])
+        liabilitiesTTM = filter_total_liabilities(htmls[1])
+        # RETORNA UN DICCIONARIO CON DOS: CASH ON HAND Y CASH ON HAND TTM
+        cash_on_hand = filter_cash_on_hand(htmls[1])
+        # RETORNA UN DICCIONARIO CON DOS: long_term_debtTTM Y long_term_debt quarterly
+        long_term_debt = filter_long_term_debt(htmls[1])
 
-    # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q
-    roi = filter_roi(htmls[2])
-    book_value = filter_book_value(htmls[2])
-    debt_to_equity = filter_debt_to_equity(htmls[2])
+        # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q
+        roi = filter_roi(htmls[2])
+        book_value = filter_book_value(htmls[2])
+        debt_to_equity = filter_debt_to_equity(htmls[2])
 
-    # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history
-    dividend_percentage = filter_dividend(htmls[3])
+        # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history
+        dividend_percentage = filter_dividend(htmls[3])
 
-    # Polygon API
-    stock_price = filter_stock_price(symbol)
+        # Polygon API
+        stock_price = filter_stock_price(symbol)
 
-    finance_variables = {"operating_expensesTTM": operating_expensesTTM,
-                         "num_shares": num_shares,
-                         'basic_num_shares': basic_shares,
-                         "sgaTTM": sgaTTM,
-                         "assetsTTM": assetsTTM,
-                         "liabilitiesTTM": liabilitiesTTM,
-                         "revenueTTM": revenueTTM,
-                         "net_incomeTTM": net_incomeTTM,
-                         "grossprofitTTM": grossprofitTTM,
-                         "dividend_percentage": dividend_percentage,
-                         "cash_on_hand": cash_on_hand,
-                         "long_term_debt": long_term_debt,
-                         "roi": roi,
-                         "book_value": book_value,
-                         "debt_to_equity": debt_to_equity,
-                         "stock_price": stock_price
-                         }
-    print(finance_variables)
+        finance_variables = {"operating_expensesTTM": operating_expensesTTM,
+                             "num_shares": num_shares,
+                             'basic_num_shares': basic_shares,
+                             "sgaTTM": sgaTTM,
+                             "assetsTTM": assetsTTM,
+                             "liabilitiesTTM": liabilitiesTTM,
+                             "revenueTTM": revenueTTM,
+                             "net_incomeTTM": net_incomeTTM,
+                             "grossprofitTTM": grossprofitTTM,
+                             "dividend_percentage": dividend_percentage,
+                             "cash_on_hand": cash_on_hand,
+                             "long_term_debt": long_term_debt,
+                             "roi": roi,
+                             "book_value": book_value,
+                             "debt_to_equity": debt_to_equity,
+                             "stock_Price": stock_price
+                             }
+        print(finance_variables)
     return finance_variables
