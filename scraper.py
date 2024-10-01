@@ -127,6 +127,37 @@ def filter_num_shares(html) -> dict:
     return num_shares
 
 
+def filter_basic_shares(html: str) -> dict:
+   # BASIC Num Shares
+
+    cells_num_shares = []
+    cells_dates = []
+
+    soup = BeautifulSoup(html, 'html.parser')
+    num_shares = soup.find("div", id="row18jqxgrid").children
+    for cell in num_shares:
+        cell = cell.text
+        if cell:
+            cells_num_shares.append(cell)
+
+    # DATES
+    dates_row = soup.find("div", id="columntablejqxgrid").children
+    for cell in dates_row:
+        cell = cell.text
+        if cell:
+            cells_dates.append(cell)
+
+    # deletes the first column, which doesn't have dates
+    cells_dates.pop(0)
+
+    # making the dictionary
+    date = cells_dates[0].replace('-', '/')
+    num_shares = clear_number(cells_num_shares[1])
+    num_shares = {
+        "basic_num_shares": num_shares, "date": date}
+    return num_shares
+
+
 def filter_selling_gen_admin(html) -> dict:
 
     # SG&A
@@ -503,6 +534,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     # URL: https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q
     operating_expensesTTM = filter_operating_expenses(htmls[0])
     num_shares = filter_num_shares(htmls[0])
+    basic_shares = filter_basic_shares(htmls[0])
     sgaTTM = filter_selling_gen_admin(htmls[0])
     revenueTTM = filter_revenue(htmls[0])
     net_incomeTTM = filter_NetIncome(htmls[0])
@@ -529,6 +561,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
 
     finance_variables = {"operating_expensesTTM": operating_expensesTTM,
                          "num_shares": num_shares,
+                         'basic_num_shares': basic_shares,
                          "sgaTTM": sgaTTM,
                          "assetsTTM": assetsTTM,
                          "liabilitiesTTM": liabilitiesTTM,
