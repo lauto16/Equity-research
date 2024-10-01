@@ -55,7 +55,7 @@ delay argument value.
    [Errno 13] Permission denied: 'C:\\path\\STOCK_DETAILS.xlsm'
      It occurs when you forget to close the Excel file before executing the action.
 
-4) **'NoneType' object has no attribute 'children'** or **timeout: Timed out receiving message from renderer: 1.500**
+4) **'NoneType' object has no attribute 'children'** or **timeout: Timed out receiving message from renderer: 1.500** or **list index out of range**
       Message: timeout: Timed out receiving message from renderer: 1.500
       (Session info: chrome=129.0.6668.71)
     Stacktrace:
