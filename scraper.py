@@ -574,7 +574,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
                          "roi": roi,
                          "book_value": book_value,
                          "debt_to_equity": debt_to_equity,
-                         "Stock_Price": stock_price
+                         "stock_Price": stock_price
                          }
     print(finance_variables)
     return finance_variables
