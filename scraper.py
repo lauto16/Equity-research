@@ -2,6 +2,8 @@ from undetected_chromedriver import Chrome
 from undetected_chromedriver import ChromeOptions
 from bs4 import BeautifulSoup
 from formating_tools import clear_number
+from requests import get
+from datetime import datetime, timedelta
 
 
 def filter_revenue(html) -> dict:
@@ -440,8 +442,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     driver.implicitly_wait(0)
 
     # Revenue TTM; Expenses TTM; Net Income TTM; Num Shares; SG&A
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/income-statement?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -451,8 +452,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls.append(html)
 
     # total assets and liabilities
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/balance-sheet?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -461,8 +461,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls.append(html)
 
     # Key financial-ratios: roi; book value; CURRENT RATIO;
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/financial-ratios?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q"
 
     try:
         driver.get(URL)
@@ -472,8 +471,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     htmls.append(html)
 
     # dividend percentage [3]
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/dividend-yield-history"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history"
 
     try:
         driver.get(URL)
@@ -495,7 +493,6 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
     # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q
     assetsTTM = filter_total_assets(htmls[1])
     liabilitiesTTM = filter_total_liabilities(htmls[1])
-
     # RETORNA UN DICCIONARIO CON DOS: CASH ON HAND Y CASH ON HAND TTM
     cash_on_hand = filter_cash_on_hand(htmls[1])
     # RETORNA UN DICCIONARIO CON DOS: long_term_debtTTM Y long_term_debt quarterly
@@ -508,6 +505,19 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
 
     # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history
     dividend_percentage = filter_dividend(htmls[3])
+
+    # Using polygon api
+    # getting yesterday date (because it doesn't)
+    today = datetime.now()
+
+    yesterday = today - timedelta(days=1)
+    yesterday = str(yesterday.date())
+    symbol = symbol.upper()
+    KEY = 'ARhsHARGe4RbLut7GtYq7KDmbWChiuQC'
+    r = get(
+        f'https://api.polygon.io/v1/open-close/{symbol}/{yesterday}?adjusted=true&apiKey={KEY}')
+    stock = r.json()
+    stock_price = float(stock['close'])
 
     finance_variables = {"operating_expensesTTM": operating_expensesTTM,
                          "num_shares": num_shares,
@@ -522,12 +532,13 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
                          "long_term_debt": long_term_debt,
                          "roi": roi,
                          "book_value": book_value,
-                         "debt_to_equity": debt_to_equity
+                         "debt_to_equity": debt_to_equity,
+                         "Stock_Price": stock_price
                          }
 
     print(finance_variables)
     return finance_variables
 
 
-if __name__ == '__main__':
-    pass
+# if __name__ == '__main__':
+#     scraper('rop', 'roper-technologies', 3)
