@@ -1,10 +1,11 @@
 **It is necessary to run the application the following:**
 
-- Have Chrome updated to the latest version
+- Have Chrome or Firefox updated to the latest version
 - Only work in the excel workbook (it should have xlsm extension)
 
 Steps:
 (This should be done only the first time)
+(Don't need to do this if the usage will be through CMD)
 
 - Open the two bash scripts and give permissions: run_refresh_stocks.bat and run_add_stock.bat which does not contain harmful
   software and are necessary for the communication between excel and the python scripts.
@@ -27,7 +28,11 @@ Steps:
 delay should be a floating point number, the worst your internet connection is, the higher it should be.
 normally this value should be between 2.5 and 5.0
 
-Because the scraping process is usually dependent on the internet connection and other factors such as computers speed,
+**Recomendations**
+- Proven through testing it was discovered that using Firefox can increase around 50% eficiency and speed.
+  There's no difference between choosing one browser over the other, just the time and computing performance, so quality of data remains the same.
+  
+- Because the scraping process is usually dependent on the internet connection and other factors such as computers speed,
 we recommend that if an error occurs in the scraping process, you try again. In case it doesn't fix, try increasing the
 delay argument value.
 
