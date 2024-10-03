@@ -578,7 +578,6 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
                          }
     actual_time = time()
     time_refresh = actual_time - starting_time
-    print(finance_variables)
     if time_refresh < minimum_time:
         sleeping = minimum_time - time_refresh
         sleep(sleeping)
@@ -586,4 +585,4 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
 
 
 if __name__ == "__main__":
-    scraper('ROP', 'roper-technologies', 3, 'f')
+    pass
