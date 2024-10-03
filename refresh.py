@@ -67,11 +67,11 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     stock_price = financial_values['stock_price']['stock_price']
     stock_price_date = financial_values['stock_price']['date']
     basic_num_shares = financial_values['basic_num_shares']['basic_num_shares']
+    current_ratio = financial_values['current_ratio']['current_ratio']
 
     net_income_margin = round(((net_incomeTTM * 100) / revenueTTM), 3)
     eps = net_income_quarterly / num_shares
     sga_margin = round(((sgaTTM * 100) / grossprofitTTM), 3)
-    current_ratio = assets_quarterly / liabilities_quarterly
     grossmarginTTM = round(((grossprofitTTM * 100) / revenueTTM), 3)
     market_cap = basic_num_shares * stock_price
     fair_value = stock_price / book_value
