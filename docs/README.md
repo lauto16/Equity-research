@@ -19,19 +19,18 @@ Steps:
 **For excecuting the commands via CMD:**
 
 - Add an stock (or refresh it, if already exists):
-    python add_stock.py symbol C:\Path\To\myExcelFile.xlsm delay
+    python add_stock.py symbol C:\Path\To\myExcelFile.xlsm delay browser
 
 - Refresh all stocks:
-    python refresh.py myExcelFileName.xlsm C:\Path\Where\ExcelFile\Is\ delay  
+    python refresh.py myExcelFileName.xlsm C:\Path\Where\ExcelFile\Is\ delay browser
 
 
-delay should be a floating point number, the worst your internet connection is, the higher it should be.
+**delay** should be a floating point number, the worst your internet connection is, the higher it should be.
 normally this value should be between 2.5 and 5.0
 
-**Recomendations**
-- Proven through testing it was discovered that using Firefox can increase around 50% eficiency and speed.
-  There's no difference between choosing one browser over the other, just the time and computing performance, so quality of data remains the same.
-  
+**browser** should be "C" or "c" for Chrome or "F" or "f" for firefox (Firefox is not avalaible yet)
+
+**Recomendations**  
 - Because the scraping process is usually dependent on the internet connection and other factors such as computers speed,
 we recommend that if an error occurs in the scraping process, you try again. In case it doesn't fix, try increasing the
 delay argument value.
