@@ -76,7 +76,7 @@ def set_text(new_tab):
     new_tab['I22'] = 'TTM'
     new_tab['I25'] = 'Billion TTM'
     new_tab['I26'] = 'Billion TTM'
-    new_tab['I28'] = 'TTM (Assets TTM / Liabilities TTM)'
+    new_tab['I28'] = '(Assets / Liabilities)'
     new_tab['I31'] = 'Billion'
     new_tab['I32'] = 'Billion'
     new_tab['I33'] = '%'

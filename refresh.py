@@ -46,10 +46,13 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     revenueTTM = financial_values['revenueTTM']['revenueTTM']
     operating_expensesTTM = financial_values['operating_expensesTTM']['operating_expensesTTM']
     net_incomeTTM = financial_values['net_incomeTTM']['net_incomeTTM']
+    net_income_quarterly = financial_values['net_incomeTTM']['net_income_quarterly']
     num_shares = financial_values['num_shares']['num_shares']
     sgaTTM = financial_values['sgaTTM']['sgaTTM']
     assetsTTM = financial_values['assetsTTM']['assetsTTM']
+    assets_quarterly = financial_values['assetsTTM']['assets_quarterly']
     liabilitiesTTM = financial_values['liabilitiesTTM']['liabilitiesTTM']
+    liabilities_quarterly = financial_values['liabilitiesTTM']['liabilities_quarterly']
     grossprofitTTM = financial_values['grossprofitTTM']['grossprofitTTM']
     dividend_percentage = float(
         financial_values['dividend_percentage']['dividend_percentage'])
@@ -66,9 +69,9 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     basic_num_shares = financial_values['basic_num_shares']['basic_num_shares']
 
     net_income_margin = round(((net_incomeTTM * 100) / revenueTTM), 3)
-    eps = net_incomeTTM / num_shares
+    eps = net_income_quarterly / num_shares
     sga_margin = round(((sgaTTM * 100) / grossprofitTTM), 3)
-    current_ratio = assetsTTM / liabilitiesTTM
+    current_ratio = assets_quarterly / liabilities_quarterly
     grossmarginTTM = round(((grossprofitTTM * 100) / revenueTTM), 3)
     market_cap = basic_num_shares * stock_price
     fair_value = stock_price * book_value
