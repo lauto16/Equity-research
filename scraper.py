@@ -1,9 +1,12 @@
 from undetected_chromedriver import Chrome
+from selenium.webdriver import Firefox
+from selenium.webdriver import FirefoxOptions
 from undetected_chromedriver import ChromeOptions
 from bs4 import BeautifulSoup
-from formating_tools import clear_number
+from utils.formating_tools import clear_number
 from requests import get
 from datetime import datetime, timedelta
+from time import sleep
 
 
 def filter_revenue(html) -> dict:
@@ -478,15 +481,20 @@ def filter_stock_price(symbol: str) -> dict:
     return stock_price
 
 
-def scraper(symbol: str, stock_name: str, scrap_delay: float):
+def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> dict:
     htmls = []
-    options = ChromeOptions()
-    # # Driver sesion initialization
-    prefs = {"profile.managed_default_content_settings.images": 2,
-             "profile.default_content_setting_values.media_stream": 2,
-             "profile.default_content_setting_values.plugins": 2}
-    options.add_experimental_option("prefs", prefs)
-    driver = Chrome(options=options)
+    if browser.upper() == 'C':
+        # # Driver sesion initialization
+        driver = Chrome()
+    elif browser.upper() == 'F':
+        options = FirefoxOptions()
+        options.add_argument('--headless')
+        driver = Firefox(options=options)
+
+    else:
+        print('Browser not valid, please chose between Chrome or Firefox')
+        sleep(5)
+        raise Exception('Invalid browser')
     driver.set_page_load_timeout(scrap_delay)
     driver.implicitly_wait(0)
 
@@ -524,11 +532,11 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float):
 
     try:
         driver.get(URL)
+        driver.quit()
     except Exception:
         pass
     html = driver.page_source
     htmls.append(html)
-
     driver.quit()
 
     # URL: https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q
