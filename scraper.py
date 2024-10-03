@@ -59,9 +59,15 @@ def filter_NetIncome(html) -> dict:
     # making the dictionary
     net_incomeTTM = 0
     for i in range(1, 5):
-        net_incomeTTM += clear_number(cells_net_income[i])
+        net_incomeTTM += float((cells_net_income[i]
+                                ).replace('$', '').replace('.', '').replace(',', '.'))
+    net_income_quarterly = float((cells_net_income[1]
+                                  ).replace('$', '').replace('.', '').replace(',', '.'))
+    net_income_quarterly = net_income_quarterly / 1000
+    net_incomeTTM = net_incomeTTM / 1000
 
-    net_incomeTTM = {"net_incomeTTM": net_incomeTTM}
+    net_incomeTTM = {"net_incomeTTM": net_incomeTTM,
+                     "net_income_quarterly": net_income_quarterly}
     return net_incomeTTM
 
 
@@ -240,9 +246,9 @@ def filter_total_assets(html: str) -> dict:
     assetsTTM = 0
     for i in range(1, 5):
         assetsTTM += clear_number(cells_assets[i])
-
+    assets_quarterly = clear_number(cells_assets[1])
     assetsTTM = {
-        "assetsTTM":  assetsTTM}
+        "assetsTTM":  assetsTTM, "assets_quarterly": assets_quarterly}
 
     return assetsTTM
 
@@ -317,9 +323,9 @@ def filter_total_liabilities(html: str) -> dict:
     liabilitiesTTM = 0
     for i in range(1, 5):
         liabilitiesTTM += clear_number(cells_liabilities[i])
-
+    liabilities_quarterly = cells_liabilities[1]
     liabilitiesTTM = {
-        "liabilitiesTTM":  liabilitiesTTM}
+        "liabilitiesTTM":  liabilitiesTTM, "liabilities_quarterly": liabilities_quarterly}
 
     return liabilitiesTTM
 
@@ -478,7 +484,7 @@ def filter_stock_price(symbol: str) -> dict:
         r = get(
             f'https://api.polygon.io/v1/open-close/{symbol}/{str(yesterday)}?adjusted=true&apiKey={KEY}')
         if r.status_code != 200:
-            stock_price = {'stock_price': -1}
+            stock_price = {'stock_price': -1, 'date': '0'}
             print('There was an error, yesterday Stock price cannot be got')
             return stock_price
 
@@ -601,9 +607,9 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
     if time_refresh < minimum_time:
         sleeping = minimum_time - time_refresh
         sleep(sleeping)
-
+    print(finance_variables)
     return finance_variables
 
 
-# if __name__ == "__main__":
-#     scraper('AAPL', 'apple', 3, 'f')
+if __name__ == "__main__":
+    scraper('ROP', 'roper-technologies', 3, 'f')

@@ -62,6 +62,7 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     book_valueTTM = financial_values['book_value']['book_valueTTM']
     debt_to_equity = financial_values['debt_to_equity']['debt_to_equity']
     stock_price = financial_values['stock_price']['stock_price']
+    stock_price_date = financial_values['stock_price']['date']
     basic_num_shares = financial_values['basic_num_shares']['basic_num_shares']
 
     net_income_margin = round(((net_incomeTTM * 100) / revenueTTM), 3)
@@ -78,6 +79,8 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
 
     # stock price
     stock_tab['H11'] = stock_price
+    # stock price date
+    stock_tab['I11'] = stock_price_date
 
     # fair value
     stock_tab['H13'] = fair_value
