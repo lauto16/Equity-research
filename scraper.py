@@ -83,6 +83,7 @@ def filter_operating_expenses(html) -> dict:
     for cell in operating_row:
         cell = cell.text
         if cell:
+            print(cell)
             cells_operating_expenses.append(cell)
 
     # DATES
@@ -98,8 +99,8 @@ def filter_operating_expenses(html) -> dict:
     date = cells_dates[0].replace('-', '/')
     operating_expensesTTM = 0
     for i in range(1, 5):
-        operating_expensesTTM += clear_number(cells_operating_expenses[i])
-
+        operating_expensesTTM += float(cells_operating_expenses[i].replace(
+            ',', '.').replace('$', '').replace('.', ''))/1000
     operating_expensesTTM = {
         "operating_expensesTTM": operating_expensesTTM, "date": date}
     return operating_expensesTTM
@@ -130,7 +131,7 @@ def filter_num_shares(html) -> dict:
 
     # making the dictionary
     date = cells_dates[0].replace('-', '/')
-    num_shares = clear_number(cells_num_shares[1])
+    num_shares = float(cells_num_shares[1].replace('.', ''))/1000
     num_shares = {
         "num_shares": num_shares, "date": date}
     return num_shares
@@ -154,6 +155,7 @@ def filter_basic_shares(html: str) -> dict:
     for cell in dates_row:
         cell = cell.text
         if cell:
+
             cells_dates.append(cell)
 
     # deletes the first column, which doesn't have dates
@@ -194,40 +196,13 @@ def filter_selling_gen_admin(html) -> dict:
     # making sga TTM
     sgaTTM = 0
     for i in range(1, 5):
-        sgaTTM += clear_number(cells_S_G_A[i])
-
+        sgaTTM += float(cells_S_G_A[i].replace('.',
+                        '').replace('$', '').replace(',', '.'))/1000
     # making the dictionary
     sgaTTM = {
         "sgaTTM":  sgaTTM, "date": date}
 
     return sgaTTM
-
-
-def filter_revenueTTMandNetIncome(html: str) -> list[dict, dict]:
-
-    # Revenue and netIncome TTM
-
-    soup = BeautifulSoup(html, 'html.parser')
-
-    tables = soup.find("table", class_="table")
-    # stands for the first table and body
-    body = tables.tbody
-
-    cells = body.find_all("td")
-    rows = []
-    for cell in cells:
-        rows.append(cell.text)
-    date = rows[0].replace('-', '/')
-
-    revenueTTM = rows[1]
-    net_incomeTTM = rows[2]
-
-    revenueTTM = clear_number(revenueTTM)
-    net_incomeTTM = clear_number(net_incomeTTM)
-
-    revenueTTM = {'revenueTTM': revenueTTM, 'date': date}
-    net_incomeTTM = {'net_incomeTTM': net_incomeTTM, 'date': date}
-    return revenueTTM, net_incomeTTM
 
 
 def filter_total_assets(html: str) -> dict:
@@ -612,4 +587,4 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
 
 
 if __name__ == "__main__":
-    scraper('ROP', 'roper-technologies', 3, 'f')
+    scraper('INTC', 'intel', 3, 'f')
