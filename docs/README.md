@@ -31,6 +31,10 @@ normally this value should be between 2.5 and 5.0
 **browser** should be "C" or "c" for Chrome or "F" or "f" for firefox
 
 **Recomendations**  
+
+- Proven through testing it was discovered that using Firefox can increase around 50% eficiency and speed.
+There's no difference between choosing one browser over the other, just the time and computing performance, so quality of data remains the same.
+
 - Because the scraping process is usually dependent on the internet connection and other factors such as computers speed,
 we recommend that if an error occurs in the scraping process, you try again. In case it doesn't fix, try increasing the
 delay argument value.
