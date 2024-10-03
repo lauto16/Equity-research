@@ -83,7 +83,6 @@ def filter_operating_expenses(html) -> dict:
     for cell in operating_row:
         cell = cell.text
         if cell:
-            print(cell)
             cells_operating_expenses.append(cell)
 
     # DATES
@@ -582,7 +581,6 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
     if time_refresh < minimum_time:
         sleeping = minimum_time - time_refresh
         sleep(sleeping)
-    print(finance_variables)
     return finance_variables
 
 
