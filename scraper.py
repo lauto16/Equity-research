@@ -162,7 +162,7 @@ def filter_basic_shares(html: str) -> dict:
 
     # making the dictionary
     date = cells_dates[0].replace('-', '/')
-    num_shares = clear_number(cells_num_shares[1])
+    num_shares = float(cells_num_shares[1].replace('.', ''))/1000
     num_shares = {
         "basic_num_shares": num_shares, "date": date}
     return num_shares
@@ -220,9 +220,8 @@ def filter_total_assets(html: str) -> dict:
     assetsTTM = 0
     for i in range(1, 5):
         assetsTTM += clear_number(cells_assets[i])
-    assets_quarterly = clear_number(cells_assets[1])
     assetsTTM = {
-        "assetsTTM":  assetsTTM, "assets_quarterly": assets_quarterly}
+        "assetsTTM":  assetsTTM}
 
     return assetsTTM
 
@@ -298,9 +297,8 @@ def filter_total_liabilities(html: str) -> dict:
     for i in range(1, 5):
         liabilitiesTTM += clear_number(cells_liabilities[i])
 
-    liabilities_quarterly = clear_number(cells_liabilities[1])
     liabilitiesTTM = {
-        "liabilitiesTTM":  liabilitiesTTM, "liabilities_quarterly": liabilities_quarterly}
+        "liabilitiesTTM":  liabilitiesTTM}
 
     return liabilitiesTTM
 
@@ -470,6 +468,25 @@ def filter_stock_price(symbol: str) -> dict:
     return stock_price
 
 
+def filter_current_ratio(html: str) -> dict:
+    # Filter current ratio
+    cells_current_ratio = []
+    soup = BeautifulSoup(html, 'html.parser')
+    current_ratio = soup.find("div", id="row0jqxgrid").children
+
+    for cell in current_ratio:
+        cell = cell.get_text()
+        if cell:
+            cells_current_ratio.append(cell)
+
+    # making the dictionary
+    current_ratio = float(cells_current_ratio[1])
+
+    current_ratio = {"current_ratio":  current_ratio}
+
+    return current_ratio
+
+
 def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> dict:
     htmls = []
     minimum_time = 16
@@ -552,6 +569,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
     roi = filter_roi(htmls[2])
     book_value = filter_book_value(htmls[2])
     debt_to_equity = filter_debt_to_equity(htmls[2])
+    current_ratio = filter_current_ratio(htmls[2])
 
     # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history
     dividend_percentage = filter_dividend(htmls[3])
@@ -574,7 +592,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
                          "roi": roi,
                          "book_value": book_value,
                          "debt_to_equity": debt_to_equity,
-                         "stock_price": stock_price
+                         "stock_price": stock_price,
+                         "current_ratio": current_ratio
                          }
     actual_time = time()
     time_refresh = actual_time - starting_time
@@ -585,4 +604,4 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
 
 
 if __name__ == "__main__":
-    pass
+    scraper('AAPL', 'apple', 3, 'f')
