@@ -94,10 +94,3 @@ delay argument value.
             (No symbol) [0x00000000]
 
 Both of the errors (NoneType and timeout) are triggered when the program haven't got enough time to copy the html. This is almost everytime caused by low delay, try increasing the delay value
-
-5) ** Max retries exceeded with url **
-  HTTPConnectionPool(host='localhost', port=56075): Max retries exceeded with url: /session/ddddddddddddddd/source (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000019DC829E2D0>:       Failed to establish a new connection: [WinError 10061] A connection cannot be established because the destination computer expressly denied the connection'))
-
-Current stock price is obtained by making an api request to "Polygon", if the number of request exceeds 5 per minute it wont allow you to access to the data.
-to fix this you can wait a few minutes and try again or if you have more than 5 stock symbols, refresh all of the stocks and when the error is shown, wait a bit and refresh the remaining stocks by using
-add stock / refresh stock button or command
