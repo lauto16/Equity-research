@@ -184,9 +184,7 @@ def filter_selling_gen_admin(html) -> dict:
     cells_dates.pop(0)
     # making the dictionary
     date = cells_dates[0].replace('-', '/')
-    # when loading the page, sga appears to be a float at macrotrends, but once it's fully loaded
-    # it refreshes into an int value changing from, for example: 6.320 to 6320, by removing the call
-    # to the clear function we prevent this conversion
+    # making sga TTM
     sgaTTM = 0
     for i in range(1, 5):
         sgaTTM += clear_number(cells_S_G_A[i])
@@ -226,7 +224,6 @@ def filter_revenueTTMandNetIncome(html: str) -> list[dict, dict]:
 
 
 def filter_total_assets(html: str) -> dict:
-    # Total Assets TTM
     # Total assets TTM
     cells_assets = []
 
@@ -465,45 +462,54 @@ def filter_debt_to_equity(html: str) -> dict:
 def filter_stock_price(symbol: str) -> dict:
     # Using polygon api
     # getting yesterday date (because it doesn't have today data)
-    try:
-        today = datetime.now()
-        yesterday = today - timedelta(days=1)
-        yesterday = str(yesterday.date())
-        symbol = symbol.upper()
-        KEY = 'ARhsHARGe4RbLut7GtYq7KDmbWChiuQC'
-        r = get(
-            f'https://api.polygon.io/v1/open-close/{symbol}/{yesterday}?adjusted=true&apiKey={KEY}')
-        stock = r.json()
-        stock_price = float(stock['close'])
-        date = stock['from'].replace('-', '/')
-        stock_price = {'stock_price': stock_price, 'date': date}
-    except Exception as e:
-        print(e)
-        stock_price = {'stock_price': 0}
+    today = datetime.now()
 
+    yesterday = today - timedelta(days=1)
+    yesterday = yesterday.date()
+    symbol = symbol.upper()
+    KEY = 'ARhsHARGe4RbLut7GtYq7KDmbWChiuQC'
+    r = get(
+        f'https://api.polygon.io/v1/open-close/{symbol}/{str(yesterday)}?adjusted=true&apiKey={KEY}')
+
+    if r.status_code != 200:
+        yesterday = yesterday - timedelta(days=1)
+        print("Unable to retrieve yesterday's stock price. Attempting to fetch the stock price from two days ago.")
+        r = get(
+            f'https://api.polygon.io/v1/open-close/{symbol}/{str(yesterday)}?adjusted=true&apiKey={KEY}')
+        if r.status_code != 200:
+            stock_price = {'stock_price': -1}
+            print('There was an error, yesterday Stock price cannot be got')
+            return stock_price
+
+    stock = r.json()
+    stock_price = float(stock['close'])
+    date = stock['from'].replace('-', '/')
+    stock_price = {'stock_price': stock_price, 'date': date}
     return stock_price
 
 
 def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> dict:
     htmls = []
     if browser.upper() == 'C':
-        # # Driver sesion initialization
+        # Driver sesion initialization
         driver = Chrome()
+        driver.set_page_load_timeout(scrap_delay)
+        driver.implicitly_wait(0)
     elif browser.upper() == 'F':
         options = FirefoxOptions()
+        # Sesion without UI
         options.add_argument('--headless')
         driver = Firefox(options=options)
+        driver.set_page_load_timeout(scrap_delay)
+        driver.implicitly_wait(0)
 
     else:
         print('Browser not valid, please chose between Chrome or Firefox')
         sleep(5)
         raise Exception('Invalid browser')
-    driver.set_page_load_timeout(scrap_delay)
-    driver.implicitly_wait(0)
 
     # Revenue TTM; Expenses TTM; Net Income TTM; Num Shares; SG&A
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/income-statement?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -513,8 +519,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
     htmls.append(html)
 
     # total assets and liabilities
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/balance-sheet?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -523,8 +528,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
     htmls.append(html)
 
     # Key financial-ratios: roi; book value; CURRENT RATIO;
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/financial-ratios?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q"
 
     try:
         driver.get(URL)
@@ -534,13 +538,12 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
     htmls.append(html)
 
     # dividend percentage [3]
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/dividend-yield-history"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history"
 
     try:
         driver.get(URL)
         driver.quit()
-    except Exception:
+    except:
         pass
     html = driver.page_source
     htmls.append(html)
@@ -558,9 +561,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
     # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q
     assetsTTM = filter_total_assets(htmls[1])
     liabilitiesTTM = filter_total_liabilities(htmls[1])
-    # RETORNA UN DICCIONARIO CON DOS: CASH ON HAND Y CASH ON HAND TTM
     cash_on_hand = filter_cash_on_hand(htmls[1])
-    # RETORNA UN DICCIONARIO CON DOS: long_term_debtTTM Y long_term_debt quarterly
     long_term_debt = filter_long_term_debt(htmls[1])
 
     # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q
@@ -593,3 +594,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
                          }
     print(finance_variables)
     return finance_variables
+
+
+if __name__ == "__main__":
+    scraper('AAPL', 'apple', 3, 'f')
