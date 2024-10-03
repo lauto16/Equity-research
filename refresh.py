@@ -71,7 +71,7 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     eps = net_incomeTTM / num_shares
     sga_margin = round(((sgaTTM * 100) / grossprofitTTM), 3)
     grossmarginTTM = round(((grossprofitTTM * 100) / revenueTTM), 3)
-    market_cap = basic_num_shares * stock_price
+    market_cap = basic_num_shares * stock_price * 1000
     fair_value = stock_price / book_value
     pe_ratio = stock_price / eps
 
