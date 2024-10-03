@@ -28,7 +28,7 @@ Steps:
 **delay** should be a floating point number, the worst your internet connection is, the higher it should be.
 normally this value should be between 2.5 and 5.0
 
-**browser** should be "C" or "c" for Chrome or "F" or "f" for firefox (Firefox is not avalaible yet)
+**browser** should be "C" or "c" for Chrome or "F" or "f" for firefox
 
 **Recomendations**  
 - Because the scraping process is usually dependent on the internet connection and other factors such as computers speed,
