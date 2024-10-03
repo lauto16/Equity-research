@@ -197,7 +197,7 @@ def main(new_symbol: str, file_name: str, scrap_delay: float, browser: str) -> N
 
 if __name__ == '__main__':
     try:
-        new_symbol = argv[1]
+        new_symbol = argv[1].upper()
         file_name = argv[2]
         scrap_delay = argv[3]
         browser = argv[4]
