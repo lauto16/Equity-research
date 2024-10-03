@@ -74,7 +74,7 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     current_ratio = assets_quarterly / liabilities_quarterly
     grossmarginTTM = round(((grossprofitTTM * 100) / revenueTTM), 3)
     market_cap = basic_num_shares * stock_price
-    fair_value = stock_price * book_value
+    fair_value = stock_price / book_value
     pe_ratio = stock_price / eps
 
     stock_tab['H5'] = date
