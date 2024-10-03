@@ -6,6 +6,7 @@ from utils.formating_tools import clear_number
 from requests import get
 from datetime import datetime, timedelta
 from time import sleep
+from time import time
 
 
 def filter_revenue(html) -> dict:
@@ -490,6 +491,8 @@ def filter_stock_price(symbol: str) -> dict:
 
 def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> dict:
     htmls = []
+    minimum_time = 16
+    starting_time = time()
     if browser.upper() == 'C':
         # Driver sesion initialization
         driver = Chrome()
@@ -542,12 +545,12 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
 
     try:
         driver.get(URL)
-        driver.quit()
     except:
         pass
-    html = driver.page_source
-    htmls.append(html)
-    driver.quit()
+    finally:
+        html = driver.page_source
+        htmls.append(html)
+        driver.quit()
 
     # URL: https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q
     operating_expensesTTM = filter_operating_expenses(htmls[0])
@@ -592,9 +595,15 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
                          "debt_to_equity": debt_to_equity,
                          "stock_price": stock_price
                          }
-    print(finance_variables)
+    actual_time = time()
+    time_refresh = actual_time - starting_time
+
+    if time_refresh < minimum_time:
+        sleeping = minimum_time - time_refresh
+        sleep(sleeping)
+
     return finance_variables
 
 
-if __name__ == "__main__":
-    scraper('AAPL', 'apple', 3, 'f')
+# if __name__ == "__main__":
+#     scraper('AAPL', 'apple', 3, 'f')
