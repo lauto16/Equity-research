@@ -297,7 +297,8 @@ def filter_total_liabilities(html: str) -> dict:
     liabilitiesTTM = 0
     for i in range(1, 5):
         liabilitiesTTM += clear_number(cells_liabilities[i])
-    liabilities_quarterly = cells_liabilities[1]
+
+    liabilities_quarterly = clear_number(cells_liabilities[1])
     liabilitiesTTM = {
         "liabilitiesTTM":  liabilitiesTTM, "liabilities_quarterly": liabilities_quarterly}
 
@@ -577,7 +578,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
                          }
     actual_time = time()
     time_refresh = actual_time - starting_time
-
+    print(finance_variables)
     if time_refresh < minimum_time:
         sleeping = minimum_time - time_refresh
         sleep(sleeping)
@@ -585,4 +586,4 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
 
 
 if __name__ == "__main__":
-    scraper('INTC', 'intel', 3, 'f')
+    scraper('ROP', 'roper-technologies', 3, 'f')
