@@ -2,7 +2,7 @@ from undetected_chromedriver import Chrome
 from selenium.webdriver import Firefox
 from selenium.webdriver import FirefoxOptions
 from bs4 import BeautifulSoup
-from utils.formating_tools import clear_number
+from utils.formating_tools import clear_number, clear_hyphen
 from requests import get
 from datetime import datetime, timedelta
 from time import sleep
@@ -59,10 +59,10 @@ def filter_NetIncome(html) -> dict:
     # making the dictionary
     net_incomeTTM = 0
     for i in range(1, 5):
-        net_incomeTTM += float((cells_net_income[i]
-                                ).replace('$', '').replace('.', '').replace(',', '.'))
-    net_income_quarterly = float((cells_net_income[1]
-                                  ).replace('$', '').replace('.', '').replace(',', '.'))
+        net_incomeTTM += clear_hyphen((cells_net_income[i]
+                                       ).replace('$', '').replace('.', '').replace(',', '.'))
+    net_income_quarterly = clear_hyphen((cells_net_income[1]
+                                         ).replace('$', '').replace('.', '').replace(',', '.'))
     net_income_quarterly = net_income_quarterly / 1000
     net_incomeTTM = net_incomeTTM / 1000
 
@@ -130,7 +130,7 @@ def filter_num_shares(html) -> dict:
 
     # making the dictionary
     date = cells_dates[0].replace('-', '/')
-    num_shares = float(cells_num_shares[1].replace('.', ''))/1000
+    num_shares = clear_hyphen(cells_num_shares[1].replace('.', ''))/1000
     num_shares = {
         "num_shares": num_shares, "date": date}
     return num_shares
@@ -162,7 +162,7 @@ def filter_basic_shares(html: str) -> dict:
 
     # making the dictionary
     date = cells_dates[0].replace('-', '/')
-    num_shares = float(cells_num_shares[1].replace('.', ''))/1000
+    num_shares = clear_hyphen(cells_num_shares[1].replace('.', ''))
     num_shares = {
         "basic_num_shares": num_shares, "date": date}
     return num_shares
@@ -195,8 +195,8 @@ def filter_selling_gen_admin(html) -> dict:
     # making sga TTM
     sgaTTM = 0
     for i in range(1, 5):
-        sgaTTM += float(cells_S_G_A[i].replace('.',
-                        '').replace('$', '').replace(',', '.'))/1000
+        sgaTTM += clear_hyphen(cells_S_G_A[i].replace('.',
+                                                      '').replace('$', '').replace(',', '.'))/1000
     # making the dictionary
     sgaTTM = {
         "sgaTTM":  sgaTTM, "date": date}
@@ -326,7 +326,7 @@ def filter_roi(html: str) -> dict:
     date = cells_dates[0].replace('-', '/')
 
     # making the dictionary
-    roi = float(cells_roi[1])
+    roi = clear_hyphen(cells_roi[1])
 
     roi = {"roi":  roi, 'date': date}
 
@@ -411,8 +411,8 @@ def filter_book_value(html: str) -> dict:
     # making the dictionary
     book_valueTTM = 0
     for i in range(1, 5):
-        book_valueTTM += float(cells_book_value[i])
-    book_value = float(cells_book_value[1])
+        book_valueTTM += clear_hyphen(cells_book_value[i])
+    book_value = clear_hyphen(cells_book_value[1])
 
     book_valueTTM = {"book_valueTTM":  book_valueTTM,
                      "book_value": book_value}
@@ -432,7 +432,7 @@ def filter_debt_to_equity(html: str) -> dict:
             cells_debt_to_equity.append(cell)
 
     # making the dictionary
-    debt_to_equity = float(cells_debt_to_equity[1])
+    debt_to_equity = clear_hyphen(cells_debt_to_equity[1])
 
     debt_to_equity = {"debt_to_equity":  debt_to_equity}
 
@@ -460,6 +460,7 @@ def filter_stock_price(symbol: str) -> dict:
             stock_price = {'stock_price': -1, 'date': '0'}
             print('There was an error, yesterday Stock price cannot be got')
             return stock_price
+        print("fetch successful!")
 
     stock = r.json()
     stock_price = float(stock['close'])
@@ -603,5 +604,5 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
     return finance_variables
 
 
-if __name__ == "__main__":
-    scraper('AAPL', 'apple', 3, 'f')
+# if __name__ == "__main__":
+#     scraper('HDSN', 'hudson-technologies', 3, 'f')

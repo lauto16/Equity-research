@@ -52,8 +52,7 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     assetsTTM = financial_values['assetsTTM']['assetsTTM']
     liabilitiesTTM = financial_values['liabilitiesTTM']['liabilitiesTTM']
     grossprofitTTM = financial_values['grossprofitTTM']['grossprofitTTM']
-    dividend_percentage = float(
-        financial_values['dividend_percentage']['dividend_percentage'])
+    dividend_percentage = financial_values['dividend_percentage']['dividend_percentage']
     cash_on_hand = financial_values['cash_on_hand']['cash_on_hand']
     cash_on_handTTM = financial_values['cash_on_hand']['cash_on_handTTM']
     long_term_debt = financial_values['long_term_debt']['long_term_debt']

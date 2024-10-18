@@ -57,7 +57,7 @@ def set_text(new_tab):
     new_tab['G31'] = 'Market cap'
     new_tab['G32'] = 'Num shares'
     new_tab['G33'] = 'Dividend'
-    new_tab['G34'] = 'Free cash flow'
+#   new_tab['G34'] = 'Free cash flow'
     new_tab['G35'] = 'SGA'
     new_tab['G36'] = 'SGA margin'
     new_tab['G37'] = 'Gross profit'
@@ -197,7 +197,7 @@ def main(new_symbol: str, file_name: str, scrap_delay: float, browser: str) -> N
 
 if __name__ == '__main__':
     try:
-        new_symbol = argv[1].upper()
+        new_symbol = argv[1]
         file_name = argv[2]
         scrap_delay = argv[3]
         browser = argv[4]
