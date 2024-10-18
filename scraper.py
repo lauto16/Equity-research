@@ -550,33 +550,39 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
         html = driver.page_source
         htmls.append(html)
         driver.quit()
+    try:
+        # URL: https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q
+        operating_expensesTTM = filter_operating_expenses(htmls[0])
+        num_shares = filter_num_shares(htmls[0])
+        basic_shares = filter_basic_shares(htmls[0])
+        sgaTTM = filter_selling_gen_admin(htmls[0])
+        revenueTTM = filter_revenue(htmls[0])
+        net_incomeTTM = filter_NetIncome(htmls[0])
+        grossprofitTTM = filter_gross_profit(htmls[0])
 
-    # URL: https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q
-    operating_expensesTTM = filter_operating_expenses(htmls[0])
-    num_shares = filter_num_shares(htmls[0])
-    basic_shares = filter_basic_shares(htmls[0])
-    sgaTTM = filter_selling_gen_admin(htmls[0])
-    revenueTTM = filter_revenue(htmls[0])
-    net_incomeTTM = filter_NetIncome(htmls[0])
-    grossprofitTTM = filter_gross_profit(htmls[0])
+        # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q
+        assetsTTM = filter_total_assets(htmls[1])
+        liabilitiesTTM = filter_total_liabilities(htmls[1])
+        cash_on_hand = filter_cash_on_hand(htmls[1])
+        long_term_debt = filter_long_term_debt(htmls[1])
 
-    # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q
-    assetsTTM = filter_total_assets(htmls[1])
-    liabilitiesTTM = filter_total_liabilities(htmls[1])
-    cash_on_hand = filter_cash_on_hand(htmls[1])
-    long_term_debt = filter_long_term_debt(htmls[1])
+        # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q
+        roi = filter_roi(htmls[2])
+        book_value = filter_book_value(htmls[2])
+        debt_to_equity = filter_debt_to_equity(htmls[2])
+        current_ratio = filter_current_ratio(htmls[2])
 
-    # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q
-    roi = filter_roi(htmls[2])
-    book_value = filter_book_value(htmls[2])
-    debt_to_equity = filter_debt_to_equity(htmls[2])
-    current_ratio = filter_current_ratio(htmls[2])
+        # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history
+        dividend_percentage = filter_dividend(htmls[3])
 
-    # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history
-    dividend_percentage = filter_dividend(htmls[3])
-
-    # Polygon API
-    stock_price = filter_stock_price(symbol)
+        # Polygon API
+        stock_price = filter_stock_price(symbol)
+    except Exception as e:
+        actual_time = time()
+        if starting_time - actual_time < 10:
+            print(f'there was a mistake in the load of {symbol}: ', e)
+            print("trying again...")
+            scraper(symbol, stock_name, scrap_delay, browser)
 
     finance_variables = {"operating_expensesTTM": operating_expensesTTM,
                          "num_shares": num_shares,
@@ -604,5 +610,5 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
     return finance_variables
 
 
-# if __name__ == "__main__":
-#     scraper('HDSN', 'hudson-technologies', 3, 'f')
+if __name__ == "__main__":
+    scraper('HDSN', 'hudson-technologies', 2, 'f')
