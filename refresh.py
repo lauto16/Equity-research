@@ -39,6 +39,9 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     print(f'REFRESHING {tab}')
     financial_values = scraper(
         symbol=tab, stock_name=getCompanyName(symbol=tab, companies=companies), scrap_delay=scrap_delay, browser=browser)
+    if financial_values is None:
+        print(f'could not scrap {tab}')
+        return
 
     stock_tab = workbook[tab]
 

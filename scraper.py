@@ -98,7 +98,7 @@ def filter_operating_expenses(html) -> dict:
     date = cells_dates[0].replace('-', '/')
     operating_expensesTTM = 0
     for i in range(1, 5):
-        operating_expensesTTM += float(cells_operating_expenses[i].replace(
+        operating_expensesTTM += clear_hyphen(cells_operating_expenses[i].replace(
             ',', '.').replace('$', '').replace('.', ''))/1000
     operating_expensesTTM = {
         "operating_expensesTTM": operating_expensesTTM, "date": date}
@@ -481,14 +481,14 @@ def filter_current_ratio(html: str) -> dict:
             cells_current_ratio.append(cell)
 
     # making the dictionary
-    current_ratio = float(cells_current_ratio[1])
+    current_ratio = clear_hyphen(cells_current_ratio[1])
 
     current_ratio = {"current_ratio":  current_ratio}
 
     return current_ratio
 
 
-def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> dict:
+def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, tries=3) -> dict:
     htmls = []
     minimum_time = 16
     starting_time = time()
@@ -578,11 +578,14 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
         # Polygon API
         stock_price = filter_stock_price(symbol)
     except Exception as e:
-        actual_time = time()
-        if starting_time - actual_time < 10:
+
+        if tries > 0:
             print(f'there was a mistake in the load of {symbol}: ', e)
             print("trying again...")
-            scraper(symbol, stock_name, scrap_delay, browser)
+            return scraper(symbol, stock_name, scrap_delay, browser, (tries-1))
+
+        else:
+            return
 
     finance_variables = {"operating_expensesTTM": operating_expensesTTM,
                          "num_shares": num_shares,
@@ -608,7 +611,3 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str) -> d
         sleeping = minimum_time - time_refresh
         sleep(sleeping)
     return finance_variables
-
-
-if __name__ == "__main__":
-    scraper('HDSN', 'hudson-technologies', 2, 'f')
