@@ -1,4 +1,5 @@
 from openpyxl import Workbook, load_workbook
+from utils.formating_tools import zero_division
 from openpyxl.styles import Font
 from scraper import scraper
 from time import sleep
@@ -13,7 +14,7 @@ def getCompanyName(symbol, companies):
 
 def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay: float, browser: str) -> None:
     """
-    Calls the scrapper and writtes the obtained data into the Workbook 
+    Calls the scrapper and writtes the obtained data into the Workbook
 
     Args:
         tab (str): The name of the tab (Symbol)
@@ -23,7 +24,7 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     """
 
     """
-    
+
         finance_variables = {"revenue": revenue,
                          "operatin_expenses": operating_expenses,
                          "net_income": net_income,
@@ -49,7 +50,6 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     revenueTTM = financial_values['revenueTTM']['revenueTTM']
     operating_expensesTTM = financial_values['operating_expensesTTM']['operating_expensesTTM']
     net_incomeTTM = financial_values['net_incomeTTM']['net_incomeTTM']
-    # net_income_quarterly = financial_values['net_incomeTTM']['net_income_quarterly']
     num_shares = financial_values['num_shares']['num_shares']
     sgaTTM = financial_values['sgaTTM']['sgaTTM']
     assetsTTM = financial_values['assetsTTM']['assetsTTM']
@@ -69,13 +69,13 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     basic_num_shares = financial_values['basic_num_shares']['basic_num_shares']
     current_ratio = financial_values['current_ratio']['current_ratio']
 
-    net_income_margin = round(((net_incomeTTM * 100) / revenueTTM), 3)
-    eps = net_incomeTTM / num_shares
-    sga_margin = round(((sgaTTM * 100) / grossprofitTTM), 3)
-    grossmarginTTM = round(((grossprofitTTM * 100) / revenueTTM), 3)
+    net_income_margin = zero_division((net_incomeTTM*100), revenueTTM)
+    eps = zero_division(net_incomeTTM, num_shares)
+    sga_margin = zero_division((sgaTTM * 100), grossprofitTTM)
+    grossmarginTTM = zero_division((grossprofitTTM * 100), revenueTTM)
     market_cap = basic_num_shares * stock_price
-    fair_value = stock_price / book_value
-    pe_ratio = stock_price / eps
+    fair_value = zero_division(stock_price, book_value)
+    pe_ratio = zero_division(stock_price, eps)
 
     stock_tab['H5'] = date
     stock_tab['H7'] = tab
