@@ -1,3 +1,10 @@
+def zero_division(dividend, divisor):
+    try:
+        return dividend / divisor
+
+    except ZeroDivisionError:
+        return 0
+
 
 def clear_number(value: str) -> float:
     """
