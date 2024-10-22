@@ -99,7 +99,7 @@ def filter_operating_expenses(html) -> dict:
     operating_expensesTTM = 0
     for i in range(1, 5):
         operating_expensesTTM += clear_hyphen(cells_operating_expenses[i].replace(
-            ',', '.').replace('$', '').replace('.', ''))/1000
+            ',', '.').replace('$', ''))/1000
     operating_expensesTTM = {
         "operating_expensesTTM": operating_expensesTTM, "date": date}
     return operating_expensesTTM
@@ -511,7 +511,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
         raise Exception('Invalid browser')
 
     # Revenue TTM; Expenses TTM; Net Income TTM; Num Shares; SG&A
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/income-statement?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -521,7 +522,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
     htmls.append(html)
 
     # total assets and liabilities
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/balance-sheet?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -530,7 +532,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
     htmls.append(html)
 
     # Key financial-ratios: roi; book value; CURRENT RATIO;
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/financial-ratios?freq=Q"
 
     try:
         driver.get(URL)
@@ -540,7 +543,8 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
     htmls.append(html)
 
     # dividend percentage [3]
-    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history"
+    URL = f"https://www.macrotrends.net/stocks/charts/{
+        symbol}/{stock_name}/dividend-yield-history"
 
     try:
         driver.get(URL)

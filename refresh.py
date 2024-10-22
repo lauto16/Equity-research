@@ -34,9 +34,6 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
 
     """
 
-    # THIS WORKS, BUT REMEMBER THAT WE NEED TTM Revenue, TTM Income and TTM Expenses, none of the three data that
-    # we've been gathering about these is correct :////
-
     print(f'REFRESHING {tab}')
     financial_values = scraper(
         symbol=tab, stock_name=getCompanyName(symbol=tab, companies=companies), scrap_delay=scrap_delay, browser=browser)
@@ -73,7 +70,7 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
     eps = zero_division(net_incomeTTM, num_shares)
     sga_margin = zero_division((sgaTTM * 100), grossprofitTTM)
     grossmarginTTM = zero_division((grossprofitTTM * 100), revenueTTM)
-    market_cap = basic_num_shares * stock_price
+    market_cap = basic_num_shares * stock_price / 1000
     fair_value = zero_division(stock_price, book_value)
     pe_ratio = zero_division(stock_price, eps)
 
