@@ -2,7 +2,7 @@ from undetected_chromedriver import Chrome
 from selenium.webdriver import Firefox
 from selenium.webdriver import FirefoxOptions
 from bs4 import BeautifulSoup
-from utils.formating_tools import clear_number, clear_hyphen
+from utils.formating_tools import clear_number_financials, clear_number_ratio
 from requests import get
 from datetime import datetime, timedelta
 from time import sleep
@@ -35,7 +35,7 @@ def filter_revenue(html) -> dict:
     # making the dictionary
     revenueTTM = 0
     for i in range(1, 5):
-        revenueTTM += clear_number(cells_revenue[i].replace('.', ''))
+        revenueTTM += clear_number_financials(cells_revenue[i])
 
     date = cells_dates[0].replace('-', '/')
     revenueTTM = {"revenueTTM": revenueTTM, "date": date}
@@ -59,12 +59,8 @@ def filter_NetIncome(html) -> dict:
     # making the dictionary
     net_incomeTTM = 0
     for i in range(1, 5):
-        net_incomeTTM += clear_hyphen((cells_net_income[i]
-                                       ).replace('$', '').replace('.', '').replace(',', '.'))
-    net_income_quarterly = clear_hyphen((cells_net_income[1]
-                                         ).replace('$', '').replace('.', '').replace(',', '.'))
-    net_income_quarterly = net_income_quarterly / 1000
-    net_incomeTTM = net_incomeTTM / 1000
+        net_incomeTTM += clear_number_financials(cells_net_income[i])
+    net_income_quarterly = clear_number_financials(cells_net_income[1])
 
     net_incomeTTM = {"net_incomeTTM": net_incomeTTM,
                      "net_income_quarterly": net_income_quarterly}
@@ -98,8 +94,8 @@ def filter_operating_expenses(html) -> dict:
     date = cells_dates[0].replace('-', '/')
     operating_expensesTTM = 0
     for i in range(1, 5):
-        operating_expensesTTM += clear_hyphen(cells_operating_expenses[i].replace(
-            ',', '.').replace('$', ''))/1000
+        operating_expensesTTM += clear_number_financials(
+            cells_operating_expenses[i])
     operating_expensesTTM = {
         "operating_expensesTTM": operating_expensesTTM, "date": date}
     return operating_expensesTTM
@@ -130,7 +126,7 @@ def filter_num_shares(html) -> dict:
 
     # making the dictionary
     date = cells_dates[0].replace('-', '/')
-    num_shares = clear_hyphen(cells_num_shares[1].replace('.', ''))/1000
+    num_shares = clear_number_financials(cells_num_shares[1])*1000
     num_shares = {
         "num_shares": num_shares, "date": date}
     return num_shares
@@ -162,7 +158,7 @@ def filter_basic_shares(html: str) -> dict:
 
     # making the dictionary
     date = cells_dates[0].replace('-', '/')
-    num_shares = clear_hyphen(cells_num_shares[1].replace('.', ''))
+    num_shares = clear_number_financials(cells_num_shares[1])*1000
     num_shares = {
         "basic_num_shares": num_shares, "date": date}
     return num_shares
@@ -195,8 +191,7 @@ def filter_selling_gen_admin(html) -> dict:
     # making sga TTM
     sgaTTM = 0
     for i in range(1, 5):
-        sgaTTM += clear_hyphen(cells_S_G_A[i].replace('.',
-                                                      '').replace('$', '').replace(',', '.'))/1000
+        sgaTTM += clear_number_financials(cells_S_G_A[i])
     # making the dictionary
     sgaTTM = {
         "sgaTTM":  sgaTTM, "date": date}
@@ -219,7 +214,7 @@ def filter_total_assets(html: str) -> dict:
     # making the dictionary
     assetsTTM = 0
     for i in range(1, 5):
-        assetsTTM += clear_number(cells_assets[i])
+        assetsTTM += clear_number_financials(cells_assets[i])
     assetsTTM = {
         "assetsTTM":  assetsTTM}
 
@@ -253,7 +248,7 @@ def filter_gross_profit(html: str) -> dict:
     # making the dictionary
     gross_profitTTM = 0
     for i in range(1, 5):
-        gross_profitTTM += clear_number(cells_gross_profit[i].replace('.', ''))
+        gross_profitTTM += clear_number_financials(cells_gross_profit[i])
 
     date = cells_dates[0].replace('-', '/')
 
@@ -295,7 +290,7 @@ def filter_total_liabilities(html: str) -> dict:
     # making the dictionary
     liabilitiesTTM = 0
     for i in range(1, 5):
-        liabilitiesTTM += clear_number(cells_liabilities[i])
+        liabilitiesTTM += clear_number_financials(cells_liabilities[i])
 
     liabilitiesTTM = {
         "liabilitiesTTM":  liabilitiesTTM}
@@ -326,7 +321,7 @@ def filter_roi(html: str) -> dict:
     date = cells_dates[0].replace('-', '/')
 
     # making the dictionary
-    roi = clear_hyphen(cells_roi[1])
+    roi = clear_number_ratio(cells_roi[1])
 
     roi = {"roi":  roi, 'date': date}
 
@@ -357,8 +352,8 @@ def filter_long_term_debt(html: str) -> dict:
     # making the dictionary
     long_term_debtTTM = 0
     for i in range(1, 5):
-        long_term_debtTTM += clear_number(cells_debt[i])
-    long_term_debt = clear_number(cells_debt[1])
+        long_term_debtTTM += clear_number_financials(cells_debt[i])
+    long_term_debt = clear_number_financials(cells_debt[1])
 
     long_term_debtTTM = {"long_term_debtTTM":  long_term_debtTTM,
                          "long_term_debt": long_term_debt}
@@ -388,8 +383,8 @@ def filter_cash_on_hand(html: str) -> dict:
     # making the dictionary
     cash_on_handTTM = 0
     for i in range(1, 5):
-        cash_on_handTTM += clear_number(cells_cash[i])
-    cash_on_hand = clear_number(cells_cash[1])
+        cash_on_handTTM += clear_number_financials(cells_cash[i])
+    cash_on_hand = clear_number_financials(cells_cash[1])
 
     cash_on_handTTM = {"cash_on_handTTM":  cash_on_handTTM,
                        "cash_on_hand": cash_on_hand}
@@ -411,8 +406,8 @@ def filter_book_value(html: str) -> dict:
     # making the dictionary
     book_valueTTM = 0
     for i in range(1, 5):
-        book_valueTTM += clear_hyphen(cells_book_value[i])
-    book_value = clear_hyphen(cells_book_value[1])
+        book_valueTTM += clear_number_ratio(cells_book_value[i])
+    book_value = clear_number_ratio(cells_book_value[1])
 
     book_valueTTM = {"book_valueTTM":  book_valueTTM,
                      "book_value": book_value}
@@ -432,7 +427,7 @@ def filter_debt_to_equity(html: str) -> dict:
             cells_debt_to_equity.append(cell)
 
     # making the dictionary
-    debt_to_equity = clear_hyphen(cells_debt_to_equity[1])
+    debt_to_equity = clear_number_ratio(cells_debt_to_equity[1])
 
     debt_to_equity = {"debt_to_equity":  debt_to_equity}
 
@@ -481,7 +476,7 @@ def filter_current_ratio(html: str) -> dict:
             cells_current_ratio.append(cell)
 
     # making the dictionary
-    current_ratio = clear_hyphen(cells_current_ratio[1])
+    current_ratio = clear_number_ratio(cells_current_ratio[1])
 
     current_ratio = {"current_ratio":  current_ratio}
 
@@ -511,8 +506,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
         raise Exception('Invalid browser')
 
     # Revenue TTM; Expenses TTM; Net Income TTM; Num Shares; SG&A
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/income-statement?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -522,8 +516,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
     htmls.append(html)
 
     # total assets and liabilities
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/balance-sheet?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q"
     try:
         driver.get(URL)
     except Exception:
@@ -532,8 +525,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
     htmls.append(html)
 
     # Key financial-ratios: roi; book value; CURRENT RATIO;
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/financial-ratios?freq=Q"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q"
 
     try:
         driver.get(URL)
@@ -543,8 +535,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
     htmls.append(html)
 
     # dividend percentage [3]
-    URL = f"https://www.macrotrends.net/stocks/charts/{
-        symbol}/{stock_name}/dividend-yield-history"
+    URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history"
 
     try:
         driver.get(URL)
@@ -586,7 +577,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
         if tries > 0:
             print(f'there was a mistake in the load of {symbol}: ', e)
             print("trying again...")
-            return scraper(symbol, stock_name, scrap_delay, browser, (tries-1))
+            return scraper(symbol, stock_name, scrap_delay+1, browser, (tries-1))
 
         else:
             return
@@ -614,4 +605,5 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
     if time_refresh < minimum_time:
         sleeping = minimum_time - time_refresh
         sleep(sleeping)
+    print(finance_variables)
     return finance_variables

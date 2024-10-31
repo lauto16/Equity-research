@@ -78,7 +78,7 @@ def set_text(new_tab):
     new_tab['I26'] = 'Billion TTM'
     new_tab['I28'] = '(Assets / Liabilities)'
     new_tab['I31'] = 'Billion'
-    new_tab['I32'] = 'Billion'
+    new_tab['I32'] = 'Million'
     new_tab['I33'] = '%'
     new_tab['I35'] = 'Billion TTM'
     new_tab['I36'] = '%'
@@ -158,6 +158,7 @@ def add_styles(new_tab) -> None:
 
 
 def main(new_symbol: str, file_name: str, scrap_delay: float, browser: str) -> None:
+
     json_path = os.path.join(os.path.dirname(file_name), 'utils/symbols.json')
     with open(json_path, 'r') as file:
         companies = json.load(file)
