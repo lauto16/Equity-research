@@ -606,6 +606,3 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
         sleeping = minimum_time - time_refresh
         sleep(sleeping)
     return finance_variables
-
-
-scraper('AAPL', 'apple', 3, 'f')
