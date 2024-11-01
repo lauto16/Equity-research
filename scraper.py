@@ -261,11 +261,11 @@ def filter_dividend(html: str) -> dict:
     # dividend Yield
     soup = BeautifulSoup(html, 'html.parser')
 
-    paragraph = soup.find("div", id="main_content").findChildren("div")
+    paragraph = soup.find(
+        "div", class_="mobile-description").findChildren("div")
 
-    i = 0
-    for div in paragraph:
-        if i == 1:
+    for i, div in enumerate(paragraph):
+        if i == 0:
             dividend = div.find_all("strong")
             dividend_percentage = dividend[1].text
             break
@@ -605,5 +605,7 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
     if time_refresh < minimum_time:
         sleeping = minimum_time - time_refresh
         sleep(sleeping)
-    print(finance_variables)
     return finance_variables
+
+
+scraper('AAPL', 'apple', 3, 'f')
