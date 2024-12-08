@@ -2,262 +2,13 @@ from undetected_chromedriver import Chrome
 from selenium.webdriver import Firefox
 from selenium.webdriver import FirefoxOptions
 from bs4 import BeautifulSoup
-from utils.formating_tools import clear_number_financials, clear_number_ratio
 from requests import get
 from datetime import datetime, timedelta
 from time import sleep
 from time import time
 
 
-def filter_revenue(html) -> dict:
-    # Revenue TTM
-    soup = BeautifulSoup(html, 'html.parser')
-
-    cells_revenue = []
-    cells_dates = []
-
-    soup = BeautifulSoup(html, 'html.parser')
-    revenue_row = soup.find("div", id="row0jqxgrid")
-
-    for cell in revenue_row:
-        cell = cell.text
-        if cell:
-            cells_revenue.append(cell)
-
-    # DATES
-    dates_row = soup.find("div", id="columntablejqxgrid").children
-    for cell in dates_row:
-        cell = cell.text
-        if cell:
-            cells_dates.append(cell)
-    # deletes the first column, which doesn't have dates
-    cells_dates.pop(0)
-    # making the dictionary
-    revenueTTM = 0
-    for i in range(1, 5):
-        revenueTTM += clear_number_financials(cells_revenue[i])
-
-    date = cells_dates[0].replace('-', '/')
-    revenueTTM = {"revenueTTM": revenueTTM, "date": date}
-    return revenueTTM
-
-
-def filter_NetIncome(html) -> dict:
-    # net TTM
-    soup = BeautifulSoup(html, 'html.parser')
-
-    cells_net_income = []
-
-    soup = BeautifulSoup(html, 'html.parser')
-    net_income_row = soup.find("div", id="row15jqxgrid")
-
-    for cell in net_income_row:
-        cell = cell.text
-        if cell:
-            cells_net_income.append(cell)
-
-    # making the dictionary
-    net_incomeTTM = 0
-    for i in range(1, 5):
-        net_incomeTTM += clear_number_financials(cells_net_income[i])
-    net_income_quarterly = clear_number_financials(cells_net_income[1])
-
-    net_incomeTTM = {"net_incomeTTM": net_incomeTTM,
-                     "net_income_quarterly": net_income_quarterly}
-    return net_incomeTTM
-
-
-def filter_operating_expenses(html) -> dict:
-    # Expenses;
-
-    soup = BeautifulSoup(html, 'html.parser')
-
-    cells_operating_expenses = []
-    cells_dates = []
-
-    operating_row = soup.find("div", id="row6jqxgrid").children
-    for cell in operating_row:
-        cell = cell.text
-        if cell:
-            cells_operating_expenses.append(cell)
-
-    # DATES
-    dates_row = soup.find("div", id="columntablejqxgrid").children
-    for cell in dates_row:
-        cell = cell.text
-        if cell:
-            cells_dates.append(cell)
-    # deletes the first column, which doesn't have dates
-    cells_dates.pop(0)
-
-    # making the dictionary
-    date = cells_dates[0].replace('-', '/')
-    operating_expensesTTM = 0
-    for i in range(1, 5):
-        operating_expensesTTM += clear_number_financials(
-            cells_operating_expenses[i])
-    operating_expensesTTM = {
-        "operating_expensesTTM": operating_expensesTTM, "date": date}
-    return operating_expensesTTM
-
-
-def filter_num_shares(html) -> dict:
-    # Num Shares
-
-    cells_num_shares = []
-    cells_dates = []
-
-    soup = BeautifulSoup(html, 'html.parser')
-    num_shares = soup.find("div", id="row19jqxgrid").children
-    for cell in num_shares:
-        cell = cell.text
-        if cell:
-            cells_num_shares.append(cell)
-
-    # DATES
-    dates_row = soup.find("div", id="columntablejqxgrid").children
-    for cell in dates_row:
-        cell = cell.text
-        if cell:
-            cells_dates.append(cell)
-
-    # deletes the first column, which doesn't have dates
-    cells_dates.pop(0)
-
-    # making the dictionary
-    date = cells_dates[0].replace('-', '/')
-    num_shares = clear_number_financials(cells_num_shares[1])*1000
-    num_shares = {
-        "num_shares": num_shares, "date": date}
-    return num_shares
-
-
-def filter_basic_shares(html: str) -> dict:
-   # BASIC Num Shares
-
-    cells_num_shares = []
-    cells_dates = []
-
-    soup = BeautifulSoup(html, 'html.parser')
-    num_shares = soup.find("div", id="row18jqxgrid").children
-    for cell in num_shares:
-        cell = cell.text
-        if cell:
-            cells_num_shares.append(cell)
-
-    # DATES
-    dates_row = soup.find("div", id="columntablejqxgrid").children
-    for cell in dates_row:
-        cell = cell.text
-        if cell:
-
-            cells_dates.append(cell)
-
-    # deletes the first column, which doesn't have dates
-    cells_dates.pop(0)
-
-    # making the dictionary
-    date = cells_dates[0].replace('-', '/')
-    num_shares = clear_number_financials(cells_num_shares[1])*1000
-    num_shares = {
-        "basic_num_shares": num_shares, "date": date}
-    return num_shares
-
-
-def filter_selling_gen_admin(html) -> dict:
-
-    # SG&A
-    cells_S_G_A = []
-    cells_dates = []
-
-    soup = BeautifulSoup(html, 'html.parser')
-    sgaTTM = soup.find("div", id="row4jqxgrid").children
-    for cell in sgaTTM:
-        cell = cell.text
-        if cell:
-            cells_S_G_A.append(cell)
-
-    # DATES
-    dates_row = soup.find("div", id="columntablejqxgrid").children
-    for cell in dates_row:
-        cell = cell.text
-        if cell:
-            cells_dates.append(cell)
-
-    # deletes the first column, which doesn't have dates
-    cells_dates.pop(0)
-    # making the dictionary
-    date = cells_dates[0].replace('-', '/')
-    # making sga TTM
-    sgaTTM = 0
-    for i in range(1, 5):
-        sgaTTM += clear_number_financials(cells_S_G_A[i])
-    # making the dictionary
-    sgaTTM = {
-        "sgaTTM":  sgaTTM, "date": date}
-
-    return sgaTTM
-
-
-def filter_total_assets(html: str) -> dict:
-    # Total assets TTM
-    cells_assets = []
-
-    soup = BeautifulSoup(html, 'html.parser')
-    assetsTTM = soup.find("div", id="row11jqxgrid").children
-
-    for cell in assetsTTM:
-        cell = cell.get_text().replace('.', '')
-        if cell:
-            cells_assets.append(cell)
-
-    # making the dictionary
-    assetsTTM = 0
-    for i in range(1, 5):
-        assetsTTM += clear_number_financials(cells_assets[i])
-    assetsTTM = {
-        "assetsTTM":  assetsTTM}
-
-    return assetsTTM
-
-
-def filter_gross_profit(html: str) -> dict:
-    # Gross profit
-    soup = BeautifulSoup(html, 'html.parser')
-
-    cells_gross_profit = []
-    cells_dates = []
-
-    soup = BeautifulSoup(html, 'html.parser')
-    gross_profit_row = soup.find("div", id="row2jqxgrid")
-
-    for cell in gross_profit_row:
-        cell = cell.text
-        if cell:
-            cells_gross_profit.append(cell)
-
-    # DATES
-    dates_row = soup.find("div", id="columntablejqxgrid").children
-    for cell in dates_row:
-        cell = cell.text
-        if cell:
-            cells_dates.append(cell)
-    # deletes the first column, which doesn't have dates
-    cells_dates.pop(0)
-
-    # making the dictionary
-    gross_profitTTM = 0
-    for i in range(1, 5):
-        gross_profitTTM += clear_number_financials(cells_gross_profit[i])
-
-    date = cells_dates[0].replace('-', '/')
-
-    gross_profitTTM = {
-        'grossprofitTTM': gross_profitTTM, 'date': date}
-    return gross_profitTTM
-
-
-def filter_dividend(html: str) -> dict:
+def filter_dividend(html: str) -> float:
     # dividend Yield
     soup = BeautifulSoup(html, 'html.parser')
 
@@ -270,168 +21,8 @@ def filter_dividend(html: str) -> dict:
             dividend_percentage = dividend[1].text
             break
         i += 1
-    dividend_percentage = dividend_percentage.replace('%', '')
-    dividend_percentage = {'dividend_percentage': dividend_percentage}
+    dividend_percentage = float(dividend_percentage.replace('%', ''))
     return dividend_percentage
-
-
-def filter_total_liabilities(html: str) -> dict:
-    # Total Liabilities TTM
-    cells_liabilities = []
-
-    soup = BeautifulSoup(html, 'html.parser')
-    liabilitiesTTM = soup.find("div", id="row16jqxgrid").children
-
-    for cell in liabilitiesTTM:
-        cell = cell.get_text().replace('.', '')
-        if cell:
-            cells_liabilities.append(cell)
-
-    # making the dictionary
-    liabilitiesTTM = 0
-    for i in range(1, 5):
-        liabilitiesTTM += clear_number_financials(cells_liabilities[i])
-
-    liabilitiesTTM = {
-        "liabilitiesTTM":  liabilitiesTTM}
-
-    return liabilitiesTTM
-
-
-def filter_roi(html: str) -> dict:
-    # Filter ROI
-    cells_roi = []
-    cells_dates = []
-    soup = BeautifulSoup(html, 'html.parser')
-    roi = soup.find("div", id="row16jqxgrid").children
-
-    for cell in roi:
-        cell = cell.get_text()
-        if cell:
-            cells_roi.append(cell)
-
-    # DATES
-    dates_row = soup.find("div", id="columntablejqxgrid").children
-    for cell in dates_row:
-        cell = cell.text
-        if cell:
-            cells_dates.append(cell)
-    # deletes the first column, which doesn't have dates
-    cells_dates.pop(0)
-    date = cells_dates[0].replace('-', '/')
-
-    # making the dictionary
-    roi = clear_number_ratio(cells_roi[1])
-
-    roi = {"roi":  roi, 'date': date}
-
-    return roi
-
-
-def filter_long_term_debt(html: str) -> dict:
-    # LONG TERM DEBT
-    cells_debt = []
-    cells_dates = []
-    soup = BeautifulSoup(html, 'html.parser')
-    long_term_debtTTM = soup.find("div", id="row13jqxgrid").children
-
-    for cell in long_term_debtTTM:
-        cell = cell.get_text().replace('.', '')
-        if cell:
-            cells_debt.append(cell)
-
-    # DATES
-    dates_row = soup.find("div", id="columntablejqxgrid").children
-    for cell in dates_row:
-        cell = cell.text
-        if cell:
-            cells_dates.append(cell)
-    # deletes the first column, which doesn't have dates
-    cells_dates.pop(0)
-
-    # making the dictionary
-    long_term_debtTTM = 0
-    for i in range(1, 5):
-        long_term_debtTTM += clear_number_financials(cells_debt[i])
-    long_term_debt = clear_number_financials(cells_debt[1])
-
-    long_term_debtTTM = {"long_term_debtTTM":  long_term_debtTTM,
-                         "long_term_debt": long_term_debt}
-    return long_term_debtTTM
-
-
-def filter_cash_on_hand(html: str) -> dict:
-    cells_cash = []
-    cells_dates = []
-    soup = BeautifulSoup(html, 'html.parser')
-    cash_on_handTTM = soup.find("div", id="row0jqxgrid").children
-
-    for cell in cash_on_handTTM:
-        cell = cell.get_text().replace('.', '')
-        if cell:
-            cells_cash.append(cell)
-
-    # DATES
-    dates_row = soup.find("div", id="columntablejqxgrid").children
-    for cell in dates_row:
-        cell = cell.text
-        if cell:
-            cells_dates.append(cell)
-    # deletes the first column, which doesn't have dates
-    cells_dates.pop(0)
-
-    # making the dictionary
-    cash_on_handTTM = 0
-    for i in range(1, 5):
-        cash_on_handTTM += clear_number_financials(cells_cash[i])
-    cash_on_hand = clear_number_financials(cells_cash[1])
-
-    cash_on_handTTM = {"cash_on_handTTM":  cash_on_handTTM,
-                       "cash_on_hand": cash_on_hand}
-
-    return cash_on_handTTM
-
-
-def filter_book_value(html: str) -> dict:
-    # Filter Book Value
-    cells_book_value = []
-    soup = BeautifulSoup(html, 'html.parser')
-    book_value = soup.find("div", id="row17jqxgrid").children
-
-    for cell in book_value:
-        cell = cell.get_text()
-        if cell:
-            cells_book_value.append(cell)
-
-    # making the dictionary
-    book_valueTTM = 0
-    for i in range(1, 5):
-        book_valueTTM += clear_number_ratio(cells_book_value[i])
-    book_value = clear_number_ratio(cells_book_value[1])
-
-    book_valueTTM = {"book_valueTTM":  book_valueTTM,
-                     "book_value": book_value}
-
-    return book_valueTTM
-
-
-def filter_debt_to_equity(html: str) -> dict:
-    # Filter Debt to Equity
-    cells_debt_to_equity = []
-    soup = BeautifulSoup(html, 'html.parser')
-    debt_to_equity = soup.find("div", id="row2jqxgrid").children
-
-    for cell in debt_to_equity:
-        cell = cell.get_text()
-        if cell:
-            cells_debt_to_equity.append(cell)
-
-    # making the dictionary
-    debt_to_equity = clear_number_ratio(cells_debt_to_equity[1])
-
-    debt_to_equity = {"debt_to_equity":  debt_to_equity}
-
-    return debt_to_equity
 
 
 def filter_stock_price(symbol: str) -> dict:
@@ -464,27 +55,43 @@ def filter_stock_price(symbol: str) -> dict:
     return stock_price
 
 
-def filter_current_ratio(html: str) -> dict:
-    # Filter current ratio
-    cells_current_ratio = []
-    soup = BeautifulSoup(html, 'html.parser')
-    current_ratio = soup.find("div", id="row0jqxgrid").children
+def its_a_date(clave):
+    try:
+        datetime.strptime(clave, "%Y-%m-%d")
+        return True
+    except ValueError:
+        return False
 
-    for cell in current_ratio:
-        cell = cell.get_text()
-        if cell:
-            cells_current_ratio.append(cell)
 
-    # making the dictionary
-    current_ratio = clear_number_ratio(cells_current_ratio[1])
+def get_date(value):
+    dates = [key for key in value.keys() if its_a_date(key)]
+    last_four_dates = sorted(dates, key=lambda x: datetime.strptime(
+        x, "%Y-%m-%d"), reverse=True)[:4]
+    return last_four_dates
 
-    current_ratio = {"current_ratio":  current_ratio}
 
-    return current_ratio
+def get_data(var: list, id: int, TTM=False) -> float:
+    var = var[id]
+    dates = get_date(var)
+    most_recent_date = max(dates)
+
+    value = 0
+    try:
+
+        if TTM:
+            for i in range(4):
+                value += float(var[dates[i]])
+            return value
+
+        data = float(var[most_recent_date])
+        return data
+
+    except:
+        return 0
 
 
 def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, tries=3) -> dict:
-    htmls = []
+    varlist = []
     minimum_time = 16
     starting_time = time()
     if browser.upper() == 'C':
@@ -512,75 +119,67 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
     except Exception:
         # this is an controlled situation due to macrotrends infinite loading
         pass
-    html = driver.page_source
-    htmls.append(html)
-
+    income_statement = driver.execute_script("return originalData;")
+    varlist.append(income_statement)
     # total assets and liabilities
     URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q"
     try:
         driver.get(URL)
     except Exception:
         pass
-    html = driver.page_source
-    htmls.append(html)
-
+    balance_sheet = driver.execute_script("return originalData;")
+    varlist.append(balance_sheet)
     # Key financial-ratios: roi; book value; CURRENT RATIO;
     URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q"
-
     try:
         driver.get(URL)
     except Exception:
         pass
-    html = driver.page_source
-    htmls.append(html)
-
+    financial_ratios = driver.execute_script("return originalData;")
+    varlist.append(financial_ratios)
     # dividend percentage [3]
     URL = f"https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history"
-
     try:
         driver.get(URL)
     except:
         pass
     finally:
         html = driver.page_source
-        htmls.append(html)
         driver.quit()
-    try:
-        # URL: https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/income-statement?freq=Q
-        operating_expensesTTM = filter_operating_expenses(htmls[0])
-        num_shares = filter_num_shares(htmls[0])
-        basic_shares = filter_basic_shares(htmls[0])
-        sgaTTM = filter_selling_gen_admin(htmls[0])
-        revenueTTM = filter_revenue(htmls[0])
-        net_incomeTTM = filter_NetIncome(htmls[0])
-        grossprofitTTM = filter_gross_profit(htmls[0])
 
-        # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/balance-sheet?freq=Q
-        assetsTTM = filter_total_assets(htmls[1])
-        liabilitiesTTM = filter_total_liabilities(htmls[1])
-        cash_on_hand = filter_cash_on_hand(htmls[1])
-        long_term_debt = filter_long_term_debt(htmls[1])
+    # Income Statement
+    # operating_expensesTTM; num_shares; basic_shares; sgaTTM; revenueTTM; net_incomeTTM; grossprofitTTM
+    operating_expensesTTM = get_data(var=varlist[0], id=6, TTM=True)
+    # num shares outstanding
+    num_shares = get_data(var=varlist[0], id=19, TTM=False)
+    basic_shares = get_data(var=varlist[0], id=18, TTM=False)
+    sgaTTM = get_data(var=varlist[0], id=4, TTM=True)
+    revenueTTM = get_data(var=varlist[0], id=0, TTM=True)
+    net_incomeTTM = get_data(var=varlist[0], id=15, TTM=True)
+    grossprofitTTM = get_data(var=varlist[0], id=2, TTM=True)
 
-        # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/financial-ratios?freq=Q
-        roi = filter_roi(htmls[2])
-        book_value = filter_book_value(htmls[2])
-        debt_to_equity = filter_debt_to_equity(htmls[2])
-        current_ratio = filter_current_ratio(htmls[2])
+    # balance-sheet
+    # assetsTTM; liabilitiesTTM; cash_on_hand; long_term_debt
+    assetsTTM = get_data(var=varlist[1], id=11, TTM=True)
+    liabilitiesTTM = get_data(var=varlist[1], id=16, TTM=True)
+    cash_on_hand = get_data(var=varlist[1], id=0, TTM=False)
+    cash_on_handTTM = get_data(var=varlist[1], id=0, TTM=True)
+    long_term_debt = get_data(var=varlist[1], id=13, TTM=False)
+    long_term_debtTTM = get_data(var=varlist[1], id=13, TTM=True)
 
-        # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history
-        dividend_percentage = filter_dividend(htmls[3])
+    # financial-ratios
+    # roi; book_value; debt_to_equity; current_ratio
+    roi = get_data(var=varlist[2], id=16)
+    book_value = get_data(var=varlist[2], id=17)
+    book_valueTTM = get_data(var=varlist[2], id=17, TTM=True)
+    debt_to_equity = get_data(var=varlist[2], id=2)
+    current_ratio = get_data(var=varlist[2], id=0)
+    date = get_date(value=varlist[0][0])[0]
 
-        # Polygon API
-        stock_price = filter_stock_price(symbol)
-    except Exception as e:
-
-        if tries > 0:
-            print(f'there was a mistake in the load of {symbol}: ', e)
-            print("trying again...")
-            return scraper(symbol, stock_name, scrap_delay+1, browser, (tries-1))
-
-        else:
-            return
+    # URL https://www.macrotrends.net/stocks/charts/{symbol}/{stock_name}/dividend-yield-history
+    dividend_percentage = filter_dividend(html)
+    # Polygon API
+    stock_price = filter_stock_price(symbol)
 
     finance_variables = {"operating_expensesTTM": operating_expensesTTM,
                          "num_shares": num_shares,
@@ -593,12 +192,16 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
                          "grossprofitTTM": grossprofitTTM,
                          "dividend_percentage": dividend_percentage,
                          "cash_on_hand": cash_on_hand,
+                         "cash_on_handTTM": cash_on_handTTM,
                          "long_term_debt": long_term_debt,
+                         "long_term_debtTTM": long_term_debtTTM,
                          "roi": roi,
                          "book_value": book_value,
+                         "book_valueTTM": book_valueTTM,
                          "debt_to_equity": debt_to_equity,
                          "stock_price": stock_price,
-                         "current_ratio": current_ratio
+                         "current_ratio": current_ratio,
+                         "date": date
                          }
     actual_time = time()
     time_refresh = actual_time - starting_time

@@ -1,5 +1,4 @@
 from openpyxl import Workbook, load_workbook
-from openpyxl.styles import Font
 from scraper import scraper
 from time import sleep
 from json import load
@@ -42,32 +41,32 @@ def refresh(tab: str, workbook: Workbook, file_name: str, companies, scrap_delay
 
     stock_tab = workbook[tab]
 
-    date = financial_values['revenueTTM']['date']
-    revenueTTM = financial_values['revenueTTM']['revenueTTM']
-    operating_expensesTTM = financial_values['operating_expensesTTM']['operating_expensesTTM']
-    net_incomeTTM = financial_values['net_incomeTTM']['net_incomeTTM']
+    date = financial_values['date']
+    revenueTTM = financial_values['revenueTTM']
+    operating_expensesTTM = financial_values['operating_expensesTTM']
+    net_incomeTTM = financial_values['net_incomeTTM']
     # net_income_quarterly = financial_values['net_incomeTTM']['net_income_quarterly']
-    num_shares = financial_values['num_shares']['num_shares']
-    sgaTTM = financial_values['sgaTTM']['sgaTTM']
-    assetsTTM = financial_values['assetsTTM']['assetsTTM']
-    liabilitiesTTM = financial_values['liabilitiesTTM']['liabilitiesTTM']
-    grossprofitTTM = financial_values['grossprofitTTM']['grossprofitTTM']
-    dividend_percentage = financial_values['dividend_percentage']['dividend_percentage']
-    cash_on_hand = financial_values['cash_on_hand']['cash_on_hand']
-    cash_on_handTTM = financial_values['cash_on_hand']['cash_on_handTTM']
-    long_term_debt = financial_values['long_term_debt']['long_term_debt']
-    long_term_debtTTM = financial_values['long_term_debt']['long_term_debtTTM']
-    roi = financial_values['roi']['roi']
-    book_value = financial_values['book_value']['book_value']
-    book_valueTTM = financial_values['book_value']['book_valueTTM']
-    debt_to_equity = financial_values['debt_to_equity']['debt_to_equity']
+    num_shares = financial_values['num_shares']
+    sgaTTM = financial_values['sgaTTM']
+    assetsTTM = financial_values['assetsTTM']
+    liabilitiesTTM = financial_values['liabilitiesTTM']
+    grossprofitTTM = financial_values['grossprofitTTM']
+    dividend_percentage = financial_values['dividend_percentage']
+    cash_on_hand = financial_values['cash_on_hand']
+    cash_on_handTTM = financial_values['cash_on_handTTM']
+    long_term_debt = financial_values['long_term_debt']
+    long_term_debtTTM = financial_values['long_term_debtTTM']
+    roi = financial_values['roi']
+    book_value = financial_values['book_value']
+    book_valueTTM = financial_values['book_valueTTM']
+    debt_to_equity = financial_values['debt_to_equity']
     stock_price = financial_values['stock_price']['stock_price']
     stock_price_date = financial_values['stock_price']['date']
-    basic_num_shares = financial_values['basic_num_shares']['basic_num_shares']
-    current_ratio = financial_values['current_ratio']['current_ratio']
+    basic_num_shares = financial_values['basic_num_shares']
+    current_ratio = financial_values['current_ratio']
 
     net_income_margin = round(((net_incomeTTM * 100) / revenueTTM), 3)
-    eps = net_incomeTTM * 1000 / num_shares
+    eps = net_incomeTTM / num_shares
     sga_margin = round(((sgaTTM * 100) / grossprofitTTM), 3)
     grossmarginTTM = round(((grossprofitTTM * 100) / revenueTTM), 3)
     market_cap = (basic_num_shares * stock_price)/1000
