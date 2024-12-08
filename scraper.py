@@ -513,8 +513,6 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
         # this is an controlled situation due to macrotrends infinite loading
         pass
     html = driver.page_source
-    with open("financials.txt", "w") as financialsFile:
-        financialsFile.write(html)
     htmls.append(html)
 
     # total assets and liabilities
@@ -524,8 +522,6 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
     except Exception:
         pass
     html = driver.page_source
-    with open("balanceSheetFile.txt", "w") as balanceSheetFile:
-        balanceSheetFile.write(html)
     htmls.append(html)
 
     # Key financial-ratios: roi; book value; CURRENT RATIO;
@@ -536,8 +532,6 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
     except Exception:
         pass
     html = driver.page_source
-    with open("ratiosFile.txt", "w") as ratiosFile:
-        ratiosFile.write(html)
     htmls.append(html)
 
     # dividend percentage [3]
@@ -549,8 +543,6 @@ def scraper(symbol: str, stock_name: str, scrap_delay: float, browser: str, trie
         pass
     finally:
         html = driver.page_source
-        with open("dividendFile.txt", "w") as dividendFile:
-            dividendFile.write(html)
         htmls.append(html)
         driver.quit()
     try:
